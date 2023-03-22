@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import NavItem from "./NavItem";
 import './navbar.css';
 
-const Navbar = () => {
+function Navbar() {
 
     const pages = [
         { basePath: "/about", title: "About Us", 
@@ -41,14 +41,8 @@ const Navbar = () => {
     return (
         <nav>
             <NavLink to="/">Logo</NavLink>
-            <table>
-                <tr>
-                    {dropDowns}
-                    <td>
-                        <NavLink to="/donate">Donate</NavLink>
-                    </td>
-                </tr>
-            </table>
+            {dropDowns}
+            <NavLink to="/donate">Donate</NavLink>
         </nav>
     )
 };
