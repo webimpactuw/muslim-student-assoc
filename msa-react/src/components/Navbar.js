@@ -36,11 +36,16 @@ function Navbar() {
         }
     ];
 
-    const dropDowns = pages.map((page) => <NavItem pages = {page} />);
+    const dropDowns = pages.map((page, index) => 
+        <NavItem key = {index} pages = {page} />
+    );
 
     return (
-        <nav>
-            <NavLink to="/">Logo</NavLink>
+        <nav className="navbar">
+            <Link to="/">
+                logo placeholder
+                <img src="/logo.png" alt="Logo" />
+            </Link>
             {dropDowns}
             <NavLink to="/donate">Donate</NavLink>
         </nav>
