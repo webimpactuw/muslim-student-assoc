@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 import './navbar.css';
 
 function Navbar() {
-
+    
     const pages = [
         { basePath: "/about", title: "About Us", 
             subPages:[
@@ -41,11 +41,8 @@ function Navbar() {
     );
 
     return (
-        <nav className="navbar">
-            <Link to="/">
-                logo placeholder
-                <img src="/logo.png" alt="Logo" />
-            </Link>
+        <nav>
+            <NavLink to="/">Logo</NavLink>
             {dropDowns}
             <NavLink to="/donate">Donate</NavLink>
         </nav>
