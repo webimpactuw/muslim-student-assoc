@@ -1,0 +1,38 @@
+.footer{
+    background-color: #28004f;
+    color: white;
+    display: flex;
+    padding: 50px 75px;
+}  
+
+.footer h3 {
+    font-size: 20px;
+    margin: 4px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 4px;
+}
+
+.divider {
+    padding: 10px;
+}
+
+.social-media {
+    display: block;
+    margin-left: auto;
+}
+
+.social-media-icons img {
+    height: 30px;
+    margin: 10px 8px;
+}
+
+.made-with-love {
+    background-color: #93649c;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px 21px;
+    position: relative;
+    top: 50px;
+}
