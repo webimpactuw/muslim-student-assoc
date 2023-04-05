@@ -2,20 +2,19 @@ import facebookLogo from "../assets/facebook-logo.png";
 import youtubeLogo from "../assets/youtube-logo-cropped.png";
 import instagramLogo from "../assets/instagram-logo.png";
 import tiktokLogo from "../assets/tiktok-logo.png";
-import "./footer.css";
 
 function Footer() {
     return (
         <div className="footer">
             <div className="footer-text">
-                <h3>FOR MSA UPDATES</h3>
+                <h4>FOR MSA UPDATES</h4>
                 <p>Best way to stay up to date on MSA: text @msauw2 to 81010</p>
                 <p className="divider"></p>
-                <h3>FOR IH UPDATES</h3>
+                <h4>FOR IH UPDATES</h4>
                 <p>Best way to stay up to date on IH announcements: text @ihuw to 81010</p>
             </div>
             <div className="social-media">
-                <h3>SOCIAL MEDIA</h3>
+                <h4>SOCIAL MEDIA</h4>
                 <div className="social-media-icons">
                     <a href="https://www.facebook.com/" target="_blank"><img src={facebookLogo} alt="Facebook"/></a>
                     <a href="https://www.instagram.com" target="_blank"><img src={instagramLogo} alt="Youtube"/></a>
