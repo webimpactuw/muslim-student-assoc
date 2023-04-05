@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import NavItem from "./NavItem";
+import msaLogo from "../assets/msa-logo.png";
 import './navbar.css';
 
 function Navbar() {
@@ -42,9 +43,11 @@ function Navbar() {
 
     return (
         <nav>
-            <NavLink to="/">Logo</NavLink>
-            {dropDowns}
-            <NavLink to="/donate">Donate</NavLink>
+            <NavLink className="logo" to="/"><img src={msaLogo} alt="MSA Logo" /></NavLink>
+            <div>
+                {dropDowns}
+                <NavLink className="donate" to="/donate">Donate</NavLink>
+            </div>
         </nav>
     )
 };

@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, About, Contact, Donate, Events, IH, Resources } from "./pages/index";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="islamic-house/*" element={<IH />} />
         <Route path="resources/*" element={<Resources />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
