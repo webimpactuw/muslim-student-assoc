@@ -5,7 +5,7 @@ nav {
   padding: 0px 60px;
 }
 
-a {
+nav a {
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -29,6 +29,7 @@ a {
   border-color: #28004f;
   border-width: 1px;
   border-radius: 20px;
+  margin: 5px;
 }
 
 .donate:hover {
