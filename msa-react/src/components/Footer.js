@@ -1,9 +1,17 @@
-import facebookLogo from "../assets/facebook-logo.png";
-import youtubeLogo from "../assets/youtube-logo-cropped.png";
-import instagramLogo from "../assets/instagram-logo.png";
-import tiktokLogo from "../assets/tiktok-logo.png";
-
 function Footer() {
+    function importAll(r) {
+        let imgs = [];
+        r.keys().map((item, index) => { imgs[index] = r(item); });
+        return imgs;
+    }
+    const images = importAll(require.context('../assets/social-media-icons', false, /\.(png|jpe?g|svg)$/));
+
+    const links = ["https://www.facebook.com/", "https://www.instagram.com", "https://www.tiktok.com", "https://www.youtube.com/"];
+
+    const a = images.map((src, index) => 
+        <a href={links[index]} target="_blank"><img src={src} alt="Facebook"/></a>
+    )
+
     return (
         <div className="footer">
             <div className="footer-text">
@@ -16,10 +24,7 @@ function Footer() {
             <div className="social-media">
                 <h4>SOCIAL MEDIA</h4>
                 <div className="social-media-icons">
-                    <a href="https://www.facebook.com/" target="_blank"><img src={facebookLogo} alt="Facebook"/></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src={instagramLogo} alt="Youtube"/></a>
-                    <a href="https://www.tiktok.com" target="_blank"><img src={tiktokLogo} alt="Facebook"/></a>
-                    <a href="https://www.youtube.com/" target="_blank"><img src={youtubeLogo} alt="Youtube"/></a>
+                    {a}
                 </div>
                 <div className="made-with-love">
                     <p>Made with 💛 by DUBvelopers!</p>

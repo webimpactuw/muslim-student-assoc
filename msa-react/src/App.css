@@ -69,9 +69,15 @@ REUSED COMPONENTS
     border-radius: 50px;
 }
 
-.purple-button:hover {
+.purple-button:hover, .purple-button:hover .purple-btn-link {
     color: var(--dark-purple);
     background-color: white;
+}
+
+/* for text inside navlinks inside buttons */
+.purple-btn-link {
+    color: white;
+    text-decoration: none;
 }
 
 /* scroll down arrow (button)*/
@@ -97,6 +103,27 @@ USEFUL ATTRIBUTES
 
 /* OTHER STYLING */
 
+
+/*
+Homepage
+*/
+.home-header {
+    height: 100vh - 100px;
+}
+.home-header-txt {
+    padding: 20vh 80px;
+}
+
+.home-text {
+    width: 60vw;
+    margin: auto;
+    min-height: 50vh;
+    padding: 5vh;
+}
+
+.home-carousel{
+    background-color: var(--bg-med-purple);
+}
 
 /* 
 NAVBAR 
