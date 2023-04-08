@@ -104,6 +104,8 @@ USEFUL ATTRIBUTES
 /* OTHER STYLING */
 
 
+
+
 /*
 Homepage
 */
@@ -114,6 +116,10 @@ Homepage
     padding: 20vh 80px;
 }
 
+.home-header-txt h1, .home-header-txt h3 {
+    margin: 0.1em;
+}
+
 .home-text {
     width: 60vw;
     margin: auto;
@@ -121,8 +127,32 @@ Homepage
     padding: 5vh;
 }
 
+/* carousel */
 .home-carousel{
     background-color: var(--bg-med-purple);
+}
+
+.slide-container {
+    padding: 8vw 0 4vw 0;
+    width: 56vw;
+    margin: auto;
+}
+  
+.each-slide > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 40vw;
+    margin: auto;  
+}
+
+ #left-arrow {
+    left: -40px;
+}
+
+#right-arrow {
+    right: -40px;
 }
 
 /* 

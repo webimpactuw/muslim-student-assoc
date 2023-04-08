@@ -7,7 +7,7 @@ const Home = () => {
         r.keys().map((item, index) => { imgs[index] = r(item); });
         return imgs;
     }
-    const images = importAll(require.context('../assets/social-media-icons', false, /\.(png|jpe?g|svg)$/));
+    const images = importAll(require.context('../assets/carousel-imgs', false, /\.(png|jpe?g|svg)$/));
 
     return (
         <div className="homePage">

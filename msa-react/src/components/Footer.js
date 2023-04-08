@@ -9,7 +9,7 @@ function Footer() {
     const links = ["https://www.facebook.com/", "https://www.instagram.com", "https://www.tiktok.com", "https://www.youtube.com/"];
 
     const a = images.map((src, index) => 
-        <a href={links[index]} target="_blank"><img src={src} alt="Facebook"/></a>
+        <a href={links[index]} target="_blank" key={index}><img src={src} alt="Facebook"/></a>
     )
 
     return (
