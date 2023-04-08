@@ -110,7 +110,8 @@ USEFUL ATTRIBUTES
 Homepage
 */
 .home-header {
-    height: 100vh - 100px;
+    background: no-repeat right url('./assets/backgrounds/home-bg.svg') var(--bg-light-purple); 
+    background-size: auto 100%;
 }
 .home-header-txt {
     padding: 20vh 80px;
@@ -124,17 +125,22 @@ Homepage
     width: 60vw;
     margin: auto;
     min-height: 50vh;
-    padding: 5vh;
+    padding: 4vh;
 }
 
 /* carousel */
 .home-carousel{
     background-color: var(--bg-med-purple);
+    background-image: url('./assets/backgrounds/carousel-left.svg'), 
+                    url('./assets/backgrounds/carousel-right.svg');
+    background-position: top left, top right;
+    background-repeat: no-repeat; 
+    background-size: 17vw;
 }
 
 .slide-container {
-    padding: 8vw 0 4vw 0;
-    width: 56vw;
+    padding: 7vw 0 4vw 0;
+    width: 66vw;
     margin: auto;
 }
   
@@ -143,7 +149,8 @@ Homepage
     align-items: center;
     justify-content: center;
     background-size: cover;
-    height: 40vw;
+    height: 48vw;
+    object-position: center;
     margin: auto;  
 }
 
