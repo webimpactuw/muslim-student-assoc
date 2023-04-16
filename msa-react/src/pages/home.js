@@ -15,12 +15,12 @@ const Home = () => {
                 <div className="home-header-txt">
                     <h1>Welcome, we are the <br/>Music Students Association!</h1>
                     <h3>AT THE UNIVERSITY OF WASHINGTON</h3>
-                    <p>Join if you want to be a part of a <br/>supportive and inclusive community of Muslims on campus!</p>
+                    <p>Join if you want to be a part of a supportive <br/>and inclusive community of Muslims on campus!</p>
 
                     <button className="purple-button"><NavLink className="purple-btn-link" to="/events/get-involved">GET INVOLVED</NavLink></button>
                 </div>
             </div>
-            <div className="home-text centered">
+            <div className="info-text">
                 <h2 className="centered">A Glimpse of MSA at UW</h2>
                 <p className="centered">MSA serves as the center of Muslim life on campus. From our weekly activities, 
                 quarterly events, social activities, classes, charitable activities, and programs at 

@@ -34,6 +34,10 @@ h1, h2 {
     font-weight: 700; /* bold */
 }
 
+h1, h2, h3 {
+    margin: 0.1em;
+}
+
 /* Title subtitles */
 h3 {
     color: var(--text-light-purple);
@@ -117,15 +121,10 @@ Homepage
     padding: 20vh 80px;
 }
 
-.home-header-txt h1, .home-header-txt h3 {
-    margin: 0.1em;
-}
-
-.home-text {
+.info-text {
     width: 60vw;
     margin: auto;
-    min-height: 50vh;
-    padding: 4vh;
+    padding: 8vh;
 }
 
 /* carousel */
@@ -177,7 +176,7 @@ nav {
 /* logo styling */
 .logo img {
     padding: 15px 0px;
-    height: 76px;
+    height: 76px; 
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -234,6 +233,26 @@ nav {
     color: white;
     border-radius: 25px;
     margin-left: 15px;
+}
+
+/* navBar shrinks if the screen is too narrow for a full bar, e.g. split screen */
+@media screen and (max-width: 1000px) {
+    .navItem a, .donate {
+        font-size: calc(0.6vw + 12px);
+    }
+    .dropbtn {
+        padding: 37px calc(4.4vw - 20px);
+    }
+    nav {
+        padding: 0px calc(12vw - 60px);
+    }
+    .logo img {
+        height: calc(56px + 2vw); 
+    }
+    .donate {
+        padding: 7px 2vw 10px 2vw;
+        margin-left: calc(2vw - 5px);
+    }
 }
 
 /* 
