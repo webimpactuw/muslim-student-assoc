@@ -97,6 +97,154 @@ USEFUL ATTRIBUTES
 
 /* OTHER STYLING */
 
+/* 
+IH HOME 
+*/
+/* ih home header */
+.header-section {
+    background-color: #D7CCEC;
+    position: relative;
+    height: 731.87px;
+}
+
+.islamic-house-title {
+    position: relative;
+    width: 559px;
+    height: 92.64px;
+    left: 75px;
+    top: 371.59px;
+    font-style: normal;
+}
+
+.islamic-house-address {
+    position: relative;
+    width: 658px;
+    height: 41.17px;
+    left: 75px;
+    top: 316.02px;
+    color: var(--text-light-purple);
+}
+
+.about-ih {
+    display: flex;
+}
+
+.ih-content {
+    width: 718px;
+    height: 492px;
+    margin-top: 8px;
+}
+
+.about-the-ih-subhead {
+    position: relative;
+    width: 343px;
+    height: 60px;
+    left: 95px;
+    top: 105px;
+    color: var(--dark-purple);
+    font-weight: 700;
+}
+
+.ih-description-first, .ih-description-second {
+    position: relative;
+    width: 713px;
+    left: 95px;
+    top: 68px;
+    font-weight: 400;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.ih-description-second {
+    margin-top: 40.5px;
+}
+
+.ih-content-table {
+    width: 627px;
+    align-content: center;
+}
+
+.prayer-times {
+    position: relative;
+    width: 162px;
+    height: 36px;
+    left: 418px;
+    top: 60px;
+    font-style: normal;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--dark-purple);
+}
+
+.prayer-time-table {
+    position: relative;
+    width: 368px;
+    height: 642px;
+    left: 320px;
+    top: 26px;
+    margin-bottom: 110px;
+}
+
+.ih-history-title {
+    color: var(--dark-purple);
+    position: relative;
+    left: 95px;
+    font-weight: 700;
+    line-height: 80px;
+    width: 452px;
+    height: 60px;
+}
+
+.read-full-story-subhead {
+    position: relative;
+    width: 765px;
+    height: 21px;
+    left: 359px;
+    right: 316px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    font-style: normal;
+    color: var(--bg-med-purple);
+    margin: 16px 0px 0px 0px;
+}
+
+.arrow-down {
+    align-self: center;
+    position: relative;
+    width: 35px;
+    height: 25px;
+    left: 723px;
+    top: 16px;
+}
+
+.ih-history-content {
+    display: flex;
+    margin-bottom: 260px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.column-item-one, .column-item-two {
+    position: relative;
+    width: 624px;
+    left: 75px;
+    top: 144.28px;
+    white-space: pre-wrap;
+    font-size: 27px;
+}
+
+.column-item-two {
+    position: relative;
+    width: 622px;
+    left: 59px;
+    top: 134.28px;
+}
 
 /* 
 NAVBAR 
