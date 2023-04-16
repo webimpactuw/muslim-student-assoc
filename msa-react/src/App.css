@@ -100,7 +100,7 @@ USEFUL ATTRIBUTES
 /* 
 IH HOME 
 */
-/* ih home header */
+/* IH Home header section */
 .header-section {
     background-color: #D7CCEC;
     position: relative;
@@ -125,6 +125,7 @@ IH HOME
     color: var(--text-light-purple);
 }
 
+/* About IH section */
 .about-ih {
     display: flex;
 }
@@ -186,6 +187,7 @@ IH HOME
     margin-bottom: 110px;
 }
 
+/* IH History section */
 .ih-history-title {
     color: var(--dark-purple);
     position: relative;
