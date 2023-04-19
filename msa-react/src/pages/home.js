@@ -2,13 +2,6 @@ import { NavLink } from "react-router-dom";
 import Carousel from "../components/Carousel";
 
 const Home = () => {
-    function importAll(r) {
-        let imgs = [];
-        r.keys().map((item, index) => { imgs[index] = r(item); });
-        return imgs;
-    }
-    const images = importAll(require.context('../assets/carousel-imgs', false, /\.(png|jpe?g|svg)$/));
-
     return (
         <div className="homePage">
             <div className="home-header header-background-purple">
@@ -30,7 +23,7 @@ const Home = () => {
                 involved in engaging activities, and really make the most out of your time at UW!</p>
             </div>
             <div className="home-carousel">
-                <Carousel imgs={images} length={images.length}></Carousel>
+                <Carousel />
             </div>
         </div>
     );

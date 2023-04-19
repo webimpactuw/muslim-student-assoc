@@ -6,31 +6,44 @@ import "react-slideshow-image/dist/styles.css";
 import leftArrow from "../assets/left-arrow.svg";
 import rightArrow from "../assets/right-arrow.svg";
 
-function Carousel({imgs, length}) {
+import client from "../client";
+import { useEffect, useState } from "react";
 
-    const properties = {
-        duration: 5000,
-        transitionDuration: 500,
-        easing: "ease",
-        indicators: true,
-        nextArrow: <img src={rightArrow} id="right-arrow"/>,
-        prevArrow: <img src={leftArrow} id="left-arrow"/>,
-      };
-    
-      return (
-        <div className="App">
-          <div className="slide-container">
-            <Slide ref={React.createRef()} {...properties}>
-              {imgs.map((each, index) => (
-                <div key={index} className="each-slide">
-                  <img className="slide" src={each} alt="carousel-img" />
-                </div>
-              ))}
-            </Slide>
-          </div>
-        </div>
-      );
-    
+function Carousel() {
+
+  const query = "*[_type == 'carousel'] { picture{asset->{url}} }";
+
+  const [content, setContent] = useState(null);
+  useEffect(() => {
+      client.fetch(query)
+          .then((data) => setContent(data));
+  }, []);
+
+  const pictures = (content ?  content.map((a) => (
+    "url(\'" + a.picture.asset.url + "\')"
+ )) : null);
+  
+  const properties = {
+    duration: 5000,
+    transitionDuration: 500,
+    easing: "ease",
+    indicators: true,
+    nextArrow: <img src={rightArrow} id="right-arrow"/>,
+    prevArrow: <img src={leftArrow} id="left-arrow"/>,
+  };
+  
+  return (
+    <div className="App">
+      <div className="slide-container">
+        <Slide ref={React.createRef()} {...properties}>
+          {pictures ? pictures.map((each, index) => (
+            <div key={index} className="each-slide" 
+              style={{backgroundImage: each}} />
+          )) : null}
+        </Slide>
+      </div>
+    </div>
+  );
 }
 
 export default Carousel;

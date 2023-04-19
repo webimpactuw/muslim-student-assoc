@@ -143,14 +143,13 @@ Homepage
     margin: auto;
 }
   
-.each-slide > img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    height: 48vw;
-    object-position: center;
-    margin: auto;  
+/* .each-slide{height: 48vw; width: 66vw;} */
+.each-slide {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48vw; width: 66vw;
+    margin: auto;
 }
 
  #left-arrow {
