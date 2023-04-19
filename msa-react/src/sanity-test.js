@@ -4,18 +4,17 @@ import React, { useEffect, useState } from "react";
 function Test() {
 
     const [content, setContent] = useState(null);
+
+    const query = "*[_type == 'programs'] { title, flyer{asset->{url}} } ";
+
     useEffect(() => {
-        // client.fetch('*[_type == "board"] {  position,   name,  picture{asset->{url}} }' )
-        client.fetch('*[_type == "programs"] {  title, flyer{asset->{url}}  }' )
+        client.fetch(query)
             .then((data) => setContent(data));
     }, []);
 
-    const posts = (content && content.map((a) => (
-        <div>
-            {/* <p> {a.title} </p> */}
-            {/* PUT CONTENT THAT IT MAPS TO HERE */}
-        </div>
-    )));
+    const posts = (content ?  content.map((a) => (
+        {/* PUT CONTENT THAT IT MAPS TO HERE */}
+    )) : null);
 
     return (
         <div>
