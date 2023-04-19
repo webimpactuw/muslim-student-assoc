@@ -25,7 +25,6 @@ export default defineConfig({
             // Our singleton type has a list item with a custom child
             S.listItem()
               .title("Upcoming Event")
-              .id("events")
               .child(
                 // render a single document instead of a list 
                 S.document()

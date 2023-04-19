@@ -12,7 +12,8 @@ export default {
             name: 'pictures',
             title: 'Pictures',
             type: 'array',
-            of: [{ type: 'image' }]
+            of: [{ type: 'image' }],
+            description: 'Drag and drop to add multiple files at once, Add Item only adds 1 at a time'
         }
     ],
 

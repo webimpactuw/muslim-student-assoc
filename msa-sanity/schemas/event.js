@@ -15,9 +15,10 @@ export default {
            title: 'Description',
        },
        {
-            name: 'rsvp',
+            name: 'link',
             type: 'url',
-            title: 'RSVP Link',
+            title: 'Link',
+            description: 'to RSVP or to Instagram post',
         },
         {
             name: 'flyer',
