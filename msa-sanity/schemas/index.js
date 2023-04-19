@@ -1,7 +1,7 @@
 import board from "./board"
 import gallery from "./gallery"
-import announcement from "./announcement"
+import event from "./event"
 import carousel from "./carousel"
-import links from "./links"
+import programs from "./programs"
 
-export const schemaTypes = [announcement, carousel, board, gallery, links]
+export const schemaTypes = [carousel, board, gallery, programs, event]

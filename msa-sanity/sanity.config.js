@@ -18,21 +18,21 @@ export default defineConfig({
         S.list()
           .title("Content")
           .items([
-            // Our singleton type has a list item with a custom child
-            S.listItem()
-              .title("Announcement (Banner)")
-              .id("single-announce")
-              .child(
-                // render a single document instead of a list 
-                S.document()
-                  .id("Announcement")
-                  .schemaType("announcement")
-                  .documentId("announcement")
-              ),
             // Regular document types minus the singleton
             ...S.documentTypeListItems()
               .filter((listItem) => 
-                !["announcement"].includes(listItem.getId()))
+                !["event"].includes(listItem.getId())),
+            // Our singleton type has a list item with a custom child
+            S.listItem()
+              .title("Upcoming Event")
+              .id("events")
+              .child(
+                // render a single document instead of a list 
+                S.document()
+                  .id("single-event")
+                  .schemaType("event")
+                  .documentId("event")
+              )
           ]),
     }),
   visionTool()],

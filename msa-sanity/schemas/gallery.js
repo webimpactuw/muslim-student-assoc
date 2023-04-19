@@ -4,14 +4,9 @@ export default {
     type: 'document',
     fields: [
         {
-            name: 'date',
-            type: 'date',
-            title: 'Date',
-        },
-        {
             name: 'info',
             type: 'string',
-            title: '(optional) Event Info/Caption)', 
+            title: 'Caption', 
         },
         {
             name: 'pictures',
@@ -23,8 +18,7 @@ export default {
 
     preview: {
         select: {
-            title: 'date',
-            subtitle: 'info',
+            title: 'info',
             media: 'pictures.0.asset',
         },
     },
