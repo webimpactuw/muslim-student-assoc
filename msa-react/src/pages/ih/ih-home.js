@@ -1,6 +1,5 @@
 import PrayerTimeSvg from "../../assets/prayer-times.svg";
 import ArrowSvg from "../../assets/arrow-down.svg";
-import React, { useState } from "react";
 
 function IHHome() {
     return (
@@ -31,8 +30,8 @@ function IHHome() {
                     </div>
                 </div>
 
-                <div>
-                    <h3 className="ih-history-title">THE HISTORY OF THE IH</h3>
+                <h3 className="ih-history-title">THE HISTORY OF THE IH</h3>
+                <div className="next-arrow-div">
                     <h6 className="read-full-story-subhead">Read the full story below</h6>
                     <img 
                         className="arrow-down"
