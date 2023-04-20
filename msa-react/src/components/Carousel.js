@@ -11,17 +11,17 @@ import { useEffect, useState } from "react";
 
 function Carousel() {
 
-  const query = "*[_type == 'carousel'] { picture{asset->{url}} }";
+  const query = "*[_type == 'carousel'] { 'image': picture.asset->url }";
 
-  const [content, setContent] = useState(null);
+  const [content, setContent] = useState([]);
   useEffect(() => {
       client.fetch(query)
           .then((data) => setContent(data));
   }, []);
 
-  const pictures = (content ?  content.map((a) => (
-    "url(\'" + a.picture.asset.url + "\')"
- )) : null);
+  const pictures = content ? content.map((item, index) => (
+    <div key={index} className="each-slide" style={{backgroundImage: `url("${item.image}")`}}/>
+  )) : null;
   
   const properties = {
     duration: 5000,
@@ -33,15 +33,11 @@ function Carousel() {
   };
   
   return (
-    <div className="App">
-      <div className="slide-container">
-        <Slide ref={React.createRef()} {...properties}>
-          {pictures ? pictures.map((each, index) => (
-            <div key={index} className="each-slide" 
-              style={{backgroundImage: each}} />
-          )) : null}
-        </Slide>
-      </div>
+    <div className="slide-container">
+      {JSON.stringify(content)}
+      <Slide ref={React.createRef()} {...properties}>
+        {pictures}
+      </Slide>
     </div>
   );
 }
