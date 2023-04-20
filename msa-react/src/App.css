@@ -109,7 +109,29 @@ USEFUL ATTRIBUTES
 
 
 
-
+/*
+About Page
+*/
+.About-Header {
+    background: no-repeat left url('./assets/backgrounds/about-bg.svg') var(--bg-light-purple);
+    background: no-repeat right url('./assets/backgrounds/about-bg-eid.svg') var(--bg-light-purple); 
+    background-size: auto 100%;
+}
+.About-Text {
+    padding-top: 375px;
+    padding-bottom: 132px;
+}
+.Who-We-Are {
+    text-align: center;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 166px;
+    padding-bottom: 200px;
+}
+.Our-Purpose {
+    background: #F9F9F9;
+    text-align: center;
+}
 /*
 Homepage
 */

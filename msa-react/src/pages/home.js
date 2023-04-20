@@ -13,7 +13,7 @@ const Home = () => {
         <div className="homePage">
             <div className="home-header header-background-purple">
                 <div className="home-header-txt">
-                    <h1>Welcome, we are the <br/>Music Students Association!</h1>
+                    <h1>Welcome, we are the <br/>Muslim Students Association!</h1>
                     <h3>AT THE UNIVERSITY OF WASHINGTON</h3>
                     <p>Join if you want to be a part of a supportive <br/>and inclusive community of Muslims on campus!</p>
 
