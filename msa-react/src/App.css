@@ -34,6 +34,10 @@ h1, h2 {
     font-weight: 700; /* bold */
 }
 
+h1, h2, h3 {
+    margin: 0.1em;
+}
+
 /* Title subtitles */
 h3 {
     color: var(--text-light-purple);
@@ -70,9 +74,15 @@ REUSED COMPONENTS
     border-radius: 50px;
 }
 
-.purple-button:hover {
+.purple-button:hover, .purple-button:hover .purple-btn-link {
     color: var(--dark-purple);
     background-color: white;
+}
+
+/* for text inside navlinks inside buttons */
+.purple-btn-link {
+    color: white;
+    text-decoration: none;
 }
 
 /* scroll down arrow (button)*/
@@ -231,6 +241,58 @@ IH HOME
     top: 134.28px;
 }
 
+
+
+/*
+Homepage
+*/
+.home-header {
+    background: no-repeat right url('./assets/backgrounds/home-bg.svg') var(--bg-light-purple); 
+    background-size: auto 100%;
+}
+.home-header-txt {
+    padding: 20vh 80px;
+}
+
+.info-text {
+    width: 60vw;
+    margin: auto;
+    padding: 8vh;
+}
+
+/* carousel */
+.home-carousel{
+    background-color: var(--bg-med-purple);
+    background-image: url('./assets/backgrounds/carousel-left.svg'), 
+                    url('./assets/backgrounds/carousel-right.svg');
+    background-position: top left, top right;
+    background-repeat: no-repeat; 
+    background-size: 17vw;
+}
+
+.slide-container {
+    padding: 7vw 0 4vw 0;
+    width: 66vw;
+    margin: auto;
+}
+  
+/* .each-slide{height: 48vw; width: 66vw;} */
+.each-slide {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 48vw; width: 66vw;
+    margin: auto;
+}
+
+ #left-arrow {
+    left: -40px;
+}
+
+#right-arrow {
+    right: -40px;
+}
+
 /* 
 NAVBAR 
 */
@@ -246,7 +308,7 @@ nav {
 /* logo styling */
 .logo img {
     padding: 15px 0px;
-    height: 76px;
+    height: 76px; 
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -303,6 +365,26 @@ nav {
     color: white;
     border-radius: 25px;
     margin-left: 15px;
+}
+
+/* navBar shrinks if the screen is too narrow for a full bar, e.g. split screen */
+@media screen and (max-width: 1000px) {
+    .navItem a, .donate {
+        font-size: calc(0.6vw + 12px);
+    }
+    .dropbtn {
+        padding: 37px calc(4.4vw - 20px);
+    }
+    nav {
+        padding: 0px calc(12vw - 60px);
+    }
+    .logo img {
+        height: calc(56px + 2vw); 
+    }
+    .donate {
+        padding: 7px 2vw 10px 2vw;
+        margin-left: calc(2vw - 5px);
+    }
 }
 
 /* 
