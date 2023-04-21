@@ -1,20 +1,22 @@
 import React from 'react';
-import purpose from "../../assets/purpose-1.svg";
+import purpose1 from "../../assets/about/purpose-1.svg";
+import purpose2 from "../../assets/about/purpose-2.svg";
+import purpose3 from "../../assets/about/purpose-3.svg";
+import purpose4 from "../../assets/about/purpose-4.svg";
+import purpose5 from "../../assets/about/purpose-5.svg";
 
 function AboutHome() {
-    console.log(purpose);
     return (
         <div className="About Page">
            <div className="About-Header">
-            <div className="About-Text">
                 <h1>About Us</h1>
                 <h3>Learn more about us and what we do</h3>
                 <button className="purple-button">BECOME A MEMBER</button>
             </div>
-            </div>  
+              
             
             
-            <div className="Who-We-Are">
+            <div className="info-text">
                 <h2>WHO WE ARE</h2>
                 <p>The Muslim Students Association at the University of Washington (MSA UW) is a student run 
                 organization that was established in 1968, which seeks to serve Muslim students and 
@@ -30,8 +32,12 @@ function AboutHome() {
 
             <div className="Our-Purpose">
                 <h2>OUR PURPOSE</h2>
-                <div className="images">
-                    <img src={purpose} alt="Purpose 1" class="image-left"/>
+                <div className="purposes">
+                    <img src={purpose1} alt="Purpose 1" class="image-left"/>
+                    <img src={purpose2} alt="Purpose 2" class="image-left"/>
+                    <img src={purpose3} alt="Purpose 3" class="image-left"/>
+                    <img src={purpose4} alt="Purpose 4" class="image-left"/>
+                    <img src={purpose5} alt="Purpose 5" class="image-left"/>
                 </div>
                 
             </div>

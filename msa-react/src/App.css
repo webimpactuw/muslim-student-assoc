@@ -245,26 +245,20 @@ IH HOME
 About Page
 */
 .About-Header {
-    background: no-repeat left url('./assets/backgrounds/about-bg.svg') var(--bg-light-purple);
-    background-size: auto 100%;
-}
-.About-Text {
-    padding-top: 375px;
-    padding-bottom: 132px;
-}
-.Who-We-Are {
-    text-align: center;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 166px;
-    padding-bottom: 200px;
+    background: no-repeat top right/cover url('./assets/backgrounds/about-bg.svg') var(--bg-light-purple);
+    /* //background-size: auto 100%; */
+    padding: 375px 0px 132px 75px;
 }
 .Our-Purpose {
     background: #F9F9F9;
     text-align: center;
 }
-.image {
-    image-rendering: 
+.purposes{
+    display: flex;
+    align-items: center; 
+}
+.purposes img {
+    margin-right: 10px;
 }
 /*
 Homepage
