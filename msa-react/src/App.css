@@ -13,6 +13,10 @@ body, button {
     font-family: 'Poppins', sans-serif;
 }
 
+p {
+    font-size: 20px;
+}
+
 /* 
 HEADERS 
 */
@@ -113,18 +117,7 @@ IH HOME
 /* IH Home header section */
 .header-section {
     background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
-    height: 731.87px;
-    padding-left: 75px;
-}
-
-.islamic-house-title {
-    position: relative;
-    top: 371.59px;
-}
-
-.islamic-house-address {
-    position: relative;
-    top: 371.02px;
+    padding: 350px 0px 130px 75px;
 }
 
 .body-section {
@@ -205,9 +198,15 @@ Homepage
 }
 
 .info-text {
-    width: 60vw;
+    width: 70vw;
+    font-size: 24px;
     margin: auto;
-    padding: 8vh;
+    padding: 15vh;
+    text-align: center;
+}
+
+.info-text > p {
+    padding-top: 20px;
 }
 
 /* carousel */
@@ -225,7 +224,7 @@ Homepage
     width: 66vw;
     margin: auto;
 }
-  
+
 /* .each-slide{height: 48vw; width: 66vw;} */
 .each-slide {
     background-size: contain;

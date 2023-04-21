@@ -5,8 +5,8 @@ function IHHome() {
     return (
         <div>
             <div className="header-section">
-                <h1 className="islamic-house-title">The Islamic House</h1>
-                <h3 className="islamic-house-address">4625 22nd Ave NE, Seattle, WA 98105</h3>
+                <h1>The Islamic House</h1>
+                <h3>4625 22nd Ave NE, Seattle, WA 98105</h3>
             </div>
             
             <div className="body-section">

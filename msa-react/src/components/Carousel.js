@@ -16,27 +16,37 @@ function Carousel() {
   const [content, setContent] = useState([]);
   useEffect(() => {
       client.fetch(query)
-          .then((data) => setContent(data));
+        .then((data) => setContent(data));
+      setContent(...content);
   }, []);
 
-  const pictures = content ? content.map((item, index) => (
+  const pictures = content?.map((item, index) => (
     <div key={index} className="each-slide" style={{backgroundImage: `url("${item.image}")`}}/>
-  )) : null;
+  ));
   
+  function importAll(r) {
+    let imgs = [];
+    r.keys().map((item, index) => { imgs[index] = r(item); });
+    return imgs;
+  }
+
   const properties = {
-    duration: 5000,
+    duration: 1000,
+    // autoplay: false,
     transitionDuration: 500,
     easing: "ease",
     indicators: true,
     nextArrow: <img src={rightArrow} id="right-arrow"/>,
     prevArrow: <img src={leftArrow} id="left-arrow"/>,
   };
-  
+
+  const images = importAll(require.context('../assets/social-media', false, /\.(svg)$/));
+
   return (
     <div className="slide-container">
-      {JSON.stringify(content)}
       <Slide ref={React.createRef()} {...properties}>
         {pictures}
+        <div className="each-slide" style={{backgroundImage: `url("${images[0]}")`}}/>
       </Slide>
     </div>
   );
