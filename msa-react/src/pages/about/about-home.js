@@ -1,7 +1,8 @@
 import React from 'react';
-
+import purpose from "../../assets/purpose-1.svg";
 
 function AboutHome() {
+    console.log(purpose);
     return (
         <div className="About Page">
            <div className="About-Header">
@@ -29,8 +30,8 @@ function AboutHome() {
 
             <div className="Our-Purpose">
                 <h2>OUR PURPOSE</h2>
-                <div>
-                    <img src='./assets/icons/about/purpose-1.svg' alt="Purpose 1" class="image-left"/>
+                <div className="images">
+                    <img src={purpose} alt="Purpose 1" class="image-left"/>
                 </div>
                 
             </div>

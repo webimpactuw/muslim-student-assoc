@@ -114,7 +114,6 @@ About Page
 */
 .About-Header {
     background: no-repeat left url('./assets/backgrounds/about-bg.svg') var(--bg-light-purple);
-    background: no-repeat right url('./assets/backgrounds/about-bg-eid.svg') var(--bg-light-purple); 
     background-size: auto 100%;
 }
 .About-Text {
@@ -131,6 +130,9 @@ About Page
 .Our-Purpose {
     background: #F9F9F9;
     text-align: center;
+}
+.image {
+    image-rendering: 
 }
 /*
 Homepage
