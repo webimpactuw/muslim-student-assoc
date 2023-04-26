@@ -8,6 +8,10 @@
   --bg-light-purple: #D7CCEC;
 }
 
+* {
+    border: 1px solid red !important;
+}
+
 /* FONT */
 body, button {
     font-family: 'Poppins', sans-serif;
