@@ -28,7 +28,7 @@ function IHHome() {
                             src="https://masjidal.com/widget/simple/v3?masjid_id=RKxwXOdO" 
                             type="text/html" 
                             width="100%" 
-                            height="600%" 
+                            height="600" 
                             frameborder="0" 
                             allowtransparency="true"
                         >
