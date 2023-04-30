@@ -201,7 +201,7 @@ Homepage
     width: 70vw;
     font-size: 24px;
     margin: auto;
-    padding: 15vh;
+    padding: 15vh 10vw;
     text-align: center;
 }
 
@@ -344,7 +344,7 @@ FOOTER
 .footer{
     background-color: var(--dark-purple);
     display: flex;
-    padding: 50px 75px;
+    padding: 50px 75px 0 75px;
 }  
 
 /* text styling */
@@ -375,6 +375,5 @@ FOOTER
     background-color: var(--bg-med-purple);
     border-radius: 10px 10px 0px 0px;
     padding: 15px 21px;
-    position: relative;
-    top: 50px;
+    margin-top: 50px;
 }
