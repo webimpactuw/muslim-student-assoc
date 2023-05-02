@@ -1,7 +1,17 @@
 import { NavLink } from "react-router-dom";
-import Carousel from "../components/Carousel";
+import client from "../client";
+import { useEffect, useState } from "react";
+import urlFor from "../urlfor";
 
 const Home = () => {
+    const query = "*[_id == 'homepics'] { picture1, 'images': [picture1, picture2, picture3, picture4, picture5]}";
+
+    const [content, setContent] = useState(null);
+    useEffect(() => {
+        client.fetch(query)
+        .then((data) => setContent(data[0].images));
+    }, []);
+
     return (
         <div className="homePage">
             <div className="home-header header-background-purple">
@@ -22,9 +32,19 @@ const Home = () => {
                 of UW’s most active student organizations, MSA is a place to meet other Muslims, get 
                 involved in engaging activities, and really make the most out of your time at UW!</p>
             </div>
-            <div className="home-carousel">
-                <Carousel />
-            </div>
+            {content ? 
+                <div className="home-pics-sect">
+                    <div className="picsLeft">
+                        <img src={urlFor(content[0]).size(750, 500).url()} className="homepics" />
+                        <img src={urlFor(content[1]).size(750, 500).url()} className="homepics" />
+                    </div>
+                    <div className="picsRight">
+                        <img src={urlFor(content[2]).size(440, 325).url()} className="homepics" />
+                        <img src={urlFor(content[3]).size(440, 325).url()} className="homepics" />
+                        <img src={urlFor(content[4]).size(440, 325).url()} className="homepics" />
+                    </div>            
+                </div>
+            : null}
         </div>
     );
 };

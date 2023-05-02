@@ -1,9 +1,24 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import NavItem from "./NavItem";
-import msaLogo from "../assets/msa-logo.png";
+import Hamburger from "./Hamburger";
+import msaLogo from "../assets/nav/msa-logo.png";
+import hambugerIcon from "../assets/nav/mobile-menu-icon.svg";
+import menuX from "../assets/nav/x-button.svg";
+
 
 function Navbar() {
     
+    const [hamburgerOpen, setHamburgerOpen] = useState({display: 'none'});
+
+    const menuOn = () => {
+        setHamburgerOpen({display: 'block'});
+    }
+    const menuOff = () => {
+        setHamburgerOpen({display: 'none'});
+    }
+
+
     const pages = [
         { basePath: "/about", title: "About Us", 
             subPages:[
@@ -41,12 +56,20 @@ function Navbar() {
         <NavItem key = {index} pages = {page} />
     );
 
+
     return (
         <nav>
             <NavLink className="logo" to="/"><img src={msaLogo} alt="MSA Logo" /></NavLink>
             <div className="dropdowns">
                 {dropDowns}
                 <NavLink className="donate purple-button" to="/donate">Donate</NavLink>
+            </div>
+            <div className="hamburger">
+                <img className="hamburger-icon" src={hambugerIcon} onClick={menuOn}/>
+                <div className="hamburger-list" style={hamburgerOpen}>
+                    <img className="menuX" src={menuX} onClick={menuOff}/>
+                    <Hamburger />
+                </div>
             </div>
         </nav>
     )
