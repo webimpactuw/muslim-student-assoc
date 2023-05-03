@@ -241,6 +241,14 @@ Homepage
     justify-content: space-between;
 }
 
+.picsLeft img {
+    max-width: 51vw;
+}
+
+.picsRight img {
+    max-width: 30vw;
+}
+
 .homepics {
     margin: 1.2vw 1vw;
     border-radius: 10px;
