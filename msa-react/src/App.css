@@ -388,11 +388,8 @@ nav { height: 94px; }
 }
 
 /* link padding */
-.burger-links { padding: 7vh 7vw; }
-.burger-links > li {
-    padding-left: 50px;
-    padding-top: 25px;
-}
+.burger-links { padding: 7vh 12vw; }
+.burger-links > li { padding-top: 25px; }
 .subpage-cont { padding-top: 5px; }
 .subpages { padding-top: 15px; }
 
@@ -400,8 +397,7 @@ nav { height: 94px; }
     height: 16px;
     max-width: 18px;
     float: right;
-    margin-right: 15px;
-    /* margin-left: auto; */
+    margin-top: 6px;
 }
 
 /* donate button */

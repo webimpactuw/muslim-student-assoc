@@ -68,7 +68,7 @@ function Navbar() {
                 <img className="hamburger-icon" src={hambugerIcon} onClick={menuOn}/>
                 <div className="hamburger-list" style={hamburgerOpen}>
                     <img className="menuX" src={menuX} onClick={menuOff}/>
-                    <Hamburger />
+                    <Hamburger closeMenu={menuOff} pages={pages.slice(0, 4)}/>
                 </div>
             </div>
         </nav>

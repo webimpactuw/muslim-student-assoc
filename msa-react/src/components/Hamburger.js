@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import BurgerItem from "./BurgerItem.js";
 
-function Hamburger() {
-    
+function Hamburger({closeMenu, pages}) {
+ 
     const [dropdownsDisplay, setDropdownsDisplay] = useState([
         "none", //about
         "none", //ih
@@ -11,56 +11,31 @@ function Hamburger() {
         "none", //resources
     ]);
 
-    const setAbout = () => {
-        setDropdownsDisplay([ "block" /*about*/, "none" /*ih*/, "none" /*events*/, "none" /*resources*/])
+    //about
+    pages[0].click = () => {
+        setDropdownsDisplay([ "block" /*about*/, "none", "none", "none"])
     }
-    const setIH = () => {
-        setDropdownsDisplay([ "none" /*about*/, "block" /*ih*/, "none" /*events*/, "none" /*resources*/])
+    //ih
+    pages[1].click = () => {
+        setDropdownsDisplay([ "none", "block" /*ih*/, "none", "none"])
     }
-    const setEvents = () => {
-        setDropdownsDisplay([ "none" /*about*/, "none" /*ih*/, "block" /*events*/, "none" /*resources*/])
+    //events
+    pages[2].click = () => {
+        setDropdownsDisplay([ "none", "none", "block" /*events*/, "none"])
     }
-    const setResources = () => {
-        setDropdownsDisplay([ "none" /*about*/, "none" /*ih*/, "none" /*events*/, "block" /*resources*/])
+    //resources
+    pages[3].click = () => {
+        setDropdownsDisplay([ "none", "none", "none", "block" /*resources*/])
     }
 
     const setNone = () => {
-        setDropdownsDisplay([ "none" /*about*/, "none" /*ih*/, "none" /*events*/, "none" /*resources*/])
+        setDropdownsDisplay([ "none", "none", "none", "none"])
     }
- 
-    const pages = [
-        { basePath: "/about", title: "About Us", 
-            subPages:[
-                { path: "/board", title: "Meet Our Board"},
-                { path: "/islam", title: "What is Islam?"},
-                { path: "/gallery", title: "Gallery"} 
-            ], 
-            click: setAbout
-        },
-        { basePath: "/islamic-house", title: "The IH", 
-            subPages:[
-                { path: "/library", title: "IH Library"},
-                { path: "/programs", title: "Programs?"},
-            ],
-            click: setIH
-        },
-        { basePath: "/events", title: "Events", 
-            subPages:[
-                { path: "/activities", title: "Activities"},
-                { path: "/get-involved", title: "Get Involved"},
-                { path: "/member", title: "Become a Member"},
-            ],
-            click: setEvents
-        },
-        { basePath: "/resources", title: "Resources", 
-            subPages:[
-                { path: "/pray", title: "Where to Pray"},
-                { path: "/restaurants", title: "Halal Restaurants"},
-                { path: "/delivery", title: "Al-Buraq Delivery"} 
-            ],
-            click: setResources
-        },
-    ];
+
+    const close = () => {
+        setNone();
+        closeMenu();        
+    }
 
     const dropDowns = pages.map((page, index) => 
         <BurgerItem 
@@ -68,7 +43,9 @@ function Hamburger() {
             pages={page} 
             styles={dropdownsDisplay} 
             num={index} 
-            close={setNone}/>
+            closeBar={setNone}
+            closeMenu={close}
+            />
     );
 
     return (
@@ -77,12 +54,16 @@ function Hamburger() {
                 {dropDowns}
                 <li>
                     <div >
-                        <NavLink to="/contact">Contact</NavLink>
+                        <NavLink to="/contact" onClick={close}>Contact</NavLink>
                     </div>
                 </li>
             </ul>
             <div className="donate-buffer">
-                <NavLink className="mobile-donate purple-button" to="/donate">Donate</NavLink>
+                <NavLink className="mobile-donate purple-button" 
+                    to="/donate" 
+                    onClick={close}>
+                    Donate
+                </NavLink>
             </div>
         </div>
     )
