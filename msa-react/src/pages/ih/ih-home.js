@@ -1,7 +1,8 @@
 import PrayerTimeSvg from "../../assets/prayer-times.svg";
-import ArrowSvg from "../../assets/arrow-down.svg";
+import ArrowSvg from "../../assets/arrow-down.svg"; 
 
 function IHHome() {
+
     return (
         <div>
             <div className="header-section">
@@ -21,11 +22,17 @@ function IHHome() {
                     </div>
                     <div className="ih-content-table">
                         <h6 className="prayer-times">Prayer Times</h6>
-                        <img
-                            className="prayer-time-table"
-                            src={PrayerTimeSvg}
-                            alt="Prayer Time Table" 
-                        />
+                        <iframe 
+                            className="ih-content-table"
+                            loading="lazy" 
+                            src="https://masjidal.com/widget/simple/v3?masjid_id=RKxwXOdO" 
+                            type="text/html" 
+                            width="100%" 
+                            height="600" 
+                            frameborder="0" 
+                            allowtransparency="true"
+                        >
+                </iframe>
                     </div>
                 </div>
 
