@@ -113,18 +113,30 @@ USEFUL ATTRIBUTES
 
 /* OTHER STYLING */
 
+/* WHAT IS ISLAM */
+.pillars { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    margin: 5vh 4vw;
+}
+
+.pillars div {
+    max-width: 46vw;
+}
+
 /* 
 IH HOME 
 */
 /* IH Home header section */
 .header-section {
     background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
-    padding: 350px 0px 130px 75px;
-}
+    padding: 350px 0px 130px 75px;}
 
 .body-section {
     padding-left: 95px;
 }
+
 /* About IH section */
 .about-ih {
     display: flex;
@@ -439,7 +451,7 @@ FOOTER
 
 
 /* MOBILE */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     /* mobile menu */
     .hamburger { display: block; }
     .navItem, .donate { display: none; }
