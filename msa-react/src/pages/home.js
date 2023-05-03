@@ -23,7 +23,7 @@ const Home = () => {
                 involved in engaging activities, and really make the most out of your time at UW!</p>
             </div>
             <div className="home-carousel">
-                <Carousel />
+                {/* <Carousel /> */}
             </div>
         </div>
     );

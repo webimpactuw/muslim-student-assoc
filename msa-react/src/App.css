@@ -107,6 +107,18 @@ USEFUL ATTRIBUTES
 
 /* OTHER STYLING */
 
+/* WHAT IS ISLAM */
+.pillars { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    margin: 5vh 4vw;
+}
+
+.pillars div {
+    max-width: 46vw;
+}
+
 /* 
 IH HOME 
 */
