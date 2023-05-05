@@ -22,6 +22,7 @@ function Navbar() {
             subPages:[
                 { path: "/activities", title: "Activities"},
                 { path: "/get-involved", title: "Get Involved"},
+                { path: "/member", title: "Become a Member"},
             ] 
         },
         { basePath: "/resources", title: "Resources", 

@@ -4,9 +4,9 @@ function Footer() {
         r.keys().map((item, index) => { imgs[index] = r(item); });
         return imgs;
     }
-    const images = importAll(require.context('../assets/social-media', false, /\.(png|jpe?g|svg)$/));
+    const images = importAll(require.context('../assets/social-media', false, /\.(svg)$/));
 
-    const links = ["https://www.facebook.com/", "https://www.instagram.com", "https://www.tiktok.com", "https://www.youtube.com/"];
+    const links = ["https://www.instagram.com/msauw/", "https://www.facebook.com/uwmsa/", "https://discord.gg/kP4rYcEPe4", "mailto:msauw@uw.edu"];
 
     const a = images.map((src, index) => 
         <a href={links[index]} target="_blank" key={index}><img src={src} alt="Facebook"/></a>

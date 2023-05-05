@@ -14,10 +14,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="info-text">
-                <h2 className="centered">A Glimpse of MSA at UW</h2>
-                <p className="centered">MSA serves as the center of Muslim life on campus. From our weekly activities, 
+                <h2>A Glimpse of MSA at UW</h2>
+                <p>MSA serves as the center of Muslim life on campus. From our weekly activities, 
                 quarterly events, social activities, classes, charitable activities, and programs at 
-                the Islamic House,
+                the Islamic House,<br/>
                 MSA has become a highlight of many students’ college experiences at the UW. As one 
                 of UW’s most active student organizations, MSA is a place to meet other Muslims, get 
                 involved in engaging activities, and really make the most out of your time at UW!</p>
