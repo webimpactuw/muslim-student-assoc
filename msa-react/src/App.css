@@ -14,29 +14,18 @@
 }
 
 /* FONT */
-body, button {
-    font-family: 'Poppins', sans-serif;
-}
-
-p {
-    font-size: 20px;
-}
+body, button { font-family: 'Poppins', sans-serif; }
+p { font-size: 20px; }
 
 /* 
 HEADERS 
 */
 
 /* Titles of Pages */
-h1 {
-    font-size: 60px;
-    line-height: 125%; 
-}
+h1 { font-size: 60px; }
 
 /* Section headers */
-h2 {
-    font-size: 40px;
-    line-height: 60px;
-}
+h2 { font-size: 40px; }
 
 h1, h2 {
     color: var(--dark-purple);
@@ -45,6 +34,7 @@ h1, h2 {
 
 h1, h2, h3, h6 {
     margin: 0.1em;
+    line-height: 150%;
 }
 
 /* Title subtitles */
@@ -52,15 +42,13 @@ h3 {
     color: var(--text-light-purple);
     font-weight: 600;
     font-size: 30px;
-    line-height: 45px;
 }
 
 /* section subheaders/subtitles */
 h6 {
     color: var(--text-light-purple);
     font-weight: 700; /* bold */
-    font-size: 25px;
-    line-height: 38px;
+    font-size: 20px;
 }
 
 /* 
@@ -73,7 +61,7 @@ REUSED COMPONENTS
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 150%;
 
     min-width: 260px;
     padding: 20px 40px;
@@ -118,11 +106,7 @@ USEFUL ATTRIBUTES
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4vw;
-    margin: 5vh 4vw;
-}
-
-.pillars div {
-    max-width: 46vw;
+    padding: 5vh 4vw;
 }
 
 /* 
@@ -134,44 +118,27 @@ IH HOME
     padding: 350px 0px 130px 75px;}
 
 .body-section {
-    padding-left: 95px;
+    padding: 100px 80px;
 }
 
 /* About IH section */
 .about-ih {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .ih-content {
-    width: 718px;
-    padding-top: 105px;
-    margin-right: 50px;
+    order: -1;
 }
 
 .ih-description {
-    font-size: 27px;
-}
-
-.ih-content-table {
-    width: 627px;
-    align-content: center;
-    margin-top: 60px;
+    font-size: 25px;
 }
 
 .prayer-times {
+    font-size: 25px;
     text-align: center;
-    white-space: nowrap;
     color: var(--dark-purple);
-}
-
-.prayer-time-table {
-    padding-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    width: 368px;
 }
 
 /* IH History section */
@@ -189,14 +156,13 @@ IH HOME
 
 .ih-history-content {
     display: flex;
-    margin: 120px 0;
+    margin-top: 50px;
+    gap: 5vw;
 }
 
 .column {
     flex: 2;
     white-space: pre-wrap;
-    font-size: 27px;
-    margin-right: 80px;
 }
 
 /*
@@ -211,10 +177,8 @@ Homepage
 }
 
 .info-text {
-    width: 70vw;
     font-size: 24px;
-    margin: auto;
-    padding: 15vh 10vw;
+    padding: 15vh 15vw;
     text-align: center;
 }
 
@@ -232,10 +196,11 @@ Homepage
     background-size: 12vw;
     display: flex;
     justify-content: center;
+    padding: 5vw 0;
 }
 
 .picsLeft, .picsRight {
-    padding: 5vw 1vw;
+    padding: 0 1vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -406,7 +371,7 @@ nav { height: 94px; }
     background-color: var(--bg-med-purple);
     position: relative;
     top: 40px;
-    margin-left: calc((80vw - 156px) / 2 );
+    margin-left: calc(40vw - 80px);
 }
 
 
@@ -418,6 +383,7 @@ FOOTER
 .footer{
     background-color: var(--dark-purple);
     display: flex;
+    gap: 10px;
     padding: 50px 75px 0 75px;
     z-index: 0;
 }  
@@ -433,11 +399,13 @@ FOOTER
 
 /* added for spacing (see Footer.js) */
 .divider { padding: 10px; }
+.footer-text { padding-bottom: 20px; }
 
 /* social media links */
 .social-media {
-    display: block;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .social-media-icons img {
@@ -450,13 +418,79 @@ FOOTER
     background-color: var(--bg-med-purple);
     border-radius: 10px 10px 0px 0px;
     padding: 15px 21px;
-    margin-top: 50px;
 }
 
 
 /* MOBILE */
 @media screen and (max-width: 600px) {
+    /* smaller fonts and button */
+    p { font-size: 15px; }
+    h1 {font-size: 30px; }
+    h2 {font-size: 25px; }
+    h3 {font-size: 20px; }
+    h6 {font-size: 20px; }
+
+    .purple-button {
+        font-size: 16px;
+        min-width: 160px;
+        padding: 20px 30px;
+    }
+
     /* mobile menu */
     .hamburger { display: block; }
     .navItem, .donate { display: none; }
+
+    /* mobile side spacing */
+    .info-text, .pillars
+    { padding: 10vh 9vw; }
+
+    /* column instead of row */
+    .home-pics-sect, .ih-history-content
+    { flex-direction: column; }
+    /* for grid system to columns */
+    .pillars, .about-ih
+    { display: block;}
+    
+    /* other stuff */
+    .home-pics-sect img {
+        max-width: 80vw;
+    }
+    .picsLeft, .picsRight {
+        margin: auto;
+        padding: 0;
+    }
+
+    .arrow-down {
+        height: 15px;
+    }
+    
+    .footer{
+        padding-left: 5vw;
+        padding-right: 5vw; 
+    }
+  
+    /* ih prayer times table scaling and padding */
+    .body-section { padding: 6vh 0; }
+    .ih-content, .ih-history-content, .history-next 
+    { padding: 0 9vw; }
+    .ih-content {
+        margin-top: 50px;
+    }
+    #frame { width: 111%; height: 120%; }
+    #frame {
+        zoom: normal;
+        transform: none;
+        transform-origin:0;
+        -ms-zoom: 0.9;
+        -moz-transform: scale(0.9);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.9);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.9);
+        -webkit-transform-origin: 0 0;
+    }
+    .ih-content-table {
+        height: 600px;
+        padding-bottom: 70px;
+    }
 }

@@ -22,8 +22,8 @@ function Footer() {
                 <p>Best way to stay up to date on IH announcements: text @ihuw to 81010</p>
             </div>
             <div className="social-media">
-                <h4>SOCIAL MEDIA</h4>
                 <div className="social-media-icons">
+                    <h4>SOCIAL MEDIA</h4>
                     {a}
                 </div>
                 <div className="made-with-love">

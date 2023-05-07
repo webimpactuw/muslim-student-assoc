@@ -59,11 +59,11 @@ function Hamburger({closeMenu, pages}) {
                 </li>
             </ul>
             <div className="donate-buffer">
-                <NavLink className="mobile-donate purple-button" 
-                    to="/donate" 
-                    onClick={close}>
-                    Donate
-                </NavLink>
+                <button className="mobile-donate purple-button">
+                    <NavLink to="/donate" onClick={close}>
+                        Donate
+                    </NavLink>
+                </button>            
             </div>
         </div>
     )
