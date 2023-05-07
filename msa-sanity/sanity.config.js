@@ -6,9 +6,12 @@ import {schemaTypes} from './schemas'
 const singletonActions = new Set(["publish", "discardChanges", "restore"]);
 const singletonTypes = new Set(["event", "homepics"]);
 
+//deployed at msa.sanity.studio
+//admin user: Ryan
+
 export default defineConfig({
   name: 'default',
-  title: 'MSA-content',
+  title: 'MSA-website-content',
 
   projectId: "b754quep",
   dataset: 'production',
