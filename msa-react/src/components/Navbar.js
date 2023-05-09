@@ -30,7 +30,7 @@ function Navbar() {
         { basePath: "/islamic-house", title: "The IH", 
             subPages:[
                 { path: "/library", title: "IH Library"},
-                { path: "/programs", title: "Programs?"},
+                { path: "/programs", title: "Programs"},
             ] 
         },
         { basePath: "/events", title: "Events", 

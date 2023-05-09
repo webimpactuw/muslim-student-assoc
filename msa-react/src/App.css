@@ -34,7 +34,7 @@ h1, h2 {
 
 h1, h2, h3, h6 {
     margin: 0.1em;
-    line-height: 150%;
+    line-height: 125%;
 }
 
 /* Title subtitles */
@@ -81,12 +81,39 @@ REUSED COMPONENTS
     text-decoration: none;
 }
 
-/* scroll down arrow (button)*/
+/* scroll down arrow (button)
 .scroll-arrow {
     left: 17%;
     right: 17%;
     width: 24px;
     border: 5px solid var(--dark-purple);
+} */
+
+/* header with white background */
+.header-white {
+    padding-top: 5vh;
+    text-align: center;
+    min-height: 70vh;
+}
+
+.header-white h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.header-white p {
+    padding: 0 15vw;
+}
+
+.header-arrow-down {
+    margin-top: max(50px, calc(55vh - 250px));
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 /* 
@@ -117,14 +144,11 @@ IH HOME
     background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
     padding: 350px 0px 130px 75px;}
 
-.body-section {
-    padding: 100px 80px;
-}
-
 /* About IH section */
 .about-ih {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 100px 80px 40px 80px;
 }
 
 .ih-content {
@@ -149,20 +173,30 @@ IH HOME
 }
 
 .arrow-down {
-    position: relative;
-    height: 25px;
-    top: 16px;
+    height: 20px;
+    margin-top: 16px;
+}
+
+.ih-history-title {
+    padding-left: 80px;
 }
 
 .ih-history-content {
     display: flex;
-    margin-top: 50px;
     gap: 5vw;
+    padding: 50px 4vw;
 }
 
 .column {
     flex: 2;
     white-space: pre-wrap;
+}
+
+/* 
+Events
+*/
+.upcoming-event {
+    display: flex;
 }
 
 /*
@@ -445,7 +479,7 @@ FOOTER
     { padding: 10vh 9vw; }
 
     /* column instead of row */
-    .home-pics-sect, .ih-history-content
+    .home-pics-sect, .ih-history-content, .links
     { flex-direction: column; }
     /* for grid system to columns */
     .pillars, .about-ih
@@ -464,13 +498,17 @@ FOOTER
         height: 15px;
     }
     
+    .links {
+        padding: 0 10vw;
+    }
+
     .footer{
         padding-left: 5vw;
         padding-right: 5vw; 
     }
   
     /* ih prayer times table scaling and padding */
-    .body-section { padding: 6vh 0; }
+    .about-ih { padding: 6vh 0; }
     .ih-content, .ih-history-content, .history-next 
     { padding: 0 9vw; }
     .ih-content {
