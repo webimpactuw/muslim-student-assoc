@@ -115,7 +115,8 @@ IH HOME
 /* IH Home header section */
 .header-section {
     background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
-    padding: 350px 0px 130px 75px;}
+    padding: 350px 0px 130px 75px;
+}
 
 .body-section {
     padding: 100px 80px;
@@ -158,6 +159,11 @@ IH HOME
     display: flex;
     margin-top: 50px;
     gap: 5vw;
+}
+
+.ih-history-title {
+    padding-left: 0;
+    text-align: center;
 }
 
 .column {
@@ -468,7 +474,16 @@ FOOTER
         padding-left: 5vw;
         padding-right: 5vw; 
     }
-  
+
+    /* 
+    IH HOME
+    */
+    
+    .header-section {
+        background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
+        padding: 185px 0px 40px 30px;
+    }
+
     /* ih prayer times table scaling and padding */
     .body-section { padding: 6vh 0; }
     .ih-content, .ih-history-content, .history-next 
@@ -477,7 +492,7 @@ FOOTER
         margin-top: 50px;
     }
     .ih-content-table {
-        height: 600px;
+        height: 55vh;
         padding-bottom: 70px;
     }
     #frame { width: 111%; height: 120%; }
