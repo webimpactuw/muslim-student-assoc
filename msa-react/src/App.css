@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+/* for troubleshooting */
+/* * {
+    border:1px solid red
+} */
+
 /* SITE COLOR VARIABLES */
 :root {
   --dark-purple: #28004f;
@@ -9,29 +14,18 @@
 }
 
 /* FONT */
-body, button {
-    font-family: 'Poppins', sans-serif;
-}
-
-p {
-    font-size: 20px;
-}
+body, button { font-family: 'Poppins', sans-serif; }
+p { font-size: 20px; }
 
 /* 
 HEADERS 
 */
 
 /* Titles of Pages */
-h1 {
-    font-size: 60px;
-    line-height: 125%; 
-}
+h1 { font-size: 60px; }
 
 /* Section headers */
-h2 {
-    font-size: 40px;
-    line-height: 60px;
-}
+h2 { font-size: 40px; }
 
 h1, h2 {
     color: var(--dark-purple);
@@ -40,6 +34,7 @@ h1, h2 {
 
 h1, h2, h3, h6 {
     margin: 0.1em;
+    line-height: 125%;
 }
 
 /* Title subtitles */
@@ -47,15 +42,13 @@ h3 {
     color: var(--text-light-purple);
     font-weight: 600;
     font-size: 30px;
-    line-height: 45px;
 }
 
 /* section subheaders/subtitles */
 h6 {
     color: var(--text-light-purple);
     font-weight: 700; /* bold */
-    font-size: 25px;
-    line-height: 38px;
+    font-size: 20px;
 }
 
 /* 
@@ -68,7 +61,7 @@ REUSED COMPONENTS
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 150%;
 
     min-width: 260px;
     padding: 20px 40px;
@@ -88,12 +81,39 @@ REUSED COMPONENTS
     text-decoration: none;
 }
 
-/* scroll down arrow (button)*/
+/* scroll down arrow (button)
 .scroll-arrow {
     left: 17%;
     right: 17%;
     width: 24px;
     border: 5px solid var(--dark-purple);
+} */
+
+/* header with white background */
+.header-white {
+    padding-top: 5vh;
+    text-align: center;
+    min-height: 70vh;
+}
+
+.header-white h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.header-white p {
+    padding: 0 15vw;
+}
+
+.header-arrow-down {
+    margin-top: max(50px, calc(55vh - 250px));
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 /* 
@@ -106,10 +126,15 @@ USEFUL ATTRIBUTES
     background: var(--bg-light-purple);
 }
 
-/* class for centering */
-.centered { text-align: center; }
-
 /* OTHER STYLING */
+
+/* WHAT IS ISLAM */
+.pillars { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4vw;
+    padding: 5vh 4vw;
+}
 
 /* 
 IH HOME 
@@ -117,48 +142,27 @@ IH HOME
 /* IH Home header section */
 .header-section, .About-Header {
     background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
-    padding: 350px 0px 130px 75px;
-}
+    padding: 350px 0px 130px 75px;}
 
-.body-section {
-    padding-left: 95px;
-}
 /* About IH section */
 .about-ih {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 80px 40px 80px;
 }
 
 .ih-content {
-    width: 718px;
-    height: 492px;
-    padding-top: 105px;
-    margin-right: 50px;
+    order: -1;
 }
 
 .ih-description {
-    font-size: 27px;
-}
-
-.ih-content-table {
-    width: 627px;
-    align-content: center;
-    margin-top: 60px;
+    font-size: 25px;
 }
 
 .prayer-times {
+    font-size: 25px;
     text-align: center;
-    white-space: nowrap;
     color: var(--dark-purple);
-}
-
-.prayer-time-table {
-    padding-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    width: 368px;
 }
 
 /* IH History section */
@@ -169,21 +173,30 @@ IH HOME
 }
 
 .arrow-down {
-    position: relative;
-    height: 25px;
-    top: 16px;
+    height: 20px;
+    margin-top: 16px;
+}
+
+.ih-history-title {
+    padding-left: 80px;
 }
 
 .ih-history-content {
     display: flex;
-    margin: 120px 0;
+    gap: 5vw;
+    padding: 50px 4vw;
 }
 
 .column {
     flex: 2;
     white-space: pre-wrap;
-    font-size: 27px;
-    margin-right: 80px;
+}
+
+/* 
+Events
+*/
+.upcoming-event {
+    display: flex;
 }
 
 
@@ -230,10 +243,8 @@ Homepage
 }
 
 .info-text {
-    width: 70vw;
     font-size: 24px;
-    margin: auto;
-    padding: 15vh;
+    padding: 15vh 15vw;
     text-align: center;
 }
 
@@ -241,37 +252,37 @@ Homepage
     padding-top: 20px;
 }
 
-/* carousel */
-.home-carousel{
+/* pics */
+.home-pics-sect{
     background-color: var(--bg-med-purple);
     background-image: url('./assets/backgrounds/carousel-left.svg'), 
                     url('./assets/backgrounds/carousel-right.svg');
     background-position: top left, top right;
     background-repeat: no-repeat; 
-    background-size: 17vw;
+    background-size: 12vw;
+    display: flex;
+    justify-content: center;
+    padding: 5vw 0;
 }
 
-.slide-container {
-    padding: 7vw 0 4vw 0;
-    width: 66vw;
-    margin: auto;
+.picsLeft, .picsRight {
+    padding: 0 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* .each-slide{height: 48vw; width: 66vw;} */
-.each-slide {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 48vw; width: 66vw;
-    margin: auto;
+.picsLeft img {
+    max-width: 51vw;
 }
 
- #left-arrow {
-    left: -40px;
+.picsRight img {
+    max-width: 30vw;
 }
 
-#right-arrow {
-    right: -40px;
+.homepics {
+    margin: 1.2vw 1vw;
+    border-radius: 10px;
 }
 
 /* 
@@ -288,7 +299,7 @@ nav {
 
 /* logo styling */
 .logo img {
-    padding: 15px 0px;
+    padding: 15px 0px 9px 0;
     height: 76px; 
 }
 
@@ -302,14 +313,12 @@ nav {
 .navItem a, .donate {
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: var(--dark-purple);
     font-size: 18px;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background: none;
-    border: none;
     padding: 37px 24px;
 }
 
@@ -368,6 +377,70 @@ nav {
     }
 }
 
+/* hamburger menu */
+.hamburger, .hamburger-list{
+    display: none;
+}
+
+.hamburger-icon {
+    padding: 35px 20px;
+}
+
+/* sizing and styling */
+.logo img { height: 64px; }
+nav { height: 94px; }
+
+.hamburger-list {
+    position: fixed;
+    left: 20vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80vw;
+    /* min-height: 100vh; */
+    background-color: var(--dark-purple);
+    z-index: 100;
+}
+.hamburger-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hamburger-list ul {
+    list-style: none;
+    margin: 0;
+}
+
+.menuX {
+    position: relative;
+    left: calc(80vw - 20px - 40px);
+    top: 35px;
+}
+
+/* link padding */
+.burger-links { padding: 7vh 12vw; }
+.burger-links > li { padding-top: 25px; }
+.subpage-cont { padding-top: 5px; }
+.subpages { padding-top: 15px; }
+
+.hamburger-arrow {
+    height: 16px;
+    max-width: 18px;
+    float: right;
+    margin-top: 6px;
+}
+
+/* donate button */
+.donate-buffer { height: 140px;}
+.mobile-donate {
+    background-color: var(--bg-med-purple);
+    position: relative;
+    top: 40px;
+    margin-left: calc(40vw - 80px);
+}
+
+
 /* 
 FOOTER 
 */
@@ -376,7 +449,9 @@ FOOTER
 .footer{
     background-color: var(--dark-purple);
     display: flex;
-    padding: 50px 75px;
+    gap: 10px;
+    padding: 50px 75px 0 75px;
+    z-index: 0;
 }  
 
 /* text styling */
@@ -390,11 +465,13 @@ FOOTER
 
 /* added for spacing (see Footer.js) */
 .divider { padding: 10px; }
+.footer-text { padding-bottom: 20px; }
 
 /* social media links */
 .social-media {
-    display: block;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .social-media-icons img {
@@ -407,6 +484,83 @@ FOOTER
     background-color: var(--bg-med-purple);
     border-radius: 10px 10px 0px 0px;
     padding: 15px 21px;
-    position: relative;
-    top: 50px;
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+    /* smaller fonts and button */
+    p { font-size: 15px; }
+    h1 {font-size: 30px; }
+    h2 {font-size: 25px; }
+    h3 {font-size: 20px; }
+    h6 {font-size: 20px; }
+
+    .purple-button {
+        font-size: 16px;
+        min-width: 160px;
+        padding: 20px 30px;
+    }
+
+    /* mobile menu */
+    .hamburger { display: block; }
+    .navItem, .donate { display: none; }
+
+    /* mobile side spacing */
+    .info-text, .pillars
+    { padding: 10vh 9vw; }
+
+    /* column instead of row */
+    .home-pics-sect, .ih-history-content, .links
+    { flex-direction: column; }
+    /* for grid system to columns */
+    .pillars, .about-ih
+    { display: block;}
+    
+    /* other stuff */
+    .home-pics-sect img {
+        max-width: 80vw;
+    }
+    .picsLeft, .picsRight {
+        margin: auto;
+        padding: 0;
+    }
+
+    .arrow-down {
+        height: 15px;
+    }
+    
+    .links {
+        padding: 0 10vw;
+    }
+
+    .footer{
+        padding-left: 5vw;
+        padding-right: 5vw; 
+    }
+  
+    /* ih prayer times table scaling and padding */
+    .about-ih { padding: 6vh 0; }
+    .ih-content, .ih-history-content, .history-next 
+    { padding: 0 9vw; }
+    .ih-content {
+        margin-top: 50px;
+    }
+    .ih-content-table {
+        height: 600px;
+        padding-bottom: 70px;
+    }
+    #frame { width: 111%; height: 120%; }
+    #frame {
+        zoom: normal;
+        transform: none;
+        transform-origin:0;
+        -ms-zoom: 0.9;
+        -moz-transform: scale(0.9);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.9);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.9);
+        -webkit-transform-origin: 0 0;
+    }
 }

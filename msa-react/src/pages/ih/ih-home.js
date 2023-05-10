@@ -1,7 +1,8 @@
 import PrayerTimeSvg from "../../assets/prayer-times.svg";
-import ArrowSvg from "../../assets/arrow-down.svg";
+import ArrowSvg from "../../assets/arrow-down.svg"; 
 
 function IHHome() {
+
     return (
         <div>
             <div className="header-section">
@@ -11,6 +12,19 @@ function IHHome() {
             
             <div className="body-section">
                 <div className="about-ih">
+                    <div className="ih-content-table" id="wrap">
+                        <h6 className="prayer-times">Prayer Times</h6>
+                        <iframe 
+                            id="frame"
+                            loading="lazy" 
+                            src="https://masjidal.com/widget/simple/v3?masjid_id=RKxwXOdO" 
+                            type="text/html" 
+                            width="100%" 
+                            height="100%" 
+                            frameborder="0" 
+                            allowtransparency="true"
+                        />
+                    </div>
                     <div className="ih-content">
                         <h2 className="about-the-ih-subhead">ABOUT THE IH</h2>
                         <p className="ih-description">
@@ -19,24 +33,18 @@ function IHHome() {
                             The IH also serves the greater Seattle community through weekly Jummah prayers, community dinners, and Sunday school programs for children. We are one of the few MSAs around the country that have a mosque we can call our own. 
                         </p>
                     </div>
-                    <div className="ih-content-table">
-                        <h6 className="prayer-times">Prayer Times</h6>
-                        <img
-                            className="prayer-time-table"
-                            src={PrayerTimeSvg}
-                            alt="Prayer Time Table" 
-                        />
-                    </div>
                 </div>
 
-                <h2 className="ih-history-title">THE HISTORY OF THE IH</h2>
-                <div className="next-arrow-div">
-                    <h6 className="read-full-story-subhead">Read the full story below</h6>
-                    <img 
-                        className="arrow-down"
-                        src={ArrowSvg}
-                        alt="Down Arrow"
-                    />
+                <div className="history-next">
+                    <h2 className="ih-history-title">THE HISTORY OF THE IH</h2>
+                    <div className="next-arrow-div">
+                        <h6>Read the full story below</h6>
+                        <img 
+                            className="arrow-down"
+                            src={ArrowSvg}
+                            alt="Down Arrow"
+                        />
+                    </div>
                 </div>
 
                 <div className="ih-history-content">
