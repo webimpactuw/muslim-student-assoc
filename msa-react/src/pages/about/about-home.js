@@ -4,6 +4,11 @@ import purpose2 from "../../assets/about/purpose-2.svg";
 import purpose3 from "../../assets/about/purpose-3.svg";
 import purpose4 from "../../assets/about/purpose-4.svg";
 import purpose5 from "../../assets/about/purpose-5.svg";
+import prayerPhoto from "../../assets/about/prayer-photo.svg";
+import mosquePhoto from "../../assets/about/mosque-photo.svg";
+import quranPhoto from "../../assets/about/quran-photo.svg";
+
+
 
 function AboutHome() {
     return (
@@ -31,13 +36,43 @@ function AboutHome() {
 
 
             <div className="Our-Purpose">
-                <h2>OUR PURPOSE</h2>
-                <div className="purposes">
-                    <img src={purpose1} alt="Purpose 1" class="image-left"/>
-                    <img src={purpose2} alt="Purpose 2" class="image-left"/>
-                    <img src={purpose3} alt="Purpose 3" class="image-left"/>
-                    <img src={purpose4} alt="Purpose 4" class="image-left"/>
-                    <img src={purpose5} alt="Purpose 5" class="image-left"/>
+                <div className="purpose-header">
+                    <h2>OUR PURPOSE</h2>
+                </div>
+                <div className="about-container">
+
+                
+                    <div className="purposes">
+                        <div>
+                        <img src={purpose1} alt="Purpose 1" class="image-left"/>
+                        </div>
+                        <div>
+                        <img src={purpose2} alt="Purpose 2" class="image-left"/>
+                        </div>
+                        <div>
+                        <img src={purpose3} alt="Purpose 3" class="image-left"/>
+                        </div>
+                        <div>
+                        <img src={purpose4} alt="Purpose 4" class="image-left"/>
+                        </div>
+                        <div>
+                        <img src={purpose5} alt="Purpose 5" class="image-left"/>
+                        </div>
+                    
+                    </div>
+                    <div className="purpose-pictures">
+                        <div>
+                            <img src={prayerPhoto} alt="Prayer Photo" class="image-right"/>
+                        </div>
+                        <div>
+                            <img src={mosquePhoto} alt="Mosque Photo" class="image-right"/>
+                        </div>
+                        <div>
+                            <img src={quranPhoto} alt="Quran Photo" class="image-right"/>
+                        </div>
+                        
+                    </div>
+
                 </div>
                 
             </div>

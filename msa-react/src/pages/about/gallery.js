@@ -1,6 +1,8 @@
 function Gallery() {
     return (
-        <h1>Gallery</h1>
+        <div className="gallery-head">
+            <h1>Gallery</h1>
+        </div>
     );
 };
 

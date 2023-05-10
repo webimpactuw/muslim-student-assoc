@@ -115,7 +115,7 @@ USEFUL ATTRIBUTES
 IH HOME 
 */
 /* IH Home header section */
-.header-section {
+.header-section, .About-Header {
     background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
     padding: 350px 0px 130px 75px;
 }
@@ -192,19 +192,31 @@ About Page
 */
 .About-Header {
     background: no-repeat top right/cover url('./assets/backgrounds/about-bg.svg') var(--bg-light-purple);
-    /* //background-size: auto 100%; */
-    padding: 375px 0px 132px 75px;
 }
 .Our-Purpose {
     background: #F9F9F9;
+    padding-bottom: 100px;
+    padding-top: 40px;
+}
+.purpose-header {
     text-align: center;
 }
-.purposes{
+.about-container {
     display: flex;
-    align-items: center; 
 }
-.purposes img {
-    margin-right: 10px;
+.purposes{
+    width: 50%;
+    margin-left: 100px;
+}
+.purpose-pictures {
+    width: 50%;
+}
+/*
+About Gallery
+*/
+.gallery-head {
+    background: no-repeat top right/cover url('./assets/backgrounds/gallery-bg.svg') var(--bg-light-purple);
+
 }
 /*
 Homepage
