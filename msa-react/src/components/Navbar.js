@@ -29,7 +29,7 @@ function Navbar() {
         },
         { basePath: "/islamic-house", title: "The IH", 
             subPages:[
-                { path: "/library", title: "IH Library"},
+                // { path: "/library", title: "IH Library"},
                 { path: "/programs", title: "Programs"},
             ] 
         },
@@ -44,7 +44,7 @@ function Navbar() {
             subPages:[
                 { path: "/pray", title: "Where to Pray"},
                 { path: "/restaurants", title: "Halal Restaurants"},
-                { path: "/delivery", title: "Al-Buraq Delivery"} 
+                // { path: "/delivery", title: "Al-Buraq Delivery"} 
             ] 
         },
         { basePath: "/contact", title: "Contact", 
