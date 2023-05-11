@@ -178,6 +178,7 @@ Homepage
     background: no-repeat right url('./assets/backgrounds/home-bg.svg') var(--bg-light-purple); 
     background-size: auto 100%;
 }
+
 .home-header-txt {
     padding: 25vh 0 15vh 80px;
 }
@@ -448,7 +449,7 @@ FOOTER
 
     /* mobile side spacing */
     .info-text, .pillars
-    { padding: 10vh 9vw; }
+    { padding: 5vh 9vw; }
 
     /* column instead of row */
     .home-pics-sect, .ih-history-content
@@ -474,16 +475,15 @@ FOOTER
         padding-left: 5vw;
         padding-right: 5vw; 
     }
-
-    /* 
-    IH HOME
-    */
     
     .header-section {
         background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
         padding: 185px 0px 40px 30px;
     }
 
+    /* 
+    IH HOME
+    */
     /* ih prayer times table scaling and padding */
     .body-section { padding: 6vh 0; }
     .ih-content, .ih-history-content, .history-next 
@@ -495,6 +495,27 @@ FOOTER
         height: 55vh;
         padding-bottom: 70px;
     }
+
+    /* 
+    HOMEPAGE
+    */
+    
+    .home-header {
+        background: no-repeat right url('./assets/backgrounds/home-bg.svg') var(--bg-light-purple); 
+        background-size: auto 100%;
+    }
+
+    .home-header-txt {
+        padding: 7vh 0 7vh 4vh;
+    }
+
+    .info-text > p {
+        padding-top: 2px;
+    }
+
+    /* 
+    OVERALL
+     */
     #frame { width: 111%; height: 120%; }
     #frame {
         zoom: normal;
