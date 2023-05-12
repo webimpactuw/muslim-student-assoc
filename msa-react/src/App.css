@@ -227,6 +227,29 @@ Homepage
 }
 
 /* 
+RESOURCES AND DONATION
+*/
+.lantern-header {
+    background-color: var(--bg-light-purple);
+    background-image: url('./assets/backgrounds/lantern-left.svg'),
+                    url('./assets/backgrounds/lantern-right.svg'),
+                    url('./assets/backgrounds/clouds.svg');
+    background-position: top left, top right, center;
+    background-repeat: no-repeat;
+    background-size: auto 50%, auto 70%, cover;
+    padding: 25vh 0vw 28vh 0vw;
+    text-align: center;
+}
+
+.resources-heading {
+    padding-bottom: 7vh;
+}
+
+.resources-pray, .resources-restaurants, .resources-delivery {
+    margin-left: 5vw;
+}
+
+/* 
 NAVBAR 
 */
 
