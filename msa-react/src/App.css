@@ -205,6 +205,13 @@ Events
     display: flex;
 }
 
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2vh 3vw;
+    gap: 3vw;
+}
+
 
 /*
 About Page
