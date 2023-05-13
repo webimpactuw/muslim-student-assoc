@@ -477,7 +477,6 @@ FOOTER
     }
     
     .header-section {
-        background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
         padding: 185px 0px 40px 30px;
     }
 
@@ -501,8 +500,8 @@ FOOTER
     */
     
     .home-header {
-        background: no-repeat right url('./assets/backgrounds/home-bg.svg') var(--bg-light-purple); 
-        background-size: auto 100%;
+        background: no-repeat bottom right url('./assets/backgrounds/home-mobile-bg.svg') var(--bg-light-purple); 
+        background-size: contain;
     }
 
     .home-header-txt {
@@ -514,7 +513,7 @@ FOOTER
     }
 
     /* 
-    OVERALL
+    IH PRAYER TIMES IFRAME SCALING
      */
     #frame { width: 111%; height: 120%; }
     #frame {
