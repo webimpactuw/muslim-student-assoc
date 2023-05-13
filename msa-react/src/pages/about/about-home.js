@@ -13,7 +13,7 @@ import quranPhoto from "../../assets/about/quran-photo.svg";
 function AboutHome() {
     return (
         <div className="About Page">
-           <div className="About-Header">
+           <div className="header-section About-Header">
                 <h1>About Us</h1>
                 <h3>Learn more about us and what we do</h3>
                 <button className="purple-button">BECOME A MEMBER</button>
