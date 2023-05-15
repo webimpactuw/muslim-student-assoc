@@ -1,4 +1,3 @@
-import PrayerTimeSvg from "../../assets/prayer-times.svg";
 import ArrowSvg from "../../assets/arrow-down.svg"; 
 
 function IHHome() {

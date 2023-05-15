@@ -27,7 +27,7 @@ function Involved() {
                             <NavLink to="/events" className="purple-btn-link">SEE OUR EVENTS</NavLink>
                         </button>
                     </div>
-                    <img src={pic6} alt="3 Brothers picture"/>
+                    <img src={pic7} alt="3 Brothers picture"/>
                     <div>
                         <h6>Become a member</h6>
                         <p>
@@ -37,7 +37,7 @@ function Involved() {
                             <NavLink to="/events/member" className="purple-btn-link">BECOME A  MEMBER</NavLink>
                         </button>
                     </div>
-                    <img src={pic6} alt="Sheikh Umair"/>
+                    <img src={pic8} alt="Sheikh Umair"/>
                     <div>
                         <h6>Run for Office and Vote in Elections</h6>
                         <p>
