@@ -1,4 +1,10 @@
 import HeaderWB from "../../components/HeaderWB";
+import pic1 from "../../assets/site-pics/pic1.png";
+import pic2 from "../../assets/site-pics/pic2.png";
+import pic3 from "../../assets/site-pics/pic3.png";
+import pic4 from "../../assets/site-pics/pic4.png";
+import pic5 from "../../assets/site-pics/pic5.png";
+
 function Activities() {
     const header = {
         title: "Activities",
@@ -15,20 +21,20 @@ function Activities() {
             <div>
                 {/* general */}
                 <div className="events-grid">
-                    <img/>
+                    <img src={pic1} alt="MSA meeting image"/>
                     <div>
                         <h2>General Activites</h2>
                         <h6>General Meetings</h6>
                         <p>The bread and butter of MSA, these are our weekly meetings in MSA. These meetings offer a mix of religious, social, charitable, and educational activities. General Meetings are a great place to meet other Muslims, stay up to date with MSA news, and spend time de-stressing with other members!</p>
                     </div>
-                    <img/>
+                    <img src={pic2} alt="Sheikh Umair Class"/>
                     <div>
                         <h6>Town Hall</h6>
                         <p>A meeting, that meets up every other week, where MSA members can voice their opinions, concerns, and suggestions and work with officers to make MSA the best it can be!</p>
                         <h6>Sheikh Umair's Class</h6>
                         <p>MSA at UW is blessed to have Sheikh Umair, a local scholar and instructor at Mihraab, hold weekly Islamic classes free of charge to MSA students.</p>
                     </div>
-                    <img/>
+                    <img src={pic3} alt="MSA meeting image"/>
                     <div>
                         <h6>MSA Dawah Table</h6>
                         <p>As part of MSA’s mission to represent Islam on campus an educate non-Muslims about our faith, MSA has a table weekly outside of the HUB with Quran’s, pamphlets, and members ready to answer questions about Islam.</p>
@@ -38,7 +44,7 @@ function Activities() {
                 </div>
                 {/* social */}
                 <div className="events-grid">
-                    <img/>
+                    <img src={pic4} alt="3 members at photo spot"/>
                     <div>
                         <h2>Social Activites</h2>
                         <h6>MSA Welcome Back BBQ</h6>
@@ -51,7 +57,7 @@ function Activities() {
                 </div>
                 {/* ih */}
                 <div className="events-grid">
-                    <img/>
+                    <img src={pic5} alt="Gathering with food"/>
                     <div>
                         <h2>Islamic House Activites</h2>
                         <h6>Jummah Prayers</h6>

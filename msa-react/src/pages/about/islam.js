@@ -1,5 +1,5 @@
 import ArrowSvg from "../../assets/arrow-down.svg";
-import pic from "../../assets/image 39.png";
+import pic from "../../assets/site-pics/islam-hist.png";
 
 function Islam() {
     return (

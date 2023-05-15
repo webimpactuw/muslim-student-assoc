@@ -1,5 +1,8 @@
 import HeaderWB from "../../components/HeaderWB";
 import { NavLink } from "react-router-dom";
+import pic6 from "../../assets/site-pics/pic6.png";
+import pic7 from "../../assets/site-pics/pic7.png";
+import pic8 from "../../assets/site-pics/pic8.png";
 
 function Involved() {
 
@@ -14,7 +17,7 @@ function Involved() {
             <div>
                 <h2>Ways to Get Involved</h2>
                 <div className="events-grid">
-                    <img/>
+                    <img src={pic6} alt="MSA Meeting"/>
                     <div>
                         <h6>Come to Our Events and Meetings</h6>
                         <p>
@@ -24,7 +27,7 @@ function Involved() {
                             <NavLink to="/events" className="purple-btn-link">SEE OUR EVENTS</NavLink>
                         </button>
                     </div>
-                    <img/>
+                    <img src={pic6} alt="3 Brothers picture"/>
                     <div>
                         <h6>Become a member</h6>
                         <p>
@@ -34,7 +37,7 @@ function Involved() {
                             <NavLink to="/events/member" className="purple-btn-link">BECOME A  MEMBER</NavLink>
                         </button>
                     </div>
-                    <img/>
+                    <img src={pic6} alt="Sheikh Umair"/>
                     <div>
                         <h6>Run for Office and Vote in Elections</h6>
                         <p>
