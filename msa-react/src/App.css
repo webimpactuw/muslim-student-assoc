@@ -287,6 +287,27 @@ p.address{
 }
 
 /* 
+CONTACT
+*/
+.contact-social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-social {
+   display: flex;
+   align-items: center;
+}
+
+.contact-social-text {
+    padding-left: 2.5vw;
+}
+
+.social-media-contact {
+    padding-bottom: 4.3vh;
+}
+
+/* 
 NAVBAR 
 */
 
