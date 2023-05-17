@@ -1,6 +1,7 @@
 import client from "../../client";
 import { useEffect, useState } from "react";
 import HeaderWB from "../../components/HeaderWB";
+import ProgramCard from "../../components/ProgramCard";
 
 function Programs() {
     const query = "*[_type == 'programs'] { name, info, description }";
@@ -13,11 +14,7 @@ function Programs() {
 
     // program traits: name, info, desc. note: add key
     const programs = content ? content.map((prog, index) => 
-        <div className="program" key={index}>
-            <h2>{prog.name}</h2>
-            <h3>{prog.info}</h3>
-            <p>{prog.description}</p>
-        </div>
+        <ProgramCard prog={prog} key={index}/>
     ) : null;
 
     const header = {
@@ -32,7 +29,9 @@ function Programs() {
             <a id="programs">
                 <h2>Ongoing Programs</h2>
             </a>
-            {programs}
+            <div className="grid-col programs-list">
+                {programs}
+            </div>
         </div>
     );
 };

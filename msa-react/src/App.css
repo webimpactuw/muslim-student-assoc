@@ -213,6 +213,22 @@ Events
     display: flex;
 }
 
+
+/* IH PROGRAMS */
+#programs h2 {
+    padding-left: 2.5vw;
+}
+.programs-list {
+    gap: 1vw;
+}
+
+.program-card {
+    padding: 20px;
+    background-color: var(--bg-light-purple);
+    height: calc(100% - 40px);
+    border-radius: 20px;
+}
+
 /*
 About Page
 */
