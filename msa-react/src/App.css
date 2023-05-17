@@ -252,7 +252,7 @@ RESOURCES
     padding-bottom: 7vh;
 }
 
-.donate {
+.donate-page {
     gap: 16vw;
 }
 
@@ -301,7 +301,15 @@ CONTACT
 
 .contact-social-text {
     padding-left: 2.5vw;
+    text-decoration: none;
+    color: var(--dark-purple);
+    padding-bottom: 1vh;
 }
+
+a:link {
+    text-decoration: none;
+}
+
 
 .social-media-contact {
     padding-bottom: 4.3vh;
@@ -611,15 +619,12 @@ FOOTER
     }
 
     .resources-heading {
-        padding-bottom: 7vh;
+        padding-bottom: 6vh;
     }
 
-    .links, .donate {
+    .links, .donate-page {
         gap: 30px;
     }
-    /* .resources-restaurants, .resources-delivery {
-        margin-left: 5vw;
-    } */
 
     /* 
     CONTACT

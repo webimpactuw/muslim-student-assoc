@@ -4,7 +4,7 @@ const Donate= () => {
     return (
       <div className="lantern-header header-background-purple">
             <h1 className="resources-heading">Donate</h1>
-            <div className="links donate">
+            <div className="links donate-page">
                 <button className="purple-button">
                     <a href= "https://us.mohid.co/wa/seattle/ih/masjid/online/donation" className="purple-btn-link" to="/resources/restaurants">DONATE TO THE IH</a>
                 </button>

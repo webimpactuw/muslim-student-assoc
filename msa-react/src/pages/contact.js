@@ -23,7 +23,9 @@ function Contact() {
                                 src={Email} 
                             />
                         </a>
-                        <p className="contact-social-text">Email: msauw@uw.edu</p>
+                        <a href="mailto:msa@uw.edu">
+                            <p className="contact-social-text">Email: msauw@uw.edu</p>
+                        </a>
                     </div>
                     <div className="contact-social">
                         <a href="https://www.instagram.com/msauw/">
@@ -33,7 +35,9 @@ function Contact() {
                                 src={Instagram} 
                             />
                         </a>
-                        <p className="contact-social-text">Instagram: @msauw</p>
+                        <a href="https://www.instsagram.com/msauw/">
+                            <p className="contact-social-text">Instagram: @msauw</p>
+                        </a>
                     </div>
                     <div className="contact-social">
                         <a href="https://discord.gg/kP4rYcEPe4">
@@ -43,7 +47,9 @@ function Contact() {
                                 src={Discord} 
                             />
                         </a>
-                        <p className="contact-social-text">Discord: msauw</p>
+                        <a href="https://discord.gg/kP4rYcEPe4">
+                            <p className="contact-social-text">Discord: msauw</p>
+                        </a>
                     </div>
                     <div className="contact-social">
                         <a href="https://www.facebook.com/uwmsa/">
@@ -53,7 +59,9 @@ function Contact() {
                                 src={Facebook} 
                             />
                         </a>
-                        <p className="contact-social-text">Facebook: uwmsa</p>
+                        <a href="https://www.facebook.com/uwmsa/">
+                            <p className="contact-social-text">Facebook: uwmsa</p>
+                        </a>
                     </div>
                     <div className="contact-social">
                         <a href="https://www.linktr.ee/msauw">
@@ -63,7 +71,9 @@ function Contact() {
                                 src={LinkTree} 
                             />
                         </a>
-                        <p className="contact-social-text">LinkTree: msauw</p>
+                        <a href="https://www.linktr.ee/msauw">
+                            <p className="contact-social-text">LinkTree: msauw</p>
+                        </a>
                     </div>
                 </div>
             </div>
