@@ -6,7 +6,10 @@ import Email from "../assets/contact/4-email-purple.svg";
 import LinkTree from "../assets/contact/5-linktree-purple.svg";
 
 function Contact() {
-    const links = ["", "https://www.instagram.com/msauw/", "https://discord.gg/kP4rYcEPe4", "https://www.facebook.com/uwmsa/", "https:www.linktr.ee/msauw"];
+    // "https://www.instagram.com/msauw/"
+    // "https://discord.gg/kP4rYcEPe4"
+    // "https://www.facebook.com/uwmsa/"
+    // "https:www.linktr.ee/msauw"
 
     return (
         <div className="contact-header header-section">
@@ -16,54 +19,64 @@ function Contact() {
                 you may have about our organization!</p>
                 <div className="social-media-contact">
                     <div className="contact-social">
-                        <a href="mailto:msauw@uw.edu">
+                        <a href="mailto:msauw@uw.edu" target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="Email"
                                 src={Email} 
                             />
                         </a>
-                        <p className="contact-social-text">Email: msauw@uw.edu</p>
+                        <a href="mailto:msa@uw.edu" target="_blank">
+                            <p className="contact-social-text">Email: msauw@uw.edu</p>
+                        </a>
                     </div>
                     <div className="contact-social">
-                        <a href="https://www.instagram.com/msauw/">
+                        <a href="https://www.instagram.com/msauw" target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="Instagram"
                                 src={Instagram} 
                             />
                         </a>
-                        <p className="contact-social-text">Instagram: @msauw</p>
+                        <a href="https://www.instagram.com/msauw/" target="_blank">
+                            <p className="contact-social-text">Instagram: @msauw</p>
+                        </a>
                     </div>
                     <div className="contact-social">
-                        <a href="https://discord.gg/kP4rYcEPe4">
+                        <a href="https://discord.gg/kP4rYcEPe4" target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="Discord"
                                 src={Discord} 
                             />
                         </a>
-                        <p className="contact-social-text">Discord: msauw</p>
+                        <a href="https://discord.gg/kP4rYcEPe4" target="_blank">
+                            <p className="contact-social-text">Discord: msauw</p>
+                        </a>
                     </div>
                     <div className="contact-social">
-                        <a href="https://www.facebook.com/uwmsa/">
+                        <a href="https://www.facebook.com/uwmsa/" target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="FaceBook"
                                 src={Facebook} 
                             />
                         </a>
-                        <p className="contact-social-text">Facebook: uwmsa</p>
+                        <a href="https://www.facebook.com/uwmsa/" target="_blank">
+                            <p className="contact-social-text">Facebook: uwmsa</p>
+                        </a>
                     </div>
                     <div className="contact-social">
-                        <a href="https://www.linktr.ee/msauw">
+                        <a href="https://www.linktr.ee/msauw" target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="LinkTree"
                                 src={LinkTree} 
                             />
                         </a>
-                        <p className="contact-social-text">LinkTree: msauw</p>
+                        <a href="https://www.linktr.ee/msauw" target="_blank">
+                            <p className="contact-social-text">LinkTree: msauw</p>
+                        </a>
                     </div>
                 </div>
             </div>
