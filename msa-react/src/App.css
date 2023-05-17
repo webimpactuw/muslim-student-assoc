@@ -300,6 +300,80 @@ Homepage
 }
 
 /* 
+RESOURCES
+*/
+.lantern-header {
+    background-color: var(--bg-light-purple);
+    background-image: url('./assets/backgrounds/lantern-left.svg'),
+                    url('./assets/backgrounds/lantern-right.svg'),
+                    url('./assets/backgrounds/clouds.svg');
+    background-position: top left, top right, center;
+    background-repeat: no-repeat;
+    background-size: auto 50%, auto 70%, cover;
+    padding: 25vh 0vw 28vh 0vw;
+    text-align: center;
+}
+
+.resources-heading {
+    padding-bottom: 7vh;
+}
+
+.donate-links {
+    gap: 16vw;
+}
+
+.contact-header {
+    background-color: var(--bg-light-purple);
+    background-image: url('./assets/backgrounds/building-doodle.svg'),
+                        url('./assets/backgrounds/moon-lantern.svg'),
+                        url('./assets/backgrounds/clouds.svg');
+    background-position: bottom right, top right, center;
+    background-size: auto 40%, auto 60%, cover;
+    background-repeat: no-repeat;
+    padding: 24vh 7vw 5vh;
+}
+
+.contact-heading {
+    padding-bottom: 2vh;
+    margin: 0vh;
+}
+
+h6.mail-address {
+    color: var(--dark-purple);
+    margin: 0;
+}
+
+.question {
+    word-wrap: break-word;
+    white-space: initial;
+}
+
+p.address{
+    margin-top: 0vh;
+}
+
+/* 
+CONTACT
+*/
+.contact-social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-social {
+   display: flex;
+   align-items: center;
+}
+
+.contact-social-text {
+    padding-left: 2.5vw;
+}
+
+.social-media-contact {
+    padding-bottom: 4.3vh;
+}
+
+/* 
 NAVBAR 
 */
 
@@ -576,6 +650,65 @@ FOOTER
 
     .info-text > p {
         padding-top: 2px;
+    }
+
+    /* 
+    RESOURCES
+    */
+    .lantern-header {
+        background-color: var(--bg-light-purple);
+        background-image: url('./assets/backgrounds/lantern-left.svg'),
+                        url('./assets/backgrounds/lantern-right.svg'),
+                        url('./assets/backgrounds/clouds.svg');
+        background-position: top left, top right, center;
+        background-repeat: no-repeat;
+        background-size: auto 25%, auto 30%, cover;
+        padding: 10vh 0vw;
+        text-align: center;
+        align-content: center;
+    }
+
+    .resources-heading {
+        padding-bottom: 7vh;
+    }
+
+    .links {
+        gap: 30px;
+    }
+    /* .resources-restaurants, .resources-delivery {
+        margin-left: 5vw;
+    } */
+
+    /* 
+    CONTACT
+    */
+    .contact-header {
+        background-color: var(--bg-light-purple);
+        background-image: url('./assets/backgrounds/moon-lantern.svg'),
+                            url('./assets/backgrounds/clouds.svg');
+        background-position: top right, center;
+        background-size: auto 40%, cover;
+        background-repeat: no-repeat;
+        padding: 7vh 7vw 5vh;
+    }
+
+    .contact-heading {
+        padding-bottom: 0vh;
+        margin: 0vh;
+    }
+
+    h6.mail-address {
+        color: var(--dark-purple);
+        margin: 0;
+    }
+
+    .question {
+        word-wrap: break-word;
+        white-space: initial;
+    }
+
+    p.address{
+        margin-top: 0vh;
     }
 
     /* 
