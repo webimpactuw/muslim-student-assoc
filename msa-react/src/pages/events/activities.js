@@ -20,7 +20,7 @@ function Activities() {
             {/* content */}
             <div>
                 {/* general */}
-                <div className="events-grid">
+                <div className="grid-col">
                     <img src={pic1} alt="MSA meeting image"/>
                     <div>
                         <h2>General Activites</h2>
@@ -43,7 +43,7 @@ function Activities() {
                     </div>
                 </div>
                 {/* social */}
-                <div className="events-grid">
+                <div className="grid-col">
                     <img src={pic4} alt="3 members at photo spot"/>
                     <div>
                         <h2>Social Activites</h2>
@@ -56,7 +56,7 @@ function Activities() {
                     </div>
                 </div>
                 {/* ih */}
-                <div className="events-grid">
+                <div className="grid-col">
                     <img src={pic5} alt="Gathering with food"/>
                     <div>
                         <h2>Islamic House Activites</h2>

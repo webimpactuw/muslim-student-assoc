@@ -129,13 +129,21 @@ USEFUL ATTRIBUTES
 /* OTHER STYLING */
 
 /* WHAT IS ISLAM */
-.pillars { 
+.grid-col { 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4vw;
-    padding: 5vh 4vw;
+    gap: 1.5vw 3.5vw;
+    padding: 5vh 3.5vw;
+    align-items: center;
 }
 
+.pillars {
+    align-items: start;
+}
+
+.grid-col img {
+    max-width: 50vw;
+}
 /* 
 IH HOME 
 */
@@ -204,14 +212,6 @@ Events
 .upcoming-event {
     display: flex;
 }
-
-.events-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2vh 3vw;
-    gap: 3vw;
-}
-
 
 /*
 About Page
@@ -333,7 +333,7 @@ nav {
 
 /* Dropdown Button */
 .dropbtn {
-    padding: 37px 24px;
+    padding: 34px 24px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -522,14 +522,14 @@ FOOTER
     .navItem, .donate { display: none; }
 
     /* mobile side spacing */
-    .info-text, .pillars
+    .info-text, .grid-col
     { padding: 5vh 9vw; }
 
     /* column instead of row */
     .home-pics-sect, .ih-history-content, .links
     { flex-direction: column; }
     /* for grid system to columns */
-    .pillars, .about-ih
+    .grid-col, .about-ih
     { display: block;}
     
     /* other stuff */
@@ -544,6 +544,7 @@ FOOTER
 
     .footer{ padding: 50px 5vw 0 5vw; }
     
+    .grid-col img { max-width: 90vw;}
 
     /* 
     IH HOME

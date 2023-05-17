@@ -19,11 +19,13 @@ function HeaderWB ({props: {title, subtitle, description, buttons}}) {
             {buttons ? 
                 <div className="links">
                     {buttons.map((link, index) => 
-                        <button className="purple-button" key={index}>
-                            <NavLink className="purple-btn-link" to={link.to} >
-                                {link.name}
-                            </NavLink>
-                        </button>            
+                        <div style={{width: "300px"}}>
+                            <button className="purple-button" key={index}>
+                                <NavLink className="purple-btn-link" to={link.to} >
+                                    {link.name}
+                                </NavLink>
+                            </button>
+                        </div>            
                     )}                
                 </div>
             : null}

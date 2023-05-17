@@ -16,7 +16,7 @@ function Involved() {
             <HeaderWB props={header}/>
             <div>
                 <h2>Ways to Get Involved</h2>
-                <div className="events-grid">
+                <div className="grid-col">
                     <img src={pic6} alt="MSA Meeting"/>
                     <div>
                         <h6>Come to Our Events and Meetings</h6>
