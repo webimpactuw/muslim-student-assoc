@@ -209,8 +209,11 @@ IH HOME
 /* 
 Events
 */
+.events-head {
+    margin: 10vh 0 2vh 3.5vw;
+}
 .upcoming-event {
-    display: flex;
+    grid-template-columns: 0.75fr 1.25fr;
 }
 
 

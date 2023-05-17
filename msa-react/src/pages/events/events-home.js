@@ -13,9 +13,9 @@ function EventsHome() {
 
     // singleton event: name, desc, link, flyer
     const upcomingEvent = content ?
-        <div className="upcoming-event">
+        <div className="grid-col upcoming-event">
             {content.flyer ? <img src={urlFor(content.flyer).size(580, 740).url()} /> : null}
-            <div className="event-info">
+            <div className="events-info">
                 <h2>{content.name}</h2>
                 <p>{content.description}</p>
                 <button className="purple-button">
@@ -37,8 +37,8 @@ function EventsHome() {
                 <h3>Come out and join us at one of our events!</h3>
             </div>
             {upcomingEvent}
-            <h2>Major Events of the Year</h2>
-            <div className="pillars">
+            <h2 className="events-head">Major Events of the Year</h2>
+            <div className="grid-col">
                 <div>
                     <h3>MSA Conference</h3>
                     <p>Our most popular event of the year! This conference is held in winter for both UW Muslims and Seattle Muslims. World renowned speakers from around the country come to Seattle to speak on a theme that is relevant to Muslim students.</p>
