@@ -15,10 +15,11 @@ function Involved() {
         <div>
             <HeaderWB props={header}/>
             <div>
-                <h2>Ways to Get Involved</h2>
                 <div className="grid-col">
+                    <h2 className="involved-subhead">Ways to Get Involved</h2>
+                    <div />
                     <img src={pic6} alt="MSA Meeting"/>
-                    <div>
+                    <div className="involved-elmt">
                         <h6>Come to Our Events and Meetings</h6>
                         <p>
                             Attend our general meetings, quarterly events, IH Jummah, social events, and other activities. This is the best chance for you to meet other Muslims on campus, get involved in engaging activities, and really make the most out of your time at UW! You do not need to be an MSA member to attend our events and activities unless stated otherwise.
@@ -28,7 +29,7 @@ function Involved() {
                         </button>
                     </div>
                     <img src={pic7} alt="3 Brothers picture"/>
-                    <div>
+                    <div className="involved-elmt">
                         <h6>Become a member</h6>
                         <p>
                             Membership is free and is available to all UW Muslim students, both undergraduate and graduate. Membership will allow you to have a say in how MSA is run, attend MSA town halls, run for office, and vote in elections. Membership is not required in order to attend our events and activities, but we highly recommend it if you would like to have a say in how MSA is run.
@@ -38,7 +39,7 @@ function Involved() {
                         </button>
                     </div>
                     <img src={pic8} alt="Sheikh Umair"/>
-                    <div>
+                    <div className="involved-elmt">
                         <h6>Run for Office and Vote in Elections</h6>
                         <p>
                             If you want to work towards advancing MSA’s cause on campus, bettering Muslim life on campus, and get engaged in meaningful service, run for an MSA Officer position!                        

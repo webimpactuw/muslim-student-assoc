@@ -129,6 +129,7 @@ USEFUL ATTRIBUTES
 /* OTHER STYLING */
 
 /* WHAT IS ISLAM */
+/* COLUMNS USED EVERYWHERE */
 .grid-col { 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -137,13 +138,14 @@ USEFUL ATTRIBUTES
     align-items: center;
 }
 
+.grid-col img {
+    max-width: 100%;
+}
+
 .pillars {
     align-items: start;
 }
 
-.grid-col img {
-    max-width: 50vw;
-}
 /* 
 IH HOME 
 */
@@ -216,6 +218,12 @@ Events
     grid-template-columns: 0.75fr 1.25fr;
 }
 
+.involved-subhead {
+    align-items: start;
+    height: 50px;
+    position: relative;
+    top: -50px;
+}
 
 /* IH PROGRAMS */
 #programs h2 {
@@ -626,18 +634,25 @@ FOOTER
     { display: block;}
     
     /* other stuff */
+    /* homepage pictures lineup */
     .home-pics-sect img { max-width: 80vw; }
     .picsLeft, .picsRight { padding: 0 10vw; }
 
+    /* arrow sizing */
     .arrow-down { height: 15px; }
     
+    /* lists of links display vertical, padding */
     .links { padding: 0 10vw; }
 
+    /* changed title spacing */
     .header-section {padding: 185px 0px 40px 30px;}
 
+    /* changed footer spacing */
     .footer{ padding: 50px 5vw 0 5vw; }
     
-    .grid-col img { max-width: 90vw;}
+    .events-head { margin: 2vh 9vw; }
+    
+    .involved-elmt { padding: 3vh 0;}
 
     /* 
     IH HOME
