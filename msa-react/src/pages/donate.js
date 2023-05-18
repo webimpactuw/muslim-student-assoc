@@ -1,16 +1,25 @@
 import { NavLink } from "react-router-dom";
+import client from "../client";
+import { useEffect, useState } from "react";
 
 const Donate= () => {
+    const query = "*[_id == 'links'] { ihdonate, msadonate }";
+
+    const [content, setContent] = useState(null);
+    useEffect(() => {
+        client.fetch(query)
+        .then((data) => setContent(data[0]));
+    }, []);
+
     return (
       <div className="lantern-header header-background-purple">
             <h1 className="resources-heading">Donate</h1>
             <div className="links donate-page">
                 <button className="purple-button">
-                    <a href= "https://us.mohid.co/wa/seattle/ih/masjid/online/donation" className="purple-btn-link" to="/resources/restaurants">DONATE TO THE IH</a>
+                    <a href={content?.ihdonate} className="purple-btn-link" target="_blank">DONATE TO THE IH</a>
                 </button>
                 <button className="purple-button">
-                    <NavLink className="purple-btn-link" to="/resources/delivery">DONATE TO MSA</NavLink>
-                    {/* REMEMBER TO CHANGE NAVLINK */}
+                    <a href={content?.msadonate} className="purple-btn-link" target="_blank">DONATE TO MSA</a>
                 </button>
             </div>
         </div>

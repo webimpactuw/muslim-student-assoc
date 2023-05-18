@@ -27,4 +27,14 @@ export default {
             title: 'Flyer',
         },
     ],
+    preview: {
+        select: {
+          title: "title",
+        },
+        prepare() {
+          return {
+            title: "Upcoming Event",
+          };
+        },
+    },
 }

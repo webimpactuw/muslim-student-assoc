@@ -49,4 +49,14 @@ export default {
             title: 'Email',
         },
     ],
+    preview: {
+        select: {
+          title: "title",
+        },
+        prepare() {
+          return {
+            title: "Links - Donation, Membership, Social Media",
+          };
+        },
+    },
 }

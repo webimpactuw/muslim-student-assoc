@@ -1,15 +1,20 @@
-import { Link } from "react-router-dom";
 import Instagram from "../assets/contact/1-instagram-purple.svg";
 import Facebook from "../assets/contact/2-Facebook-purple.svg";
 import Discord from "../assets/contact/3-discord-purple.svg";
 import Email from "../assets/contact/4-email-purple.svg";
 import LinkTree from "../assets/contact/5-linktree-purple.svg";
 
+import client from "../client";
+import { useEffect, useState } from "react";
+
 function Contact() {
-    // "https://www.instagram.com/msauw/"
-    // "https://discord.gg/kP4rYcEPe4"
-    // "https://www.facebook.com/uwmsa/"
-    // "https:www.linktr.ee/msauw"
+    const query = "*[_id == 'links'] { email, instagram, discord, facebook, linktree }";
+
+    const [content, setContent] = useState(null);
+    useEffect(() => {
+        client.fetch(query)
+        .then((data) => setContent(data[0]));
+    }, []);
 
     return (
         <div className="contact-header header-section">
@@ -17,64 +22,65 @@ function Contact() {
             <div className="contact-info">
                 <p className="questions">Feel free to contact us about any questions<br/> 
                 you may have about our organization!</p>
+
                 <div className="social-media-contact">
                     <div className="contact-social">
-                        <a href="mailto:msauw@uw.edu" target="_blank">
+                        <a href={content ? "mailto:" + content.email : null} target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="Email"
                                 src={Email} 
                             />
                         </a>
-                        <a href="mailto:msa@uw.edu" target="_blank">
+                        <a href={content ? "mailto:" + content.email : null} target="_blank">
                             <p className="contact-social-text">Email: msauw@uw.edu</p>
                         </a>
                     </div>
                     <div className="contact-social">
-                        <a href="https://www.instagram.com/msauw" target="_blank">
+                        <a href={content?.instagram} target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="Instagram"
                                 src={Instagram} 
                             />
                         </a>
-                        <a href="https://www.instagram.com/msauw/" target="_blank">
+                        <a href={content?.instagram} target="_blank">
                             <p className="contact-social-text">Instagram: @msauw</p>
                         </a>
                     </div>
                     <div className="contact-social">
-                        <a href="https://discord.gg/kP4rYcEPe4" target="_blank">
+                        <a href={content?.discord} target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="Discord"
                                 src={Discord} 
                             />
                         </a>
-                        <a href="https://discord.gg/kP4rYcEPe4" target="_blank">
+                        <a href={content?.discord} target="_blank">
                             <p className="contact-social-text">Discord: msauw</p>
                         </a>
                     </div>
                     <div className="contact-social">
-                        <a href="https://www.facebook.com/uwmsa/" target="_blank">
+                        <a href={content?.facebook} target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="FaceBook"
                                 src={Facebook} 
                             />
                         </a>
-                        <a href="https://www.facebook.com/uwmsa/" target="_blank">
+                        <a href={content?.facebook} target="_blank">
                             <p className="contact-social-text">Facebook: uwmsa</p>
                         </a>
                     </div>
                     <div className="contact-social">
-                        <a href="https://www.linktr.ee/msauw" target="_blank">
+                        <a href={content?.linktree} target="_blank">
                             <img 
                                 className="contact-social-icon"
                                 alt="LinkTree"
                                 src={LinkTree} 
                             />
                         </a>
-                        <a href="https://www.linktr.ee/msauw" target="_blank">
+                        <a href={content?.linktree} target="_blank">
                             <p className="contact-social-text">LinkTree: msauw</p>
                         </a>
                     </div>

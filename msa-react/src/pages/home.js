@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import urlFor from "../urlfor";
 
 const Home = () => {
-    const query = "*[_id == 'homepics'] { picture1, 'images': [picture1, picture2, picture3, picture4, picture5]}";
+    const query = "*[_id == 'homepics'] { 'images': [picture1, picture2, picture3, picture4, picture5]}";
 
     const [content, setContent] = useState(null);
     useEffect(() => {

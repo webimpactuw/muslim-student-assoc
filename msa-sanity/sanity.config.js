@@ -6,8 +6,8 @@ import {schemaTypes} from './schemas'
 const singletonActions = new Set(["publish", "discardChanges", "restore"]);
 const singletonTypes = new Set(["event", "homepics", "links"]);
 
-//deployed at msa.sanity.studio
-//admin user: Ryan
+//deployed at msauw.sanity.studio
+//studio owner: Ryan
 
 export default defineConfig({
   name: 'default',

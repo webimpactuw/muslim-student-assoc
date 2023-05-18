@@ -1,16 +1,27 @@
+import client from "../client";
+import { useEffect, useState } from "react";
+
+import Instagram from "../assets/social-media/1-instagram.svg";
+import Facebook from "../assets/social-media/2-Facebook.svg";
+import Discord from "../assets/social-media/3-discord.svg";
+import Tiktok from "../assets/social-media/4-tiktok.svg";
+
 function Footer() {
-    function importAll(r) {
-        let imgs = [];
-        r.keys().map((item, index) => { imgs[index] = r(item); });
-        return imgs;
-    }
-    const images = importAll(require.context('../assets/social-media', false, /\.(svg)$/));
+    const query = "*[_id == 'links'] { 'links': [instagram, facebook, discord, tiktok]}";
 
-    const links = ["https://www.instagram.com/msauw/", "https://www.facebook.com/uwmsa/", "https://discord.gg/kP4rYcEPe4", "https://www.tiktok.com/@msa.uw"];
+    const [content, setContent] = useState(null);
+    useEffect(() => {
+        client.fetch(query)
+        .then((data) => setContent(data[0].links));
+    }, []);
 
-    const a = images.map((src, index) => 
-        <a href={links[index]} target="_blank" key={index}><img src={src} alt="Facebook"/></a>
-    )
+    const images = [Instagram, Facebook, Discord, Tiktok]
+
+    const a = content ? images.map((src, index) => 
+        <a href={content[index]} target="_blank" key={index}>
+            <img src={src} alt="Social Media Logo"/>
+        </a>
+    ) : null
 
     return (
         <div className="footer">
