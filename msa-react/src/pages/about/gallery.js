@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import urlFor from "../../urlfor";
 
 function Gallery() {
-    const query = "*[_type == 'gallery'] { info,  pictures[] }";
+    // newest first
+    const query = "*[_type == 'gallery'] | order(_createdAt desc) { info,  pictures[] }";
 
     const [content, setContent] = useState([]);
     useEffect(() => {

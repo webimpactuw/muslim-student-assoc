@@ -4,7 +4,7 @@ import HeaderWB from "../../components/HeaderWB";
 import ProgramCard from "../../components/ProgramCard";
 
 function Programs() {
-    const query = "*[_type == 'programs'] { name, info, description }";
+    const query = "*[_type == 'programs'] | order(_createdAt asc){ name, info, description }";
 
     const [content, setContent] = useState([]);
     useEffect(() => {

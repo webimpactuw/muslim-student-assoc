@@ -18,35 +18,40 @@ function Activities() {
         <div>
             <HeaderWB props={header}/>
             {/* content */}
-            <div>
-                {/* general */}
+            <div className="activities">
                 <div className="grid-col">
-                    <img src={pic1} alt="MSA meeting image"/>
+                    <div />
+                    <h2>General Activites</h2>
                     <div>
-                        <h2>General Activites</h2>
-                        <h6>General Meetings</h6>
-                        <p>The bread and butter of MSA, these are our weekly meetings in MSA. These meetings offer a mix of religious, social, charitable, and educational activities. General Meetings are a great place to meet other Muslims, stay up to date with MSA news, and spend time de-stressing with other members!</p>
+                        <img src={pic1} alt="MSA meeting image"/>
+                        <img src={pic2} alt="Sheikh Umair Class"/>
+                        <img src={pic3} alt="MSA meeting image"/>
                     </div>
-                    <img src={pic2} alt="Sheikh Umair Class"/>
                     <div>
-                        <h6>Town Hall</h6>
-                        <p>A meeting, that meets up every other week, where MSA members can voice their opinions, concerns, and suggestions and work with officers to make MSA the best it can be!</p>
-                        <h6>Sheikh Umair's Class</h6>
-                        <p>MSA at UW is blessed to have Sheikh Umair, a local scholar and instructor at Mihraab, hold weekly Islamic classes free of charge to MSA students.</p>
-                    </div>
-                    <img src={pic3} alt="MSA meeting image"/>
-                    <div>
-                        <h6>MSA Dawah Table</h6>
-                        <p>As part of MSA’s mission to represent Islam on campus an educate non-Muslims about our faith, MSA has a table weekly outside of the HUB with Quran’s, pamphlets, and members ready to answer questions about Islam.</p>
-                        <h6>Halaqahs</h6>
-                        <p>We hold frequent halaqah’s during the quarter for MSA members to come together and discuss a wide variety of topics that interest them ranging from how to increase one’s iman to Islamic banking and finance.There are separate halaqah’s for brothers and sisters so as to allow them to discuss topics in a more comfortable setting.</p>
+                        <div>
+                            <h6>General Meetings</h6>
+                            <p>The bread and butter of MSA, these are our weekly meetings in MSA. These meetings offer a mix of religious, social, charitable, and educational activities. General Meetings are a great place to meet other Muslims, stay up to date with MSA news, and spend time de-stressing with other members!</p>
+                        </div>
+                        <div>
+                            <h6>Town Hall</h6>
+                            <p>A meeting, that meets up every other week, where MSA members can voice their opinions, concerns, and suggestions and work with officers to make MSA the best it can be!</p>
+                            <h6>Sheikh Umair's Class</h6>
+                            <p>MSA at UW is blessed to have Sheikh Umair, a local scholar and instructor at Mihraab, hold weekly Islamic classes free of charge to MSA students.</p>
+                        </div>
+                        <div>
+                            <h6>MSA Dawah Table</h6>
+                            <p>As part of MSA’s mission to represent Islam on campus an educate non-Muslims about our faith, MSA has a table weekly outside of the HUB with Quran’s, pamphlets, and members ready to answer questions about Islam.</p>
+                            <h6>Halaqahs</h6>
+                            <p>We hold frequent halaqah’s during the quarter for MSA members to come together and discuss a wide variety of topics that interest them ranging from how to increase one’s iman to Islamic banking and finance.There are separate halaqah’s for brothers and sisters so as to allow them to discuss topics in a more comfortable setting.</p>
+                        </div>
                     </div>
                 </div>
-                {/* social */}
+
                 <div className="grid-col">
+                    <div />
+                    <h2>Social Activites</h2>
                     <img src={pic4} alt="3 members at photo spot"/>
                     <div>
-                        <h2>Social Activites</h2>
                         <h6>MSA Welcome Back BBQ</h6>
                         <p>Every year on the first Friday of fall quarter, the MSA has a welcome back barbecue for new and existing Muslim students after Jummah at the IH. This BBQ is MSA’s first event of the year and is a chance to meet members of the MSA and become a part of the MSA community!</p>
                         <h6>Monthly Socials</h6>
@@ -55,11 +60,12 @@ function Activities() {
                         <p>Our Muslim talent show on campus. Put on by MSA members, Muslimtainment is a showcase of talents, skits, and homemade movies.</p>
                     </div>
                 </div>
-                {/* ih */}
+
                 <div className="grid-col">
+                    <div />
+                    <h2>Islamic House Activites</h2>
                     <img src={pic5} alt="Gathering with food"/>
                     <div>
-                        <h2>Islamic House Activites</h2>
                         <h6>Jummah Prayers</h6>
                         <p>
                             Khutbahs are delivered by students and imams from around the Seattle area. More information in Islamic House Page.                        

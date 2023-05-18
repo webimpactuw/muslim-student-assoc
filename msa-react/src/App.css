@@ -217,12 +217,29 @@ Events
 .upcoming-event {
     grid-template-columns: 0.75fr 1.25fr;
 }
+.member-info {
+    padding: 5vh 3.5vw;
+}
+
+.member-info a, .member-info li {
+    font-size: 20px;
+}
+
+.member-list {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: center;
+}
 
 .involved-subhead {
     align-items: start;
     height: 50px;
     position: relative;
     top: -50px;
+}
+
+.activities .grid-col {
+    padding: 3vh 3.5vw;
 }
 
 /* IH PROGRAMS */
@@ -248,22 +265,24 @@ About Page
 }
 .Our-Purpose {
     background: #F9F9F9;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-top: 40px;
-}
-.purpose-header {
     text-align: center;
 }
+
 .about-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    padding: 2vh 4vw;
+    gap: 2vw;
+    align-items: center;
+    text-align: start;
 }
-.purposes{
-    width: 50%;
-    margin-left: 100px;
+.about-container img {
+    max-width: 95%;
+    margin-left: 5%;
 }
-.purpose-pictures {
-    width: 50%;
-}
+
 /*
 About Gallery
 */
@@ -638,9 +657,9 @@ FOOTER
     .home-pics-sect, .ih-history-content, .links
     { flex-direction: column; }
     /* for grid system to columns */
-    .grid-col, .about-ih
-    { display: block;}
-    
+    .grid-col, .about-ih, .member-list
+    { grid-template-columns: 1fr; }
+
     /* other stuff */
     /* homepage pictures lineup */
     .home-pics-sect img { max-width: 80vw; }
@@ -653,13 +672,14 @@ FOOTER
     .links { padding: 0 10vw; }
 
     /* changed title spacing */
-    .header-section {padding: 185px 0px 40px 30px;}
+    .header-section {padding: 185px 30px 40px 30px;}
 
     /* changed footer spacing */
     .footer{ padding: 50px 5vw 0 5vw; }
     
     .events-head { margin: 2vh 9vw; }
     
+    /* extra padding for vertical display */
     .involved-elmt { padding: 3vh 0;}
 
     /* 

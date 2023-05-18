@@ -1,5 +1,5 @@
 import HeaderWB from "../../components/HeaderWB";
-
+import Hug from "../../assets/site-pics/memberhug.svg";
 function member() {
     const header = {
         title: "Become a Member",
@@ -9,15 +9,20 @@ function member() {
     return (
         <div>
             <HeaderWB props={header}/>
-            <div>
+            <div className="member-info">
                 <h2>Becoming a member is easy!</h2>
                 
-                <h6>The only requirements are:</h6>
-                <ul>
-                    <li>The student must be a Muslim.</li>
-                    <li>The student must be enrolled at UW Seattle. Students who have graduated cannot be members. </li>
-                    <li>The student must be in full agreement with the MSA purpose statement.</li>
-                </ul>
+                <div className="member-list">
+                    <div>
+                        <h6>The only requirements are:</h6>
+                        <ul>
+                            <li>The student must be a Muslim.</li>
+                            <li>The student must be enrolled at UW Seattle. Students who have graduated cannot be members. </li>
+                            <li>The student must be in full agreement with the MSA purpose statement.</li>
+                        </ul>
+                    </div>
+                    <img src={Hug} style={{height: "100%"}}/>
+                </div>
 
                 <h6>What is the purpose statement?</h6>
                 <p>
@@ -31,7 +36,7 @@ function member() {
                 <p>
                 Please refer to the MSA Membership Guidelines regarding eligibility to vote in elections and run for office. The short version is, if you show up and are active, you get to vote. For the specifics, refer here: 
                 </p>
-                <a target="_blank" rel="noopener" href="https://msauw.org/wp-content/uploads/2019/06/MSA-UW-Membership-Guidelines-2019-2020_.pdf">MSA-UW Membership Guidelines 2019-2020</a>
+                {/* <a target="_blank" rel="noopener" href="https://msauw.org/wp-content/uploads/2019/06/MSA-UW-Membership-Guidelines-2019-2020_.pdf">MSA-UW Membership Guidelines 2019-2020</a> */}
                 <p>
                 Once you are ready, fill out the form below to become a member!
                 </p>
