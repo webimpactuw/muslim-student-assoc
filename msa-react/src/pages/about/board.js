@@ -13,9 +13,8 @@ function Board() {
 
 
     //each board member object has a name, position, and picture, accessible as seen below
-    //note: add key
-    const board = content ? content.map((person) => 
-        <div>{person.name}
+    const board = content ? content.map((person, index) => 
+        <div key={index}>{person.name}
             {person.position}
             <img src={urlFor(person.picture).url()}/>
         </div>

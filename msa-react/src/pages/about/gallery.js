@@ -13,9 +13,8 @@ function Gallery() {
     }, []);
 
     //each gallery entry has a title and array of images, access with post.info and map the images
-    //note: add key
-    const posts = content ? content.map((post) => 
-        <div>{post.info}
+    const posts = content ? content.map((post, index) => 
+        <div key={index}>{post.info}
             {post.pictures.map((pic) => <img src={urlFor(pic).url()}/> )}
         </div>
     ) : null;
