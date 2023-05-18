@@ -1,8 +1,8 @@
-import Instagram from "../assets/contact/1-instagram-purple.svg";
-import Facebook from "../assets/contact/2-Facebook-purple.svg";
-import Discord from "../assets/contact/3-discord-purple.svg";
-import Email from "../assets/contact/4-email-purple.svg";
-import LinkTree from "../assets/contact/5-linktree-purple.svg";
+import Instagram from "../assets/contact/instagram-purple.svg";
+import Facebook from "../assets/contact/facebook-purple.svg";
+import Discord from "../assets/contact/discord-purple.svg";
+import Email from "../assets/contact/email-purple.svg";
+import LinkTree from "../assets/contact/linktree-purple.svg";
 
 import client from "../client";
 import { useEffect, useState } from "react";

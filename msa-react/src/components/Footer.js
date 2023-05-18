@@ -1,10 +1,10 @@
 import client from "../client";
 import { useEffect, useState } from "react";
 
-import Instagram from "../assets/social-media/1-instagram.svg";
-import Facebook from "../assets/social-media/2-Facebook.svg";
-import Discord from "../assets/social-media/3-discord.svg";
-import Tiktok from "../assets/social-media/4-tiktok.svg";
+import Instagram from "../assets/social-media/instagram.svg";
+import Facebook from "../assets/social-media/facebook.svg";
+import Discord from "../assets/social-media/discord.svg";
+import Tiktok from "../assets/social-media/tiktok.svg";
 
 function Footer() {
     const query = "*[_id == 'links'] { 'links': [instagram, facebook, discord, tiktok]}";
