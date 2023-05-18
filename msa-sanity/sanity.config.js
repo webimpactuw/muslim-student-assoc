@@ -4,7 +4,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 
 const singletonActions = new Set(["publish", "discardChanges", "restore"]);
-const singletonTypes = new Set(["event", "homepics"]);
+const singletonTypes = new Set(["event", "homepics", "links"]);
 
 //deployed at msa.sanity.studio
 //admin user: Ryan
@@ -24,7 +24,7 @@ export default defineConfig({
         S.list()
           .title("Content")
           .items([
-            // home-pics singleton
+            // singleton a list item with a custom child
             S.listItem()
               .title("Homepage Pictures")
               .child(
@@ -38,16 +38,22 @@ export default defineConfig({
             ...S.documentTypeListItems()
               .filter((listItem) => 
                 !singletonTypes.has(listItem.getId())),
-            // Our singleton type has a list item with a custom child
             S.listItem()
               .title("Upcoming Event")
               .child(
-                // render a single document instead of a list 
                 S.document()
                   .id("single-event")
                   .schemaType("event")
                   .documentId("event")
-              )
+              ),
+            S.listItem()
+              .title("Important Links")
+              .child(
+                S.document()
+                  .id("single-links")
+                  .schemaType("links")
+                  .documentId("links")
+              ),
           ]),
     }),
   visionTool()],
