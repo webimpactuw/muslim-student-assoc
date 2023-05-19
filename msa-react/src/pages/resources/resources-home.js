@@ -16,11 +16,11 @@ function ResourcesHome() {
                         <NavLink className="purple-btn-link" to="/resources/restaurants">HALAL RESTAURANTS</NavLink>
                     </button>
                 </div>
-                <div style={{width: "300px"}}>
+                {/* <div style={{width: "300px"}}>
                     <button className="purple-button resources-delivery">
                         <NavLink className="purple-btn-link" to="/resources/delivery">AL-BURAQ DELIVERY</NavLink>
                     </button>
-                </div>
+                </div> */}
             </div>
         </div>
     );
