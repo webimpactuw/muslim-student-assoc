@@ -12,19 +12,34 @@ function Board() {
     }, []);
 
 
-    //each board member object has a name, position, and picture, accessible as seen below
     const board = content ? content.map((person, index) => 
-        <div key={index}>{person.name}
-            {person.position}
-            <img src={urlFor(person.picture).url()}/>
+        <div className="board-member" key={index}>
+            <img className="member-pic" src={urlFor(person.picture).size(300, 300).url()}/>
+            <p>{person.name}</p>
+            <h6>{person.position}</h6>
         </div>
     ) : null;
 
     console.log(board);
     return (
-        <h1>MSA Board
-            {board}
-        </h1>
+        <div>
+            <div className="header-section">
+                <h1>MSA Board</h1>
+                <h3>MSA Officer Board 2022-2023 & Previous</h3>
+            </div>
+            <div className="info-text">
+                <h2>Officer Board</h2>
+                <p>The Officer Board does not do all of the work in MSA,
+                     rather they seek to delegate responsibilities and roles to general members. 
+                     The role of the Officer Board is to lead, while empowering everyone in the organization
+                      to contribute to the MSA cause. Officers are volunteers, and are motivated individuals who 
+                      sacrifice their time to better the MSA.
+                </p>
+            </div>
+            <div className="board">
+                {board}
+            </div>
+        </div>
     );
 };
 

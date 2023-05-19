@@ -283,13 +283,41 @@ About Page
     margin-left: 5%;
 }
 
+/* 
+Board Members
+*/
+.board {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 10vh 5vw;
+    background-color: #F9F9F9;
+}
+.board-member {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 150px;
+}
+
 /*
 About Gallery
 */
-.gallery-head {
-    background: no-repeat top right/cover url('./assets/backgrounds/gallery-bg.svg') var(--bg-light-purple);
-
+.gallery-img-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 1vh 1vw;
 }
+
+.gallery-img {
+    height: 300px;
+    padding: 30px 20px 70px 20px;
+    background-color: white;
+    box-shadow: 0 0 10px 5px #ccc;
+    max-width: 90%;
+}
+
 /*
 Homepage
 */
