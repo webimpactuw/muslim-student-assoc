@@ -125,7 +125,7 @@ IH HOME
     padding: 350px 0px 130px 75px;
 }
 
-.body-section {
+.body-section, .pray-body-section {
     padding: 100px 80px;
 }
 
@@ -313,6 +313,69 @@ a:link {
 
 .social-media-contact {
     padding-bottom: 4.3vh;
+}
+
+/* 
+RESTAURANTS 
+*/
+.restaurants-overall {
+    align-items: center;
+}
+
+.center-headings {
+    text-align: center;
+}
+
+.halal-restaurants {
+    padding-top: 11vh;
+}
+
+.list-restaurants-heading {
+    padding-bottom: 11vh;
+}
+
+.restaurants-body {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 10vh;
+}
+
+.restaurant {
+    padding: 0vh 0vw 0vh 15vw;
+    align-self: center;
+    text-align: left;
+    flex-grow: 2;
+}
+
+.restaurant-pray-name {
+    color: black;
+}
+
+.restaurant-address-1 {
+    margin: 0;
+    padding-left: 3vw;
+}
+
+.restaurant-address-2 {
+    margin-top: 0;
+    padding-left: 3vw;
+}
+
+.halal-restaurants-maps {
+    padding-left: 15vw;
+}
+
+/* 
+WHERE TO PRAY
+*/
+
+.pray-headings {
+    padding: 10vh;
+}
+
+.pray-arrow-down {
+    display: none;
 }
 
 /* 
@@ -575,12 +638,12 @@ FOOTER
     */
     /* ih prayer times table scaling and padding */
     .body-section { padding: 6vh 0; }
-    .ih-content, .ih-history-content, .history-next 
+    .ih-content, .ih-history-content, .history-next, .pray-content 
     { padding: 0 9vw; }
-    .ih-content {
+    .ih-content, .pray-content {
         margin-top: 50px;
     }
-    .ih-content-table {
+    .ih-content-table, .pray-content-table {
         height: 55vh;
         padding-bottom: 70px;
     }
@@ -656,6 +719,30 @@ FOOTER
 
     p.address{
         margin-top: 0vh;
+    }
+
+    /* 
+    WHERE TO PRAY
+    */
+
+    .pray-headings {
+        padding: 4vh 0vw 0vh;
+    }
+
+    .pray-arrow-down {
+        display: none;
+    }
+
+    .pray-body-section {
+        padding: 0vh 0vw 5vh;
+    }
+
+    .pray-content {
+        margin: 5vh 0vw 5vh 0vw;
+    }
+
+    .pray-content-table {
+        padding-bottom: 5vh;
     }
 
     /* 
