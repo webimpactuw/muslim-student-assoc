@@ -511,7 +511,7 @@ FOOTER
     { padding: 10vh 9vw; }
 
     /* column instead of row */
-    .home-pics-sect, .ih-history-content, .links
+    .home-pics-sect, .ih-history-content, .links, .about-container
     { flex-direction: column; }
     /* for grid system to columns */
     .pillars, .about-ih
