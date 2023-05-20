@@ -231,6 +231,12 @@ About Gallery
     background: no-repeat top right/cover url('./assets/backgrounds/gallery-bg.svg') var(--bg-light-purple);
 
 }
+.gallery-img-polaroid{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px; /* Adjust the padding size as needed */
+    margin: 10px;
+}
 /*
 Homepage
 */
