@@ -11,19 +11,6 @@ function IHHome() {
             
             <div className="body-section">
                 <div className="about-ih">
-                    <div className="ih-content-table" id="wrap">
-                        <h6 className="prayer-times">Prayer Times</h6>
-                        <iframe 
-                            id="frame"
-                            loading="lazy" 
-                            src="https://masjidal.com/widget/simple/v3?masjid_id=RKxwXOdO" 
-                            type="text/html" 
-                            width="100%" 
-                            height="100%" 
-                            frameborder="0" 
-                            allowtransparency="true"
-                        />
-                    </div>
                     <div className="ih-content">
                         <h2 className="about-the-ih-subhead">ABOUT THE IH</h2>
                         <p className="ih-description">
@@ -32,20 +19,36 @@ function IHHome() {
                             The IH also serves the greater Seattle community through weekly Jummah prayers, community dinners, and Sunday school programs for children. We are one of the few MSAs around the country that have a mosque we can call our own. 
                         </p>
                     </div>
-                </div>
-
-                <div className="history-next">
-                    <h2 className="ih-history-title">THE HISTORY OF THE IH</h2>
-                    <div className="next-arrow-div">
-                        <h6>Read the full story below</h6>
-                        <img 
-                            className="arrow-down"
-                            src={ArrowSvg}
-                            alt="Down Arrow"
-                        />
+                    <div className="ih-content-table">
+                        <h6 className="prayer-times">Prayer Times</h6>
+                        <iframe 
+                            className="ih-content-table"
+                            loading="lazy" 
+                            src="https://masjidal.com/widget/simple/v3?masjid_id=RKxwXOdO" 
+                            type="text/html" 
+                            width="100%" 
+                            height="600" 
+                            frameborder="0" 
+                            allowtransparency="true"
+                        >
+                </iframe>
                     </div>
                 </div>
 
+                <div className="next-arrow-div">
+                    <h6 className="read-full-story-subhead">Read the full story below</h6>
+                    <img 
+                        className="arrow-down"
+                        src={ArrowSvg}
+                        alt="Down Arrow"
+                    />
+                </div>
+                <div className="ih-library-content">
+                    <h2 className="about-the-ih-subhead">ISLAMIC HOUSE LIBRARY</h2>
+                    <p className="ih-library-description">The Islamic House is home to a collection of books that have been donated by students over the years. We have textbooks, general school books, and Islamic books as well.
+                        Come check is out at []</p>
+                </div>
+                <h2 className="ih-history-title">THE HISTORY OF THE IH</h2>
                 <div className="ih-history-content">
                     <div className="column">
                         <p className="column-item-one">

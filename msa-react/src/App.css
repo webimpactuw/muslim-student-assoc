@@ -192,24 +192,22 @@ IH HOME
     margin-top: 16px;
 }
 
-.ih-history-title {
-    padding-left: 80px;
-}
-
 .ih-history-content {
     display: flex;
     gap: 5vw;
-    padding: 50px 4vw;
-}
-
-.ih-history-title {
-    padding-left: 0;
-    text-align: center;
 }
 
 .column {
     flex: 2;
     white-space: pre-wrap;
+}
+
+.ih-library-content, .ih-history-content {
+    padding: 50px 4vw;
+}
+
+.ih-history-title {
+    padding: 0vh 4vw;
 }
 
 /* 
