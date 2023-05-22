@@ -192,24 +192,22 @@ IH HOME
     margin-top: 16px;
 }
 
-.ih-history-title {
-    padding-left: 80px;
-}
-
 .ih-history-content {
     display: flex;
     gap: 5vw;
-    padding: 50px 4vw;
-}
-
-.ih-history-title {
-    padding-left: 0;
-    text-align: center;
 }
 
 .column {
     flex: 2;
     white-space: pre-wrap;
+}
+
+.ih-library-content, .ih-history-content {
+    padding: 50px 4vw;
+}
+
+.ih-history-title {
+    padding: 0vh 4vw;
 }
 
 /* 
@@ -788,14 +786,18 @@ FOOTER
     */
     /* ih prayer times table scaling and padding */
     .about-ih { padding: 6vh 0; }
-    .ih-content, .ih-history-content, .history-next, .pray-content 
-    { padding: 0 9vw; }
+    .ih-content, .ih-history-content, .history-next, .pray-content, .ih-library-content
+    { padding: 2vh 9vw; }
     .ih-content, .pray-content {
         margin-top: 50px;
     }
     .ih-content-table, .pray-content-table {
         height: 55vh;
         padding-bottom: 70px;
+    }
+
+    .ih-history-title {
+        padding: 0vh 9vw;
     }
 
     /* 
