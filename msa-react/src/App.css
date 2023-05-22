@@ -321,7 +321,13 @@ About Gallery
     box-shadow: 0 0 10px 5px #ccc;
     max-width: 90%;
 }
-
+.gallery-img-polaroid{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    padding-bottom: 45px;
+    margin: 10px;
+}
 /*
 Homepage
 */
@@ -749,7 +755,7 @@ FOOTER
     { padding: 5vh 9vw; }
 
     /* column instead of row */
-    .home-pics-sect, .ih-history-content, .links
+    .home-pics-sect, .ih-history-content, .links, .about-container
     { flex-direction: column; }
     /* for grid system to columns */
     .grid-col, .about-ih, .member-list
