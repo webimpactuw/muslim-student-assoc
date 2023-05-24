@@ -14,7 +14,8 @@ function Board() {
 
     const board = content ? content.map((person, index) => 
         <div className="board-member" key={index}>
-            <img className="member-pic" src={urlFor(person.picture).size(300, 300).url()}/>
+            <img className="member-pic" alt="board member headshot"
+                src={urlFor(person.picture).size(300, 300).url()}/>
             <p>{person.name}</p>
             <h6>{person.position}</h6>
         </div>

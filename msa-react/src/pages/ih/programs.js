@@ -1,6 +1,5 @@
 import client from "../../client";
 import { useEffect, useState } from "react";
-import HeaderWB from "../../components/HeaderWB";
 import ProgramCard from "../../components/ProgramCard";
 import DownArrow from "../../components/DownArrow";
 

@@ -243,12 +243,10 @@ Events
     height: 100%;
     max-width: 100%;
 }
+.involved-elmt { padding: 3vh 0;}
 
 .involved-subhead {
-    align-items: start;
-    height: 50px;
-    position: relative;
-    top: -50px;
+    padding: 8vh 3.5vw 0;
 }
 
 .activities .grid-col {
@@ -792,7 +790,11 @@ FOOTER
     .events-head { margin: 2vh 9vw; }
     
     /* extra padding for vertical display */
-    .involved-elmt { padding: 3vh 0;}
+    .involved-subhead { 
+        padding: 4vh 9vw 0; 
+        position: relative;
+        top: 2vh;
+    }
 
     /* 
     IH HOME

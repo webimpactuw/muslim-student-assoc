@@ -22,10 +22,11 @@ function Activities() {
                 <div className="grid-col">
                     <div />
                     <h2>General Activites</h2>
+
                     <div>
-                        <img src={pic1} alt="MSA meeting image"/>
+                        <img src={pic1} alt="MSA meeting"/>
                         <img src={pic2} alt="Sheikh Umair Class"/>
-                        <img src={pic3} alt="MSA meeting image"/>
+                        <img src={pic3} alt="MSA meeting"/>
                     </div>
                     <div>
                         <div>
@@ -50,7 +51,8 @@ function Activities() {
                 <div className="grid-col">
                     <div />
                     <h2>Social Activites</h2>
-                    <img src={pic4} alt="3 members at photo spot"/>
+
+                    <img src={pic4} alt="3 members under arch"/>
                     <div>
                         <h6>MSA Welcome Back BBQ</h6>
                         <p>Every year on the first Friday of fall quarter, the MSA has a welcome back barbecue for new and existing Muslim students after Jummah at the IH. This BBQ is MSA’s first event of the year and is a chance to meet members of the MSA and become a part of the MSA community!</p>
@@ -64,6 +66,7 @@ function Activities() {
                 <div className="grid-col">
                     <div />
                     <h2>Islamic House Activites</h2>
+
                     <img src={pic5} alt="Gathering with food"/>
                     <div>
                         <h6>Jummah Prayers</h6>

@@ -14,10 +14,10 @@ function Involved() {
     return (
         <div>
             <HeaderWB props={header}/>
-            <div>
-                <div className="grid-col grey-bg">
-                    <h2 className="involved-subhead">Ways to Get Involved</h2>
-                    <div />
+
+            <div className="grey-bg">
+                <h2 className="involved-subhead">Ways to Get Involved</h2>
+                <div className="grid-col">
                     <img src={pic6} alt="MSA Meeting"/>
                     <div className="involved-elmt">
                         <h6>Come to Our Events and Meetings</h6>
@@ -28,7 +28,8 @@ function Involved() {
                             <NavLink to="/events" className="purple-btn-link">SEE OUR EVENTS</NavLink>
                         </button>
                     </div>
-                    <img src={pic7} alt="3 Brothers picture"/>
+
+                    <img src={pic7} alt="3 Brothers"/>
                     <div className="involved-elmt">
                         <h6>Become a member</h6>
                         <p>
@@ -38,6 +39,7 @@ function Involved() {
                             <NavLink to="/events/member" className="purple-btn-link">BECOME A  MEMBER</NavLink>
                         </button>
                     </div>
+                    
                     <img src={pic8} alt="Sheikh Umair"/>
                     <div className="involved-elmt">
                         <h6>Run for Office and Vote in Elections</h6>

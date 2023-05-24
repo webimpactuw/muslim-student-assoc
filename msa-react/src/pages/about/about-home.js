@@ -46,9 +46,9 @@ function AboutHome() {
                         <img src={purpose5} alt="Purpose 5"/>
                     </div>
                     <div className="purpose-pictures">
-                        <img src={prayerPhoto} alt="Prayer Photo"/>
-                        <img src={mosquePhoto} alt="Mosque Photo"/>
-                        <img src={quranPhoto} alt="Quran Photo"/>
+                        <img src={prayerPhoto} alt="Prayer"/>
+                        <img src={mosquePhoto} alt="Mosque"/>
+                        <img src={quranPhoto} alt="Quran"/>
                     </div>
                 </div>
             </div>
