@@ -32,7 +32,7 @@ function AboutHome() {
             </div>
             
 
-            <div className="Our-Purpose">
+            <div className="Our-Purpose grey-bg">
                 <div className="purpose-header">
                     <h2>OUR PURPOSE</h2>
                 </div>

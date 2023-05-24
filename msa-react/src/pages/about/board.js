@@ -36,7 +36,7 @@ function Board() {
                       sacrifice their time to better the MSA.
                 </p>
             </div>
-            <div className="board">
+            <div className="board grey-bg">
                 {board}
             </div>
         </div>

@@ -18,7 +18,7 @@ function Activities() {
         <div>
             <HeaderWB props={header}/>
             {/* content */}
-            <div className="activities">
+            <div className="activities grey-bg">
                 <div className="grid-col">
                     <div />
                     <h2>General Activites</h2>

@@ -11,6 +11,7 @@
   --text-light-purple: #7E719B;
   --bg-med-purple: #93649C;
   --bg-light-purple: #D7CCEC;
+  --bg-light-grey: #f9f9f9;
 }
 
 /* FONT */
@@ -126,6 +127,10 @@ USEFUL ATTRIBUTES
     background: var(--bg-light-purple);
 }
 
+.grey-bg {
+    background-color: var(--bg-light-grey);
+}
+
 /* OTHER STYLING */
 
 /* WHAT IS ISLAM */
@@ -231,6 +236,12 @@ Events
     display: grid;
     grid-template-columns: 1.25fr 0.75fr;
     align-items: center;
+    padding: 3vh 0;
+}
+
+.hug-pic {
+    height: 100%;
+    max-width: 100%;
 }
 
 .involved-subhead {
@@ -245,8 +256,8 @@ Events
 }
 
 /* IH PROGRAMS */
-#programs h2 {
-    padding-left: 2.5vw;
+#programs h2{
+    padding: 5vh 0 0 3.5vw;
 }
 .programs-list {
     gap: 1vw;
@@ -266,7 +277,6 @@ About Page
     background: no-repeat top right/cover url('./assets/backgrounds/about-bg.svg') var(--bg-light-purple);
 }
 .Our-Purpose {
-    background: #F9F9F9;
     padding-bottom: 50px;
     padding-top: 40px;
     text-align: center;
@@ -294,7 +304,6 @@ Board Members
     flex-wrap: wrap;
     gap: 3vw;
     padding: 10vh 5vw;
-    background-color: #F9F9F9;
 }
 .board-member {
     text-align: center;
@@ -519,7 +528,7 @@ WHERE TO PRAY
 */
 
 .pray-headings {
-    padding: 10vh;
+    padding-top: 10vh;
 }
 
 .pray-arrow-down {
@@ -758,6 +767,10 @@ FOOTER
     /* for grid system to columns */
     .grid-col, .about-ih, .member-list
     { grid-template-columns: 1fr; }
+
+    /* reverse order for grids */
+    .hug-pic    
+    { order: -1; }
 
     /* other stuff */
     /* homepage pictures lineup */

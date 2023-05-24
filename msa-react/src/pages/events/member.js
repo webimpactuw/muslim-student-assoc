@@ -21,7 +21,7 @@ function member() {
                             <li>The student must be in full agreement with the MSA purpose statement.</li>
                         </ul>
                     </div>
-                    <img src={Hug} style={{height: "100%"}}/>
+                    <img src={Hug} className="hug-pic"/>
                 </div>
 
                 <h6>What is the purpose statement?</h6>

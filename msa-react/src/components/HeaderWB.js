@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import ArrowSvg from "../assets/arrow-down.svg";
+import DownArrow from "./DownArrow";
 
 // white header section with buttons
 
@@ -29,14 +29,7 @@ function HeaderWB ({props: {title, subtitle, description, buttons}}) {
                     )}                
                 </div>
             : null}
-            <div className="header-arrow-down">
-                <h6>Find out more below</h6>
-                <img 
-                    className="arrow-down"
-                    src={ArrowSvg}
-                    alt="Down Arrow"
-                />
-            </div>
+            <DownArrow />
         </div>
     );
 }
