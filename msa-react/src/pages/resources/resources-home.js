@@ -4,7 +4,7 @@ function ResourcesHome() {
     return (
         <div className="lantern-header header-background-purple">
             <h1 className="resources-heading">Resources</h1>
-            <div className="links">
+            <div className="links donate-page">
                 <div style={{width: "300px"}}>
 
                     <button className="purple-button resources-pray">
