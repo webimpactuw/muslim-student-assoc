@@ -20,11 +20,6 @@ function Pray() {
                     </div>
                     <div className="pray-content-table" id="wrap">
                         <h6 className="prayer-times">Prayer Times</h6>
-                        <img 
-                            className="pray-arrow-down"
-                            src={ArrowSvg}
-                            alt="Down Arrow"
-                        />
                         <iframe 
                             id="frame"
                             loading="lazy" 

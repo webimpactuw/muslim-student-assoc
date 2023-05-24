@@ -117,6 +117,10 @@ REUSED COMPONENTS
     flex-wrap: wrap;
 }
 
+.link-container {
+    width: 300px;
+}
+
 /* 
 USEFUL ATTRIBUTES 
 */
@@ -408,7 +412,7 @@ RESOURCES
 }
 
 .donate-page {
-    gap: 16vw;
+    gap: 13vw;
 }
 
 .contact-header {
@@ -427,7 +431,7 @@ RESOURCES
     margin: 0vh;
 }
 
-h6.mail-address {
+.mail-address {
     color: var(--dark-purple);
     margin: 0;
 }
@@ -527,10 +531,6 @@ WHERE TO PRAY
 
 .pray-headings {
     padding-top: 10vh;
-}
-
-.pray-arrow-down {
-    display: none;
 }
 
 /* 
@@ -779,7 +779,11 @@ FOOTER
     .arrow-down { height: 15px; }
     
     /* lists of links display vertical, padding */
-    .links { padding: 0 10vw; }
+    .links { 
+        padding: 0 10vw; 
+        gap: 30px;
+    }
+    .link-container { width: 100%; }
 
     /* changed title spacing */
     .header-section {padding: 185px 30px 40px 30px;}
@@ -796,149 +800,48 @@ FOOTER
         top: 2vh;
     }
 
-    /* 
-    IH HOME
-    */
+    /* IH HOME */
     /* ih prayer times table scaling and padding */
     .about-ih { padding: 6vh 0; }
-    .ih-content, .ih-history-content, .history-next, .pray-content, .ih-library-content
+    .ih-history-title { padding: 0vh 9vw; }
+    .ih-content, .ih-history-content, .history-next, .ih-library-content
     { padding: 2vh 9vw; }
-    .ih-content, .pray-content {
-        margin-top: 50px;
-    }
+    .ih-content { margin-top: 50px; }
     .ih-content-table, .pray-content-table {
         height: 55vh;
         padding-bottom: 70px;
     }
 
-    .ih-history-title {
-        padding: 0vh 9vw;
-    }
-
-    /* 
-    HOMEPAGE
-    */
-    
+    /* HOMEPAGE */
     .home-header {
         background: no-repeat bottom right url('./assets/backgrounds/home-mobile-bg.svg') var(--bg-light-purple); 
         background-size: contain;
     }
+    .home-header-txt { padding: 7vh 3.5vh; }
 
-    .home-header-txt {
-        padding: 7vh 0 7vh 4vh;
-    }
-
-    .info-text > p {
-        padding-top: 2px;
-    }
-
-    /* 
-    RESOURCES
-    */
+    /* RESOURCES */
     .lantern-header {
-        background-color: var(--bg-light-purple);
-        background-image: url('./assets/backgrounds/lantern-left.svg'),
-                        url('./assets/backgrounds/lantern-right.svg'),
-                        url('./assets/backgrounds/clouds.svg');
-        background-position: top left, top right, center;
-        background-repeat: no-repeat;
         background-size: auto 25%, auto 30%, cover;
         padding: 10vh 0vw;
-        text-align: center;
-        align-content: center;
     }
 
-    .resources-heading {
-        padding-bottom: 6vh;
-    }
-
-    .links, .donate-page {
-        gap: 30px;
-    }
-
-    /* 
-    CONTACT
-    */
+    /* CONTACT */
     .contact-header {
-        background-color: var(--bg-light-purple);
         background-image: url('./assets/backgrounds/moon-lantern.svg'),
                             url('./assets/backgrounds/clouds.svg');
         background-position: top right, center;
         background-size: auto 40%, cover;
-        background-repeat: no-repeat;
         padding: 7vh 7vw 5vh;
     }
 
-    .contact-heading {
-        padding-bottom: 0vh;
-        margin: 0vh;
-    }
+    .contact-heading { padding-bottom: 0vh; }
 
-    h6.mail-address {
-        color: var(--dark-purple);
-        margin: 0;
-    }
+    /* WHERE TO PRAY */
+    .pray-headings { padding: 4vh 0vw 0vh; }
+    .pray-body-section { padding: 0; }
+    .pray-content { padding: 0 9vw 5vh; }
 
-    .question {
-        word-wrap: break-word;
-        white-space: initial;
-    }
-
-    p.address{
-        margin-top: 0vh;
-    }
-
-    /* 
-    WHERE TO PRAY
-    */
-
-    .pray-headings {
-        padding: 4vh 0vw 0vh;
-    }
-
-    .pray-arrow-down {
-        display: none;
-    }
-
-    .pray-body-section {
-        padding: 0vh 0vw 5vh;
-    }
-
-    .pray-content {
-        margin: 5vh 0vw 5vh 0vw;
-    }
-
-    .pray-content-table {
-        padding-bottom: 5vh;
-    }
-
-    /* 
-    WHERE TO PRAY
-    */
-
-    .pray-headings {
-        padding: 4vh 0vw 0vh;
-    }
-
-    .pray-arrow-down {
-        display: none;
-    }
-
-    .pray-body-section {
-        padding: 0vh 0vw 5vh;
-    }
-
-    .pray-content {
-        margin: 5vh 0vw 5vh 0vw;
-    }
-
-    .pray-content-table {
-        padding-bottom: 5vh;
-    }
-
-    /* 
-    IH PRAYER TIMES IFRAME SCALING
-     */
+    /* IH PRAYER TIMES IFRAME SCALING */
     #frame { width: 111%; height: 120%; }
     #frame {
         zoom: normal;
