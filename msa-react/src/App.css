@@ -492,6 +492,200 @@ RESTAURANTS
     padding-left: 3vw;
 }
 
+/* 
+NAVBAR 
+*/
+
+/* nav background and spacing */
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px;
+    height: 94px;
+}
+
+/* logo styling */
+.logo img {
+    padding: 12px 0 0 5px;
+    height: 72px; 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.navItem {
+    position: relative;
+    display: inline-block;
+}
+
+/* link buttons */
+.navItem a, .donate {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--dark-purple);
+    font-size: 18px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    padding: 34px 24px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 20px 24px;
+    text-decoration: none;
+    display: block;
+    border-top: 1px solid white;
+    background-color: var(--bg-med-purple); 
+}
+
+/* Show the dropdown menu on hover */
+.navItem:hover .dropdown-content { display: block; }
+
+/* Change the background color of the dropdown button on hover */
+.navItem:hover a { color: white; }
+.navItem:hover .dropbtn { background-color: var(--dark-purple); }
+
+/* donate button smaller than others */
+.donate {
+    padding: 7px 20px 10px 20px;
+    color: white;
+    border-radius: 25px;
+    margin-left: 15px;
+}
+
+/* navBar shrinks if the screen is too narrow for a full bar, e.g. split screen */
+@media screen and (max-width: 1000px) {
+    .navItem a, .donate {
+        font-size: calc(0.6vw + 12px);
+    }
+    .dropbtn {
+        padding: 37px calc(4.4vw - 20px);
+    }
+    nav {
+        padding: 0px calc(12vw - 60px);
+    }
+    .logo img {
+        height: calc(52px + 2vw); 
+    }
+    .donate {
+        padding: 7px 2vw 10px 2vw;
+        margin-left: calc(2vw - 5px);
+    }
+}
+
+/* hamburger menu */
+/* hide by default */
+.hamburger, .hamburger-list{ display: none; }
+
+.hamburger-icon { padding: 35px 20px; }
+
+.hamburger-list {
+    position: fixed;
+    left: 20vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80vw;
+    background-color: var(--dark-purple);
+    z-index: 100;
+}
+.hamburger-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hamburger-list ul {
+    list-style: none;
+    margin: 0;
+}
+
+.menuX {
+    position: relative;
+    left: calc(80vw - 20px - 40px);
+    top: 35px;
+}
+
+/* link padding */
+.burger-links { padding: 7vh 12vw; }
+.burger-links > li { padding-top: 25px; }
+.subpage-cont { padding-top: 5px; }
+.subpages { padding-top: 15px; }
+
+.hamburger-arrow {
+    height: 16px;
+    max-width: 18px;
+    float: right;
+    margin-top: 6px;
+}
+
+/* donate button */
+.donate-buffer { height: 140px;}
+.mobile-donate {
+    background-color: var(--bg-med-purple);
+    position: relative;
+    top: 40px;
+    margin-left: calc(40vw - 80px);
+}
+
+
+/* 
+FOOTER 
+*/
+
+/* lay out section */
+.footer{
+    background-color: var(--dark-purple);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 50px 75px 0 75px;
+    z-index: 0;
+}  
+
+/* text styling */
+.footer h4, .footer p {
+    color: white;
+    margin: 4px;
+    font-size: 20px;
+}
+
+.footer p { font-size: 16px; }
+
+/* added for spacing (see Footer.js) */
+.divider { padding: 10px; }
+.footer-text { padding-bottom: 20px; }
+
+/* social media links */
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-media-icons img {
+    height: 30px;
+    margin: 10px 8px;
+}
+
+/* bottom right watermark */
+.made-with-love {
+    background-color: var(--bg-med-purple);
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px 21px;
+}
+
+
 /* MOBILE */
 @media screen and (max-width: 600px) {
     /* FONTS */
@@ -500,6 +694,11 @@ RESTAURANTS
     h2 {font-size: 25px; }
     h3 {font-size: 20px; }
     h6 {font-size: 20px; }
+
+    /* show mobile MENU */
+    .hamburger { display: block; }
+    .navItem, .donate { display: none; }
+    .logo img { height: 64px; }
 
     /* COMMON CHANGES */
 
@@ -539,6 +738,9 @@ RESTAURANTS
 
     /* changed title spacing */
     .header-section {padding: 185px 30px 40px 30px;}
+
+    /* changed footer spacing */
+    .footer{ padding: 50px 5vw 0 5vw; }
 
     /* PAGE STYLING */
 
