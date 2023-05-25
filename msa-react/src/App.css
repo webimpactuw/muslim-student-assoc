@@ -492,230 +492,19 @@ RESTAURANTS
     padding-left: 3vw;
 }
 
-/* 
-NAVBAR 
-*/
-
-/* nav background and spacing */
-nav {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 60px;
-}
-
-/* logo styling */
-.logo img {
-    padding: 15px 0px 9px 0;
-    height: 76px; 
-}
-
-/* The container <div> - needed to position the dropdown content */
-.navItem {
-    position: relative;
-    display: inline-block;
-}
-
-/* link buttons */
-.navItem a, .donate {
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--dark-purple);
-    font-size: 18px;
-}
-
-/* Dropdown Button */
-.dropbtn {
-    padding: 34px 24px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: white;
-    padding: 20px 24px;
-    text-decoration: none;
-    display: block;
-    border-top: 1px solid white;
-}
-
-/* Show the dropdown menu on hover */
-.navItem:hover .dropdown-content { display: block; }
-.navItem:hover .dropdown-content a { 
-    background-color: var(--bg-med-purple); 
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.navItem:hover a { color: white; }
-.navItem:hover .dropbtn { background-color: var(--dark-purple); }
-
-/* donate button smaller than others */
-.donate {
-    padding: 7px 20px 10px 20px;
-    color: white;
-    border-radius: 25px;
-    margin-left: 15px;
-}
-
-/* navBar shrinks if the screen is too narrow for a full bar, e.g. split screen */
-@media screen and (max-width: 1000px) {
-    .navItem a, .donate {
-        font-size: calc(0.6vw + 12px);
-    }
-    .dropbtn {
-        padding: 37px calc(4.4vw - 20px);
-    }
-    nav {
-        padding: 0px calc(12vw - 60px);
-    }
-    .logo img {
-        height: calc(56px + 2vw); 
-    }
-    .donate {
-        padding: 7px 2vw 10px 2vw;
-        margin-left: calc(2vw - 5px);
-    }
-}
-
-/* hamburger menu */
-.hamburger, .hamburger-list{
-    display: none;
-}
-
-.hamburger-icon {
-    padding: 35px 20px;
-}
-
-/* sizing and styling */
-.logo img { height: 64px; }
-nav { height: 94px; }
-
-.hamburger-list {
-    position: fixed;
-    left: 20vw;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 80vw;
-    /* min-height: 100vh; */
-    background-color: var(--dark-purple);
-    z-index: 100;
-}
-.hamburger-list a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-.hamburger-list ul {
-    list-style: none;
-    margin: 0;
-}
-
-.menuX {
-    position: relative;
-    left: calc(80vw - 20px - 40px);
-    top: 35px;
-}
-
-/* link padding */
-.burger-links { padding: 7vh 12vw; }
-.burger-links > li { padding-top: 25px; }
-.subpage-cont { padding-top: 5px; }
-.subpages { padding-top: 15px; }
-
-.hamburger-arrow {
-    height: 16px;
-    max-width: 18px;
-    float: right;
-    margin-top: 6px;
-}
-
-/* donate button */
-.donate-buffer { height: 140px;}
-.mobile-donate {
-    background-color: var(--bg-med-purple);
-    position: relative;
-    top: 40px;
-    margin-left: calc(40vw - 80px);
-}
-
-
-/* 
-FOOTER 
-*/
-
-/* lay out section */
-.footer{
-    background-color: var(--dark-purple);
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    padding: 50px 75px 0 75px;
-    z-index: 0;
-}  
-
-/* text styling */
-.footer h4, .footer p {
-    color: white;
-    margin: 4px;
-    font-size: 20px;
-}
-
-.footer p { font-size: 16px; }
-
-/* added for spacing (see Footer.js) */
-.divider { padding: 10px; }
-.footer-text { padding-bottom: 20px; }
-
-/* social media links */
-.social-media {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.social-media-icons img {
-    height: 30px;
-    margin: 10px 8px;
-}
-
-/* bottom right watermark */
-.made-with-love {
-    background-color: var(--bg-med-purple);
-    border-radius: 10px 10px 0px 0px;
-    padding: 15px 21px;
-}
-
-
 /* MOBILE */
 @media screen and (max-width: 600px) {
-    /* smaller fonts and button */
+    /* FONTS */
     p { font-size: 15px; }
     h1 {font-size: 30px; }
     h2 {font-size: 25px; }
     h3 {font-size: 20px; }
     h6 {font-size: 20px; }
 
-    .purple-button {
-        font-size: 16px;
-        min-width: 160px;
-        padding: 20px 30px;
-    }
-
-    /* mobile menu */
-    .hamburger { display: block; }
-    .navItem, .donate { display: none; }
+    /* COMMON CHANGES */
 
     /* mobile side spacing */
-    .info-text, .grid-col
+    .info-text, .grid-col, .home-header-txt
     { padding: 5vh 9vw; }
 
     /* column instead of row */
@@ -726,13 +515,17 @@ FOOTER
     { grid-template-columns: 1fr; }
 
     /* reverse order for grids */
-    .hug-pic    
+    .hug-pic
     { order: -1; }
 
-    /* other stuff */
-    /* homepage pictures lineup */
-    .home-pics-sect img { max-width: 80vw; }
-    .picsLeft, .picsRight { padding: 0 10vw; }
+    /* REUSED COMPONENTS */
+
+    /* button sizing */
+    .purple-button {
+        font-size: 16px;
+        min-width: 160px;
+        padding: 20px 30px;
+    }
 
     /* arrow sizing */
     .arrow-down { height: 15px; }
@@ -747,17 +540,16 @@ FOOTER
     /* changed title spacing */
     .header-section {padding: 185px 30px 40px 30px;}
 
-    /* changed footer spacing */
-    .footer{ padding: 50px 5vw 0 5vw; }
-    
-    .events-head { margin: 2vh 9vw; }
-    
-    /* extra padding for vertical display */
-    .involved-subhead { 
-        padding: 4vh 9vw 0; 
-        position: relative;
-        top: 2vh;
+    /* PAGE STYLING */
+
+    /* HOMEPAGE */
+    .home-header {
+        background: no-repeat bottom right url('./assets/backgrounds/home-mobile-bg.svg') var(--bg-light-purple); 
+        background-size: contain;
     }
+    /* homepage pictures lineup */
+    .home-pics-sect img { max-width: 80vw; }
+    .picsLeft, .picsRight { padding: 0 10vw; }
 
     /* IH HOME */
     /* ih prayer times table scaling and padding */
@@ -771,18 +563,26 @@ FOOTER
         padding-bottom: 70px;
     }
 
-    /* HOMEPAGE */
-    .home-header {
-        background: no-repeat bottom right url('./assets/backgrounds/home-mobile-bg.svg') var(--bg-light-purple); 
-        background-size: contain;
+    /* events */
+    .events-head { margin: 2vh 9vw; }
+    
+    /* get involved extra padding for vertical display */
+    .involved-subhead { 
+        padding: 4vh 9vw 0; 
+        position: relative;
+        top: 2vh;
     }
-    .home-header-txt { padding: 7vh 9vw; }
 
     /* RESOURCES */
     .lantern-header {
         background-size: auto 25%, auto 30%, cover;
         padding: 10vh 0vw;
     }
+
+    /* WHERE TO PRAY */
+    .pray-headings { padding: 4vh 0vw 0vh; }
+    .pray-body-section { padding: 0; }
+    .pray-content { padding: 0 9vw 5vh; }
 
     /* CONTACT */
     .contact-header {
@@ -792,13 +592,7 @@ FOOTER
         background-size: auto 40%, cover;
         padding: 7vh 7vw 5vh;
     }
-
     .contact-heading { padding-bottom: 0vh; }
-
-    /* WHERE TO PRAY */
-    .pray-headings { padding: 4vh 0vw 0vh; }
-    .pray-body-section { padding: 0; }
-    .pray-content { padding: 0 9vw 5vh; }
 
     /* IH PRAYER TIMES IFRAME SCALING */
     #frame { width: 111%; height: 120%; }
