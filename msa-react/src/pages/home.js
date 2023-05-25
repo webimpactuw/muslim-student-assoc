@@ -20,14 +20,18 @@ const Home = () => {
                     <h3>AT THE UNIVERSITY OF WASHINGTON</h3>
                     <p>Join if you want to be a part of a supportive <br/>and inclusive community of Muslims on campus!</p>
 
-                    <button className="purple-button"><NavLink className="purple-btn-link" to="/events/get-involved">GET INVOLVED</NavLink></button>
+                    <button className="purple-button">
+                        <NavLink className="purple-btn-link" to="/events/get-involved">
+                            GET INVOLVED
+                        </NavLink>
+                    </button>
                 </div>
             </div>
             <div className="info-text">
                 <h2>A Glimpse of MSA at UW</h2>
                 <p>MSA serves as the center of Muslim life on campus. From our weekly activities, 
                 quarterly events, social activities, classes, charitable activities, and programs at 
-                the Islamic House,<br/>
+                the Islamic House.<br/>
                 MSA has become a highlight of many students’ college experiences at the UW. As one 
                 of UW’s most active student organizations, MSA is a place to meet other Muslims, get 
                 involved in engaging activities, and really make the most out of your time at UW!</p>

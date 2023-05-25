@@ -1,9 +1,9 @@
 function Restaurants() {
     return (
-        <div className="restaurants-overall">
+        <div>
             <div className="center-headings">
-                <h1 className="halal-restaurants">Halal Restaurants</h1>
-                <h3 className="list-restaurants-heading">List of Halal Restaurants Nearby</h3>
+                <h1>Halal Restaurants</h1>
+                <h3>List of Halal Restaurants Nearby</h3>
             </div>
             <div className="restaurants-body">
                 <div className="halal-restaurants-maps">

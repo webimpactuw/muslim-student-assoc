@@ -82,34 +82,24 @@ REUSED COMPONENTS
     text-decoration: none;
 }
 
-/* scroll down arrow (button)
-.scroll-arrow {
-    left: 17%;
-    right: 17%;
-    width: 24px;
-    border: 5px solid var(--dark-purple);
-} */
 
+/* HEADER WB COMPONENT */
 /* header with white background */
 .header-white {
-    padding-top: 5vh;
+    padding-top: 10vh;
     text-align: center;
     min-height: 70vh;
 }
 
+/* header text spacing */
 .header-white h3 {
     font-size: 20px;
     margin-bottom: 30px;
 }
+.header-white p { padding: 0 15vw; }
+.header-arrow-down { margin-top: max(50px, calc(55vh - 250px)); }
 
-.header-white p {
-    padding: 0 15vw;
-}
-
-.header-arrow-down {
-    margin-top: max(50px, calc(55vh - 250px));
-}
-
+/* lists of links */
 .links {
     display: flex;
     justify-content: center;
@@ -117,27 +107,11 @@ REUSED COMPONENTS
     flex-wrap: wrap;
 }
 
-.link-container {
-    width: 300px;
-}
-
-/* 
-USEFUL ATTRIBUTES 
-*/
-
-/* header sections */
-.header-background-purple {
-    /* figma has images overlaid on top, add those as needed */
-    background: var(--bg-light-purple);
-}
-
+/* grey  background color */
 .grey-bg {
     background-color: var(--bg-light-grey);
 }
 
-/* OTHER STYLING */
-
-/* WHAT IS ISLAM */
 /* COLUMNS USED EVERYWHERE */
 .grid-col { 
     display: grid;
@@ -151,192 +125,24 @@ USEFUL ATTRIBUTES
     max-width: 100%;
 }
 
-.pillars {
-    align-items: start;
-}
-
-/* 
-IH HOME 
-*/
-/* IH Home header section */
+/* Purple background svg header section */
+/* IH, Events, Board, Gallery, What is Islam */
 .header-section, .About-Header {
     background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
     padding: 350px 0px 130px 75px;
 }
 
-.pray-body-section {
-    padding: 100px 80px;
-}
-
-/* About IH section */
-.about-ih {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 100px 80px 40px 80px;
-}
-
-.ih-content {
-    order: -1;
-}
-
-.ih-description {
-    font-size: 25px;
-}
-
-.prayer-times {
-    font-size: 25px;
+.info-text {
+    font-size: 24px;
+    padding: 15vh 15vw;
     text-align: center;
-    color: var(--dark-purple);
 }
-
-/* IH History section */
-.next-arrow-div {
-    text-align: center;
-    margin: auto;
-    margin-top: 16px;
-}
-
-.arrow-down {
-    height: 20px;
-    margin-top: 16px;
-}
-
-.ih-history-content {
-    display: flex;
-    gap: 5vw;
-}
-
-.column {
-    flex: 2;
-    white-space: pre-wrap;
-}
-
-.ih-library-content, .ih-history-content {
-    padding: 50px 4vw;
-}
-
-.ih-history-title {
-    padding: 0vh 4vw;
-}
-
-/* 
-Events
-*/
-.events-head {
-    margin: 10vh 0 2vh 3.5vw;
-}
-.upcoming-event {
-    grid-template-columns: 0.75fr 1.25fr;
-}
-.member-info {
-    padding: 5vh 3.5vw;
-}
-
-.member-info a, .member-info li {
-    font-size: 20px;
-}
-
-.member-list {
-    display: grid;
-    grid-template-columns: 1.25fr 0.75fr;
-    align-items: center;
-    padding: 3vh 0;
-}
-
-.hug-pic {
-    height: 100%;
-    max-width: 100%;
-}
-.involved-elmt { padding: 3vh 0;}
-
-.involved-subhead {
-    padding: 8vh 3.5vw 0;
-}
-
-.activities .grid-col {
-    padding: 3vh 3.5vw;
-}
-
-/* IH PROGRAMS */
-#programs h2{
-    padding: 5vh 0 0 3.5vw;
-}
-.programs-list {
-    gap: 1vw;
-}
-
-.program-card {
-    padding: 20px;
-    background-color: var(--bg-light-purple);
-    height: calc(100% - 40px);
-    border-radius: 20px;
-}
+.info-text > p { padding-top: 20px; }
 
 /*
-About Page
+PAGE STYLING
 */
-.About-Header {
-    background: no-repeat top right/cover url('./assets/backgrounds/about-bg.svg') var(--bg-light-purple);
-}
-.Our-Purpose {
-    padding-bottom: 50px;
-    padding-top: 40px;
-    text-align: center;
-}
 
-.about-container {
-    display: grid;
-    grid-template-columns: 5fr 3fr;
-    padding: 2vh 4vw;
-    gap: 2vw;
-    align-items: center;
-    text-align: start;
-}
-.about-container img {
-    max-width: 95%;
-    margin-left: 5%;
-}
-
-/* 
-Board Members
-*/
-.board {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3vw;
-    padding: 10vh 5vw;
-}
-.board-member {
-    text-align: center;
-    font-weight: bold;
-    border-radius: 150px;
-}
-
-/*
-About Gallery
-*/
-.gallery-img-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3vw;
-    padding: 1vh 1vw;
-}
-
-.gallery-img {
-    height: 300px;
-    padding: 30px 20px 70px 20px;
-    background-color: white;
-    box-shadow: 0 0 10px 5px #ccc;
-    max-width: 90%;
-}
-.gallery-img-polaroid{
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    padding: 15px;
-    padding-bottom: 45px;
-    margin: 10px;
-}
 /*
 Homepage
 */
@@ -347,16 +153,6 @@ Homepage
 
 .home-header-txt {
     padding: 25vh 0 15vh 80px;
-}
-
-.info-text {
-    font-size: 24px;
-    padding: 15vh 15vw;
-    text-align: center;
-}
-
-.info-text > p {
-    padding-top: 20px;
 }
 
 /* pics */
@@ -390,6 +186,199 @@ Homepage
 .homepics {
     margin: 1.2vw 1vw;
     border-radius: 10px;
+}
+
+/*
+About Page
+*/
+.About-Header {
+    background: no-repeat top right/cover url('./assets/backgrounds/about-bg.svg') var(--bg-light-purple);
+}
+.Our-Purpose {
+    padding-bottom: 50px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    padding: 2vh 3.5vw;
+    gap: 2vw;
+    align-items: center;
+    text-align: start;
+}
+.about-container img {
+    max-width: 95%;
+    margin-left: 5%;
+}
+
+/* 
+Board Members
+*/
+.board {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 10vh 5vw;
+}
+.board-member {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 150px;
+}
+
+/*
+WHAT IS ISLAM 
+*/
+.pillars {
+    align-items: start;
+}
+
+/*
+About Gallery
+*/
+.gallery-img-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 1vh 1vw;
+}
+
+.gallery-img {
+    height: 300px;
+    padding: 30px 20px 70px 20px;
+    background-color: white;
+    box-shadow: 0 0 10px 5px #ccc;
+    max-width: 90%;
+}
+.gallery-img-polaroid{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    padding-bottom: 45px;
+    margin: 10px;
+}
+
+/* 
+IH HOME 
+*/
+.pray-body-section {
+    padding: 100px 80px;
+}
+
+/* About IH section */
+.about-ih {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px 80px 40px 80px;
+}
+
+.ih-content {
+    order: -1;
+}
+
+.ih-description {
+    font-size: 25px;
+}
+
+/* prayer table */
+.prayer-times {
+    font-size: 25px;
+    text-align: center;
+    color: var(--dark-purple);
+}
+
+/* IH history arrow down */
+.next-arrow-div {
+    text-align: center;
+    margin: auto;
+    margin-top: 16px;
+}
+
+.arrow-down {
+    height: 20px;
+    margin-top: 16px;
+}
+
+/* IH history text */
+.ih-history-content {
+    display: flex;
+    gap: 5vw;
+}
+
+.column {
+    flex: 2;
+    white-space: pre-wrap;
+}
+
+.ih-library-content, .ih-history-content {
+    padding: 50px 3.5vw;
+}
+
+.ih-history-title {
+    padding: 0vh 3.5vw;
+}
+
+/* IH PROGRAMS */
+#programs h2{
+    padding: 5vh 0 0 3.5vw;
+}
+.programs-list {
+    gap: 1vw;
+}
+
+.program-card {
+    padding: 20px;
+    background-color: var(--bg-light-purple);
+    height: calc(100% - 40px);
+    border-radius: 20px;
+}
+
+/* 
+Events
+*/
+/* singular event */
+.events-head {
+    margin: 10vh 0 2vh 3.5vw;
+}
+.upcoming-event {
+    grid-template-columns: 0.75fr 1.25fr;
+}
+
+/* become a member */
+.member-info {
+    padding: 5vh 3.5vw;
+}
+
+.member-info a, .member-info li {
+    font-size: 20px;
+}
+
+.member-list {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    align-items: center;
+    padding: 3vh 0;
+}
+
+/* become a member svg */
+.hug-pic {
+    height: 100%;
+    max-width: 100%;
+}
+
+/* get involved */
+.involved-elmt { padding: 3vh 0;}
+
+.involved-subhead {
+    padding: 8vh 3.5vw 0;
+}
+
+/* activities */
+.activities .grid-col {
+    padding: 3vh 3.5vw;
 }
 
 /* 
@@ -469,7 +458,6 @@ a:link {
     text-decoration: none;
 }
 
-
 .social-media-contact {
     padding-bottom: 4.3vh;
 }
@@ -477,34 +465,17 @@ a:link {
 /* 
 RESTAURANTS 
 */
-.restaurants-overall {
-    align-items: center;
-}
-
 .center-headings {
     text-align: center;
-}
-
-.halal-restaurants {
     padding-top: 11vh;
-}
-
-.list-restaurants-heading {
-    padding-bottom: 11vh;
 }
 
 .restaurants-body {
     display: flex;
     align-items: center;
     align-content: center;
-    padding-bottom: 10vh;
-}
-
-.restaurant {
-    padding: 0vh 0vw 0vh 15vw;
-    align-self: center;
-    text-align: left;
-    flex-grow: 2;
+    padding: 11vh 0 10vh 15vw;
+    gap: 15vw;
 }
 
 .restaurant-pray-name {
@@ -519,18 +490,6 @@ RESTAURANTS
 .restaurant-address-2 {
     margin-top: 0;
     padding-left: 3vw;
-}
-
-.halal-restaurants-maps {
-    padding-left: 15vw;
-}
-
-/* 
-WHERE TO PRAY
-*/
-
-.pray-headings {
-    padding-top: 10vh;
 }
 
 /* 
@@ -780,7 +739,7 @@ FOOTER
     
     /* lists of links display vertical, padding */
     .links { 
-        padding: 0 10vw; 
+        padding: 0 9vw; 
         gap: 30px;
     }
     .link-container { width: 100%; }
@@ -817,7 +776,7 @@ FOOTER
         background: no-repeat bottom right url('./assets/backgrounds/home-mobile-bg.svg') var(--bg-light-purple); 
         background-size: contain;
     }
-    .home-header-txt { padding: 7vh 3.5vh; }
+    .home-header-txt { padding: 7vh 9vw; }
 
     /* RESOURCES */
     .lantern-header {
