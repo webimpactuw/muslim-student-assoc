@@ -9,9 +9,9 @@ function Activities() {
     const header = {
         title: "Activities",
         subtitle: "Check out our activities below!",
-        buttons: [{to: "#", name: "GENERAL ACTIVITIES"}, 
-        {to: "#", name: "SOCIAL ACTIVITIES"},
-        {to: "#", name: "IH ACTIVITIES"}]
+        buttons: [{to: "#activity-general", name: "GENERAL ACTIVITIES"}, 
+        {to: "#activity-social", name: "SOCIAL ACTIVITIES"},
+        {to: "#activity-ih", name: "IH ACTIVITIES"}]
     } 
 
     return (
@@ -21,7 +21,9 @@ function Activities() {
             <div className="activities grey-bg">
                 <div className="grid-col">
                     <div />
-                    <h2>General Activites</h2>
+                    <a id="activity-general">
+                        <h2>General Activites</h2>
+                    </a>
 
                     <div>
                         <img src={pic1} alt="MSA meeting"/>
@@ -69,7 +71,9 @@ function Activities() {
 
                 <div className="grid-col">
                     <div />
-                    <h2>Social Activites</h2>
+                    <a id="activity-social">
+                        <h2>Social Activites</h2>
+                    </a>
 
                     <img src={pic4} alt="3 members under arch"/>
                     <div>
@@ -94,7 +98,9 @@ function Activities() {
 
                 <div className="grid-col">
                     <div />
-                    <h2>Islamic House Activites</h2>
+                    <a id="activity-ih">
+                        <h2>Islamic House Activites</h2>
+                    </a>
 
                     <img src={pic5} alt="Gathering with food"/>
                     <div>

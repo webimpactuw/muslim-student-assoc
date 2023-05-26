@@ -8,6 +8,7 @@ function Restaurants() {
             <div className="restaurants-body">
                 <div className="halal-restaurants-maps">
                     <iframe
+                        id="map"
                         src="https://www.google.com/maps/d/u/0/embed?mid=1u8ERVmzE7l4eFrDv_rJYdcvPh3Mq_kE&ehbc=2E312F" 
                         width="480" 
                         height="600"

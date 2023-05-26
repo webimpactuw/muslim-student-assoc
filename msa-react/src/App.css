@@ -129,7 +129,7 @@ REUSED COMPONENTS
 /* IH, Events, Board, Gallery, What is Islam */
 .header-section, .About-Header {
     background: no-repeat top right/cover url('./assets/backgrounds/main-bg.svg') var(--bg-light-purple);
-    padding: 350px 0px 130px 75px;
+    padding: 350px 5vw 130px;
 }
 
 .info-text {
@@ -265,18 +265,15 @@ About Gallery
 IH HOME 
 */
 .pray-body-section {
-    padding: 100px 80px;
+    padding: 100px calc(10vw - 50px);
 }
 
 /* About IH section */
 .about-ih {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 100px 80px 40px 80px;
-}
-
-.ih-content {
-    order: -1;
+    padding: 100px 3.5vw 40px;
+    gap: 2vw;
 }
 
 .ih-description {
@@ -293,8 +290,11 @@ IH HOME
 /* IH history arrow down */
 .next-arrow-div {
     text-align: center;
-    margin: auto;
-    margin-top: 16px;
+    margin: 50px auto;
+}
+
+.ih-text{
+    padding: 0vh 3.5vw 5vh;
 }
 
 .arrow-down {
@@ -311,14 +311,6 @@ IH HOME
 .column {
     flex: 2;
     white-space: pre-wrap;
-}
-
-.ih-library-content, .ih-history-content {
-    padding: 50px 3.5vw;
-}
-
-.ih-history-title {
-    padding: 0vh 3.5vw;
 }
 
 /* IH PROGRAMS */
@@ -474,7 +466,8 @@ RESTAURANTS
     display: flex;
     align-items: center;
     align-content: center;
-    padding: 11vh 0 10vh 15vw;
+    justify-content: center;
+    padding: 11vh 5vw;
     gap: 15vw;
 }
 
@@ -490,6 +483,10 @@ RESTAURANTS
 .restaurant-address-2 {
     margin-top: 0;
     padding-left: 3vw;
+}
+
+#map {
+    max-width: 50vw;
 }
 
 /* 
@@ -707,14 +704,14 @@ FOOTER
     { padding: 5vh 9vw; }
 
     /* column instead of row */
-    .home-pics-sect, .ih-history-content, .links, .about-container
+    .home-pics-sect, .ih-history-content, .links, .about-container, .restaurants-body
     { flex-direction: column; }
     /* for grid system to columns */
     .grid-col, .about-ih, .member-list
     { grid-template-columns: 1fr; }
 
     /* reverse order for grids */
-    .hug-pic
+    .hug-pic, .ih-content-table, .restaurant
     { order: -1; }
 
     /* REUSED COMPONENTS */
@@ -737,7 +734,7 @@ FOOTER
     .link-container { width: 100%; }
 
     /* changed title spacing */
-    .header-section {padding: 185px 30px 40px 30px;}
+    .header-section {padding: 185px 30px 40px;}
 
     /* changed footer spacing */
     .footer{ padding: 50px 5vw 0 5vw; }
@@ -755,15 +752,15 @@ FOOTER
 
     /* IH HOME */
     /* ih prayer times table scaling and padding */
-    .about-ih { padding: 6vh 0; }
-    .ih-history-title { padding: 0vh 9vw; }
-    .ih-content, .ih-history-content, .history-next, .ih-library-content
-    { padding: 2vh 9vw; }
+    .about-ih { padding: 6vh 0 0; }
+    .ih-content, .ih-text { padding: 2vh 9vw; }
     .ih-content { margin-top: 50px; }
     .ih-content-table, .pray-content-table {
-        height: 55vh;
+        height: 60vh;
         padding-bottom: 70px;
     }
+
+    .ih-history-content { gap: 0; }
 
     /* events */
     .events-head { margin: 2vh 9vw; }
@@ -783,9 +780,10 @@ FOOTER
 
     /* WHERE TO PRAY */
     .pray-headings { padding: 4vh 0vw 0vh; }
-    .pray-body-section { padding: 0; }
+    .pray-body-section { padding: 0 0 10vh; }
     .pray-content { padding: 0 9vw 5vh; }
 
+    #map { max-width: 95vw; }
     /* CONTACT */
     .contact-header {
         background-image: url('./assets/backgrounds/moon-lantern.svg'),

@@ -7,9 +7,11 @@ function NavItem ({pages}) {
 
     return (
         <div className="navItem">
-            <div className="dropbtn">
-                <NavLink to={pages.basePath}>{pages.title}</NavLink>
-            </div>
+            <NavLink to={pages.basePath}>
+                <div className="dropbtn">
+                    {pages.title}
+                </div>
+            </NavLink>
             <div className="dropdown-content">
                 {subPages}
             </div>
