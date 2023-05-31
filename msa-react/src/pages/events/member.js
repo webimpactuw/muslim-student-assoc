@@ -5,14 +5,15 @@ function member() {
         title: "Become a Member",
         description: `Become an MSA member today! Members are the only ones able to have a say in how MSA should run, 
             attend MSA town halls, run for an Officer position, and vote in elections. 
-            We strongly suggest that you become a member, as our organization’s success depends on our general member involvement.`
+            We strongly suggest that you become a member, as our organization’s success depends on our general member involvement.`,
+        scrollTo: "#member"
     } 
 
     return (
         <div>
             <HeaderWB props={header}/>
             <div className="member-info">
-                <h2>Becoming a member is easy!</h2>
+                <h2 id="member">Becoming a member is easy!</h2>
                 
                 <div className="member-list">
                     <div>
@@ -42,13 +43,13 @@ function member() {
                 <h6>Final Steps</h6>
                 <p>
                     Please refer to the MSA Membership Guidelines regarding eligibility to vote in elections and run for office. 
-                    The short version is, if you show up and are active, you get to vote. For the specifics, refer here: 
+                    The short version is, if you show up and are active, you get to vote.  
                 </p>
                 {/* <a target="_blank" rel="noopener" href="https://msauw.org/wp-content/uploads/2019/06/MSA-UW-Membership-Guidelines-2019-2020_.pdf">
                     MSA-UW Membership Guidelines 2019-2020</a> */}
-                <p>
+                {/* <p>
                     Once you are ready, fill out the form below to become a member!
-                </p>
+                </p> */}
             </div>
         </div>
     );

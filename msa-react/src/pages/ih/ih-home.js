@@ -33,23 +33,24 @@ function IHHome() {
                         />
                     </div>
                 </div>
-
-                <div className="ih-text">
-                    <div className="ih-library-content">
-                        <h2 className="about-the-ih-subhead">ISLAMIC HOUSE LIBRARY</h2>
-                        <p className="ih-library-description">The Islamic House is home to a collection of books that have been donated by students over the years. We have textbooks, general school books, and Islamic books as well.
-                            Come check is out at []</p>
-                    </div>
-
-                    <div className="next-arrow-div">
-                        <h6 className="read-full-story-subhead">Read the full story below</h6>
+                <div className="next-arrow-div">
+                    <h6 className="read-full-story-subhead">Read the full story below</h6>
+                    <a href="#history">
                         <img 
                             className="arrow-down"
                             src={ArrowSvg}
                             alt="Down Arrow"
                         />
+                    </a>
+                </div>
+
+                <div className="ih-text">
+                    <div className="ih-library-content">
+                        <h2 className="about-the-ih-subhead">ISLAMIC HOUSE LIBRARY</h2>
+                        <p className="ih-library-description">The Islamic House is home to a collection of books that have been donated by students over the years. We have textbooks, general school books, and Islamic books as well.
+                            Come check it out!</p>
                     </div>
-                    <h2 className="ih-history-title">THE HISTORY OF THE IH</h2>
+                    <h2 id="history" className="ih-history-title">THE HISTORY OF THE IH</h2>
                     <div className="ih-history-content">
                         <div className="column">
                             <p className="column-item-one">

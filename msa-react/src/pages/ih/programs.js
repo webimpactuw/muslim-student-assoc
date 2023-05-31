@@ -20,17 +20,15 @@ function Programs() {
     const header = {
         title: "Programs",
         subtitle: "Check out our programs below!",
-        buttons: [{to: "#programs", name: "UPCOMING"}]
+        buttons: [{to: "#programs", name: "UPCOMING"}],
+        scrollTo: "#programs",
     } 
-
 
     return (
         <div>
             <HeaderWB props={header}/>
             <div className="grey-bg">
-                <a id="programs">
-                    <h2>Ongoing Programs</h2>
-                </a>
+                <h2 id="programs" className="program-head">Ongoing Programs</h2>
                 <div className="grid-col programs-list">
                     {programs}
                 </div>

@@ -10,7 +10,7 @@ import DownArrow from "./DownArrow";
     // subtitle: "Check out our programs below!",
     // links: [{to: "#programs", name: }] 
 // } 
-function HeaderWB ({props: {title, subtitle, description, buttons}}) {
+function HeaderWB ({props: {title, subtitle, description, buttons, scrollTo}}) {
     return (    
         <div className="header-white">
             <h1>{title}</h1>
@@ -37,7 +37,7 @@ function HeaderWB ({props: {title, subtitle, description, buttons}}) {
                     )}
                 </div>
             : null}
-            <DownArrow />
+            <DownArrow to={scrollTo}/>
         </div>
     );
 }

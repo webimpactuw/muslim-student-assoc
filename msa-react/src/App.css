@@ -14,6 +14,8 @@
   --bg-light-grey: #f9f9f9;
 }
 
+html { scroll-behavior: smooth; }
+
 /* FONT */
 body, button { font-family: 'Poppins', sans-serif; }
 p { font-size: 20px; }
@@ -267,7 +269,7 @@ IH HOME
 .about-ih {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 100px 3.5vw 40px;
+    padding: 100px 3.5vw 0;
     gap: 2vw;
 }
 
@@ -285,7 +287,6 @@ IH HOME
 /* IH history arrow down */
 .next-arrow-div {
     text-align: center;
-    margin: 50px auto;
 }
 
 .ih-text{
@@ -295,6 +296,11 @@ IH HOME
 .arrow-down {
     height: 20px;
     margin-top: 16px;
+}
+
+.ih-library-content {
+    max-width: 1000px;
+    margin: 50px 0;
 }
 
 /* IH history text */
@@ -309,8 +315,8 @@ IH HOME
 }
 
 /* IH PROGRAMS */
-#programs h2{
-    padding: 5vh 0 0 3.5vw;
+.program-head{
+    padding: 5vh 3.5vw 0;
 }
 .programs-list {
     gap: 1vw;
@@ -762,6 +768,8 @@ FOOTER
     }
 
     .ih-history-content { gap: 0; }
+
+    .program-head {padding: 3vh 9vw 0;}
 
     /* events */
     .events-head { margin: 2vh 9vw; }

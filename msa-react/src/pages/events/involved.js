@@ -11,6 +11,7 @@ function Involved() {
         description: `MSA is an organization that is only successful when its members are involved 
             and when Muslim students on campus see the value in an organization like MSA. 
             Being involved in MSA can be a big part of your college experience.`,
+        scrollTo: "#involved",
     } 
 
     return (
@@ -18,7 +19,7 @@ function Involved() {
             <HeaderWB props={header}/>
 
             <div className="grey-bg">
-                <h2 className="involved-subhead">Ways to Get Involved</h2>
+                <h2 id="involved" className="involved-subhead">Ways to Get Involved</h2>
                 <div className="grid-col">
                     <img src={pic6} alt="MSA Meeting"/>
                     <div className="involved-elmt">
@@ -29,9 +30,11 @@ function Involved() {
                             and really make the most out of your time at UW! You do not need to be an MSA member to attend our 
                             events and activities unless stated otherwise.
                         </p>
-                        <button className="purple-button" >
-                            <NavLink to="/events" className="purple-btn-link">SEE OUR EVENTS</NavLink>
-                        </button>
+                        <NavLink to="/events" className="purple-btn-link">
+                            <button className="purple-button" >
+                                SEE OUR EVENTS
+                            </button>
+                        </NavLink>
                     </div>
 
                     <img src={pic7} alt="3 Brothers"/>
@@ -43,9 +46,11 @@ function Involved() {
                             and vote in elections. Membership is not required in order to attend our events and activities, 
                             but we highly recommend it if you would like to have a say in how MSA is run.
                         </p>
-                        <button className="purple-button" >
-                            <NavLink to="/events/member" className="purple-btn-link">BECOME A  MEMBER</NavLink>
-                        </button>
+                        <NavLink to="/events/member" className="purple-btn-link">
+                            <button className="purple-button" >
+                                BECOME A  MEMBER
+                            </button>
+                        </NavLink>
                     </div>
                     
                     <img src={pic8} alt="Sheikh Umair"/>
@@ -64,9 +69,11 @@ function Involved() {
                             Remember, any member can run for an Officer position, but only active members for two quarters can vote in elections. 
                             For full details, visit our MSA Membership Guidelines for this year.
                         </p>
-                        <button className="purple-button" >
-                            <a target="_blank" rel="noopener" className="purple-btn-link" href="">VIEW GUIDELINES</a>
-                        </button>
+                        <a target="_blank" rel="noopener" className="purple-btn-link" href="">
+                            <button className="purple-button" >
+                                VIEW GUIDELINES
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
