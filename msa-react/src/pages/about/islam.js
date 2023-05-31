@@ -14,13 +14,15 @@ function Islam() {
             </div>
             <div className="next-arrow-div">
                 <h6 className="read-full-story-subhead">The Five Pillars of Islam</h6>
-                <img 
-                    className="arrow-down"
-                    src={ArrowSvg}
-                    alt="Down Arrow"
-                />
+                <a href="#islam">
+                    <img 
+                        className="arrow-down"
+                        src={ArrowSvg}
+                        alt="Down Arrow"
+                    />
+                </a>
             </div>
-            <div className="grid-col pillars">
+            <div className="grid-col pillars" id="islam">
                 <div>
                     <h2>Shahadah</h2>
                     <h3>TESTIMONY OF FAITH</h3>
