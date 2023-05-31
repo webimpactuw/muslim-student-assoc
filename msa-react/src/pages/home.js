@@ -20,11 +20,11 @@ const Home = () => {
                     <h3>AT THE UNIVERSITY OF WASHINGTON</h3>
                     <p>Join if you want to be a part of a supportive <br/>and inclusive community of Muslims on campus!</p>
 
-                    <button className="purple-button">
-                        <NavLink className="purple-btn-link" to="/events/get-involved">
-                            GET INVOLVED
-                        </NavLink>
-                    </button>
+                    <NavLink className="purple-btn-link" to="/events/get-involved">
+                        <button className="purple-button">
+                                GET INVOLVED
+                        </button>
+                    </NavLink>
                 </div>
             </div>
             <div className="info-text">
@@ -39,13 +39,13 @@ const Home = () => {
             {content ? 
                 <div className="home-pics-sect">
                     <div className="picsLeft">
-                        <img src={urlFor(content[0]).size(750, 500).url()} className="homepics" />
-                        <img src={urlFor(content[1]).size(750, 500).url()} className="homepics" />
+                        <img src={urlFor(content[0]).size(750, 500).url()} className="homepics" alt=""/>
+                        <img src={urlFor(content[1]).size(750, 500).url()} className="homepics" alt=""/>
                     </div>
                     <div className="picsRight">
-                        <img src={urlFor(content[2]).size(440, 325).url()} className="homepics" />
-                        <img src={urlFor(content[3]).size(440, 325).url()} className="homepics" />
-                        <img src={urlFor(content[4]).size(440, 325).url()} className="homepics" />
+                        <img src={urlFor(content[2]).size(440, 325).url()} className="homepics" alt=""/>
+                        <img src={urlFor(content[3]).size(440, 325).url()} className="homepics" alt=""/>
+                        <img src={urlFor(content[4]).size(440, 325).url()} className="homepics" alt=""/>
                     </div>            
                 </div>
             : null}

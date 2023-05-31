@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import purpose1 from "../../assets/about/purpose-1.svg";
 import purpose2 from "../../assets/about/purpose-2.svg";
 import purpose3 from "../../assets/about/purpose-3.svg";
@@ -15,7 +16,11 @@ function AboutHome() {
            <div className="header-section About-Header">
                 <h1>About Us</h1>
                 <h3>Learn more about us and what we do</h3>
-                <button className="purple-button">BECOME A MEMBER</button>
+                <NavLink className="purple-btn-link" to="/events/member">
+                    <button className="purple-button">
+                        BECOME A MEMBER
+                    </button>
+                </NavLink>
             </div>
               
             

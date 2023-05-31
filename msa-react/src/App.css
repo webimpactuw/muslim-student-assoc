@@ -239,26 +239,21 @@ WHAT IS ISLAM
 /*
 About Gallery
 */
+.gallery{ padding: 3vh 3.5vw;}
+.gallery-title{padding-top: 3vh;}
 .gallery-img-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 3vw;
-    padding: 1vh 1vw;
+    gap: 1vw;
 }
 
-.gallery-img {
-    height: 300px;
-    padding: 30px 20px 70px 20px;
-    background-color: white;
-    box-shadow: 0 0 10px 5px #ccc;
-    max-width: 90%;
-}
 .gallery-img-polaroid{
+    height: 300px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    padding: 15px;
-    padding-bottom: 45px;
+    padding: 15px 15px 45px;
     margin: 10px;
+    max-width: 90%;
 }
 
 /* 
@@ -749,6 +744,12 @@ FOOTER
     /* homepage pictures lineup */
     .home-pics-sect img { max-width: 80vw; }
     .picsLeft, .picsRight { padding: 0 10vw; }
+
+    .gallery-img-row{justify-content: center}
+    .gallery-img-polaroid{
+        max-width: calc(93% - 30px);
+        height: auto;
+    }
 
     /* IH HOME */
     /* ih prayer times table scaling and padding */

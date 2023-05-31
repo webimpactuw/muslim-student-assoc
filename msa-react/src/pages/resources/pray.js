@@ -1,5 +1,3 @@
-import ArrowSvg from "../../assets/arrow-down.svg"; 
-
 function Pray() {
     return (
         <div>

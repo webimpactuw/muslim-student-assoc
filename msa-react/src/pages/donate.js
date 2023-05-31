@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import client from "../client";
 import { useEffect, useState } from "react";
 
@@ -15,12 +14,12 @@ const Donate= () => {
       <div className="lantern-header header-background-purple">
             <h1 className="resources-heading">Donate</h1>
             <div className="links donate-page">
-                <button className="purple-button">
-                    <a href={content?.ihdonate} className="purple-btn-link" target="_blank">DONATE TO THE IH</a>
-                </button>
-                <button className="purple-button">
-                    <a href={content?.msadonate} className="purple-btn-link" target="_blank">DONATE TO MSA</a>
-                </button>
+                <a href={content?.ihdonate} className="purple-btn-link" target="_blank">
+                    <button className="purple-button">DONATE TO THE IH</button>
+                </a>
+                <a href={content?.msadonate} className="purple-btn-link" target="_blank">
+                    <button className="purple-button">DONATE TO MSA</button>
+                </a>
             </div>
         </div>
     );

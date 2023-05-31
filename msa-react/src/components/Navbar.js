@@ -65,9 +65,9 @@ function Navbar() {
                 <NavLink className="donate purple-button" to="/donate">Donate</NavLink>
             </div>
             <div className="hamburger">
-                <img className="hamburger-icon" src={hambugerIcon} onClick={menuOn}/>
+                <img className="hamburger-icon" src={hambugerIcon} alt="mobile menu" onClick={menuOn}/>
                 <div className="hamburger-list" style={hamburgerOpen}>
-                    <img className="menuX" src={menuX} onClick={menuOff}/>
+                    <img className="menuX" src={menuX} onClick={menuOff} alt="close mobile menu"/>
                     <Hamburger closeMenu={menuOff} pages={pages.slice(0, 4)}/>
                 </div>
             </div>

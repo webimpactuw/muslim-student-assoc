@@ -16,8 +16,8 @@ function BurgerItem({ pages, styles, num, closeBar, closeMenu }) {
     const style = { display: styles[num] };
 
     const img = (styles[num] === 'none' ?
-        <img className="hamburger-arrow" src={arrowRight} /> :
-        <img className="hamburger-arrow" src={arrowDown} />);
+        <img className="hamburger-arrow" src={arrowRight} alt="arrow to open menu" /> :
+        <img className="hamburger-arrow" src={arrowDown} alt="arrow to close menu"/>);
 
     return (
         <li>

@@ -15,16 +15,17 @@ function Gallery() {
     //each gallery entry has a title and array of images, access with post.info and map the images
     const posts = content ? content.map((post, index) =>
         <div key={index}>
-            <h2>{post.info}</h2>
+            <h2 className="gallery-title">{post.info}</h2>
 
             <div className="gallery-img-row">
                 {post.pictures.map((pic, picIndex) => (
-                <img
-                          key={picIndex}
-                          className="gallery-img-polaroid"
-                          src={urlFor(pic).url()}
-                        />
-                      ))}
+                    <img
+                        key={picIndex}
+                        className="gallery-img-polaroid"
+                        src={urlFor(pic).url()}
+                        alt="gallery pics"
+                    />
+                ))}
             </div>
 
         </div>
@@ -35,7 +36,7 @@ function Gallery() {
             <div className="header-section">
                 <h1>Gallery</h1>
             </div>
-            <div>
+            <div className="gallery">
                 {posts}
             </div>
         </div>

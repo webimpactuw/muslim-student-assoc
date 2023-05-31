@@ -18,7 +18,7 @@ function Footer() {
     const images = [Instagram, Facebook, Discord, Tiktok]
 
     const a = content ? images.map((src, index) => 
-        <a href={content[index]} target="_blank" key={index}>
+        <a href={content[index]} target="_blank" rel="noreferrer" key={index}>
             <img src={src} alt="Social Media Logo"/>
         </a>
     ) : null
