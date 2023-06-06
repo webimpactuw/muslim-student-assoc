@@ -222,12 +222,16 @@ Board Members
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3vw;
-    padding: 10vh 5vw;
+    gap: 4vw;
+    padding: 10vh 7vw;
 }
 .board-member {
     text-align: center;
     font-weight: bold;
+    max-width: 310px;
+}
+
+.member-pic {
     border-radius: 150px;
 }
 
