@@ -13,13 +13,23 @@ export default {
             name: 'info',
             type: 'string',
             title: 'Location/Time',
-         },
-
+        },
+        {
+            name: 'flyer',
+            type: 'image',
+            title: 'Flyer',
+        },
         {
             name: 'description',
             type: 'text',
             title: 'Description',
             validation: Rule => Rule.required(),
+        },
+    ],    
+    preview: {
+        select: {
+          title: 'name',
          },
-    ],
+     },
+ 
 }

@@ -8,7 +8,7 @@ export default {
             name: 'picture1',
             type: 'image',
             title: 'Picture 1',
-            description: 'Use the crop button to focus areas in the picture. 3:2 is presented on the website',
+            description: 'Use the crop button to focus areas in the picture. Pictures are cropped to 3:2 on the website',
             validation: Rule => Rule.required(),
             options: {
                 hotspot: true

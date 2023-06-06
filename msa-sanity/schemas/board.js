@@ -20,7 +20,7 @@ export default {
             name: 'order',
             type: 'number',
             title: 'Order',
-            description: 'Order of this position on the website',
+            description: 'Order that members will be displayed in',
             validation: Rule => Rule.required(),
        },
        {
