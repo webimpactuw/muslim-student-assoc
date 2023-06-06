@@ -2,9 +2,10 @@ import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import {media} from 'sanity-plugin-media'
 
 const singletonActions = new Set(["publish", "discardChanges", "restore"]);
-const singletonTypes = new Set(["event", "homepics", "links"]);
+const singletonTypes = new Set(["event", "homepics", "links", "media.tag"]);
 
 //deployed at msauw.sanity.studio
 //studio owner: Ryan
@@ -56,7 +57,8 @@ export default defineConfig({
               ),
           ]),
     }),
-  visionTool()],
+  visionTool(),
+  media()],
 
   schema: {
     types: schemaTypes,
