@@ -323,7 +323,7 @@ IH HOME
     padding: 5vh 3.5vw 0;
 }
 .programs-list {
-    gap: 1vw;
+    gap: 2vw;
 }
 
 .program-card {
@@ -331,6 +331,11 @@ IH HOME
     background-color: var(--bg-light-purple);
     height: calc(100% - 40px);
     border-radius: 20px;
+}
+
+.prog-flyer {
+    display: block;
+    margin: 1vh auto;
 }
 
 /* 

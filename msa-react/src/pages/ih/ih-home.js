@@ -48,7 +48,7 @@ function IHHome() {
                     <div className="ih-library-content">
                         <h2 className="about-the-ih-subhead">ISLAMIC HOUSE LIBRARY</h2>
                         <p className="ih-library-description">The Islamic House is home to a collection of books that have been donated by students over the years. We have textbooks, general school books, and Islamic books as well.
-                            Come check it out on the first floor of the IH!</p>
+                            Come check it out on the first floor of the Islamic House, on 22nd Ave!</p>
                     </div>
                     <h2 id="history" className="ih-history-title">THE HISTORY OF THE IH</h2>
                     <div className="ih-history-content">
