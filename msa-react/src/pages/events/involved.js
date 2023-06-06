@@ -3,8 +3,18 @@ import { NavLink } from "react-router-dom";
 import pic6 from "../../assets/site-pics/pic6.png";
 import pic7 from "../../assets/site-pics/pic7.png";
 import pic8 from "../../assets/site-pics/pic8.png";
+import client from "../../client";
+import { useEffect, useState } from "react";
 
 function Involved() {
+
+    const query = "*[_id == 'links'] { membership }";
+
+    const [content, setContent] = useState([]);
+    useEffect(() => {
+        client.fetch(query)
+            .then((data) => setContent(data[0].membership));
+    }, []);
 
     const header = {
         title: "Get Involved",
@@ -69,9 +79,9 @@ function Involved() {
                             Remember, any member can run for an Officer position, but only active members for two quarters can vote in elections. 
                             For full details, visit our MSA Membership Guidelines for this year.
                         </p>
-                        <a target="_blank" rel="noopener" className="purple-btn-link" href="">
+                        <a target="_blank" rel="noopener" className="purple-btn-link" href={content ? content : ""}>
                             <button className="purple-button" >
-                                VIEW GUIDELINES
+                                MEMBERSHIP FORM
                             </button>
                         </a>
                     </div>
