@@ -1,6 +1,18 @@
 import HeaderWB from "../../components/HeaderWB";
 import Hug from "../../assets/site-pics/memberhug.svg";
-function member() {
+import client from "../../client";
+import { useEffect, useState } from "react";
+
+function Member() {
+
+    const query = "*[_id == 'links'] { membership }";
+
+    const [content, setContent] = useState([]);
+    useEffect(() => {
+        client.fetch(query)
+            .then((data) => setContent(data[0].membership));
+    }, []);
+
     const header = {
         title: "Become a Member",
         description: `Become an MSA member today! Members are the only ones able to have a say in how MSA should run, 
@@ -45,14 +57,14 @@ function member() {
                     Please refer to the MSA Membership Guidelines regarding eligibility to vote in elections and run for office. 
                     The short version is, if you show up and are active, you get to vote.  
                 </p>
-                {/* <a target="_blank" rel="noopener" href="https://msauw.org/wp-content/uploads/2019/06/MSA-UW-Membership-Guidelines-2019-2020_.pdf">
-                    MSA-UW Membership Guidelines 2019-2020</a> */}
-                {/* <p>
+                <a target="_blank" rel="noopener" href={content ? content : ""} style={{textDecoration:"underline"}}>
+                    MSA-UW Membership Guidelines</a>
+                <p>
                     Once you are ready, fill out the form below to become a member!
-                </p> */}
+                </p>
             </div>
         </div>
     );
 }
 
-export default member;
+export default Member;
