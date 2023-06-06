@@ -1,7 +1,7 @@
 {
   "name": "msa-react",
   "version": "0.1.0",
-  "homepage": "https://dubvelopers-uw.github.io/react-gh-pages",
+  "homepage": "https://dubvelopers-uw.github.io/muslim-student-assoc/",
   "private": true,
   "dependencies": {
     "@sanity/client": "^5.4.2",
