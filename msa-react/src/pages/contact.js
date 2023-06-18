@@ -9,11 +9,15 @@ import { useEffect, useState } from "react";
 
 function Contact() {
     const query = "*[_id == 'links'] { email, instagram, discord, facebook, linktree }";
+    const query2 = "*[_id == 'text'] {mail}";
 
     const [content, setContent] = useState(null);
+    const [address, setAddress] = useState(null);
     useEffect(() => {
         client.fetch(query)
-        .then((data) => setContent(data[0]));
+            .then((data) => setContent(data[0]));
+        client.fetch(query2)
+         .then((data) => setAddress(data[0].mail));
     }, []);
 
     return (
@@ -88,11 +92,8 @@ function Contact() {
             </div>
             <div>
                 <h6 className="mail-address">Mailing Address:</h6>
-                <p className="address">Muslim Students Association<br/>
-                University of Washington<br/>
-                4001 NE Stevens Way<br/>
-                HUB 232, Box 352258, SAO Box 127<br/>
-                Seattle, WA 98105<br/>
+                <p className="address">
+                    {address}
                 </p>
             </div>
         </div>

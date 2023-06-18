@@ -5,14 +5,14 @@ import {schemaTypes} from './schemas'
 import {media} from 'sanity-plugin-media'
 
 const singletonActions = new Set(["publish", "discardChanges", "restore"]);
-const singletonTypes = new Set(["event", "homepics", "links", "media.tag"]);
+const singletonTypes = new Set(["event", "homepics", "links", "media.tag", "blurbs"]);
 
 //deployed at msauw.sanity.studio
 //studio owner: Ryan
 
 export default defineConfig({
   name: 'default',
-  title: 'MSA-website-content',
+  title: 'MSA Website Content',
 
   projectId: "b754quep",
   dataset: 'production',
@@ -33,7 +33,6 @@ export default defineConfig({
                 S.document()
                   .schemaType("homepics")
                   .documentId("homepics")
-                  .title("Homepage Pictures")
               ),
             // Regular document types minus the singleton
             ...S.documentTypeListItems()
@@ -43,15 +42,20 @@ export default defineConfig({
               .title("Upcoming Event")
               .child(
                 S.document()
-                  .id("single-event")
                   .schemaType("event")
                   .documentId("event")
+              ),
+            S.listItem()
+              .title("Text Blurbs")
+              .child(
+                S.document()
+                  .schemaType("blurbs")
+                  .documentId("text")
               ),
             S.listItem()
               .title("Important Links")
               .child(
                 S.document()
-                  .id("single-links")
                   .schemaType("links")
                   .documentId("links")
               ),

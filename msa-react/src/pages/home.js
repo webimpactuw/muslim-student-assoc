@@ -1,15 +1,19 @@
 import { NavLink } from "react-router-dom";
-import client from "../client";
 import { useEffect, useState } from "react";
+import client from "../client";
 import urlFor from "../urlfor";
 
 const Home = () => {
     const query = "*[_id == 'homepics'] { 'images': [picture1, picture2, picture3, picture4, picture5]}";
+    const query2 = "*[_id == 'text'] {home}";
 
     const [content, setContent] = useState(null);
+    const [info, setInfo] = useState(null);
     useEffect(() => {
         client.fetch(query)
-        .then((data) => setContent(data[0].images));
+            .then((data) => setContent(data[0].images));
+        client.fetch(query2)
+            .then((data) => setInfo(data[0].home));
     }, []);
 
     return (
@@ -22,19 +26,14 @@ const Home = () => {
 
                     <NavLink className="purple-btn-link" to="/events/get-involved">
                         <button className="purple-button">
-                                GET INVOLVED
+                            GET INVOLVED
                         </button>
                     </NavLink>
                 </div>
             </div>
             <div className="info-text">
                 <h2>A Glimpse of MSA at UW</h2>
-                <p>MSA serves as the center of Muslim life on campus. From our weekly activities, 
-                quarterly events, social activities, classes, charitable activities, and programs at 
-                the Islamic House.<br/>
-                MSA has become a highlight of many students’ college experiences at the UW. As one 
-                of UW’s most active student organizations, MSA is a place to meet other Muslims, get 
-                involved in engaging activities, and really make the most out of your time at UW!</p>
+                <p>{info}</p>
             </div>
             {content ? 
                 <div className="home-pics-sect">

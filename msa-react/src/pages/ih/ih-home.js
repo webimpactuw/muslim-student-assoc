@@ -1,12 +1,21 @@
 import ArrowSvg from "../../assets/arrow-down.svg"; 
+import client from "../../client";
+import { useEffect, useState } from "react";
 
 function IHHome() {
+    const query = "*[_id == 'text'] {IHaddress, aboutIH, IHlibrary}";
+
+    const [content, setContent] = useState(null);
+    useEffect(() => {
+        client.fetch(query)
+            .then((data) => setContent(data[0]));
+    }, []);
 
     return (
         <div>
             <div className="header-section">
                 <h1>The Islamic House</h1>
-                <h3>4625 22nd Ave NE, Seattle, WA 98105</h3>
+                <h3>At {content?.IHaddress}</h3>
             </div>
             
             <div className="body-section">
@@ -14,9 +23,7 @@ function IHHome() {
                     <div className="ih-content">
                         <h2 className="about-the-ih-subhead">ABOUT THE IH</h2>
                         <p className="ih-description">
-                            Established in 1979, the IH is a student-run mosque that has served as a hub of Muslim life at the UW. Through daily prayers, faith-based events, and social activities, students can come strengthen their faith and create long-lasting relationships with fellow Muslim brothers and sisters.
-                            <br/><br/>
-                            The IH also serves the greater Seattle community through weekly Jummah prayers, community dinners, and Sunday school programs for children. We are one of the few MSAs around the country that have a mosque we can call our own. 
+                            {content?.aboutIH}
                         </p>
                     </div>
                     <div className="ih-content-table">
@@ -47,8 +54,9 @@ function IHHome() {
                 <div className="ih-text">
                     <div className="ih-library-content">
                         <h2 className="about-the-ih-subhead">ISLAMIC HOUSE LIBRARY</h2>
-                        <p className="ih-library-description">The Islamic House is home to a collection of books that have been donated by students over the years. We have textbooks, general school books, and Islamic books as well.
-                            Come check it out on the first floor of the Islamic House, on 22nd Ave!</p>
+                        <p className="ih-library-description">
+                            {content?.IHlibrary}    
+                        </p>
                     </div>
                     <h2 id="history" className="ih-history-title">THE HISTORY OF THE IH</h2>
                     <div className="ih-history-content">

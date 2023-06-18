@@ -54,6 +54,13 @@ h6 {
     font-size: 20px;
 }
 
+.ih-description, .address, .ih-library-description, .info-text, .purpose
+{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
 /* 
 REUSED COMPONENTS 
 */

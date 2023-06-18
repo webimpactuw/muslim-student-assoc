@@ -4,11 +4,15 @@ import urlFor from "../../urlfor";
 
 function Board() {
     const query = "*[_type == 'board'] | order(order asc) {  position,   name,  picture }";
+    const subQuery = "*[_id == 'text'] { subtitle, board } "
 
     const [content, setContent] = useState([]);
+    const [info, setInfo] = useState(null);
     useEffect(() => {
         client.fetch(query)
-        .then((data) => setContent(data));
+            .then((data) => setContent(data));
+        client.fetch(subQuery)
+            .then((data) => setInfo(data[0]));
     }, []);
 
 
@@ -26,15 +30,12 @@ function Board() {
         <div>
             <div className="header-section">
                 <h1>MSA Board</h1>
-                <h3>MSA Officer Board 2022-2023 & Previous</h3>
+                <h3>MSA Officer Board  {info?.subtitle}</h3>
             </div>
             <div className="info-text">
                 <h2>Officer Board</h2>
-                <p>The Officer Board does not do all of the work in MSA,
-                     rather they seek to delegate responsibilities and roles to general members. 
-                     The role of the Officer Board is to lead, while empowering everyone in the organization
-                      to contribute to the MSA cause. Officers are volunteers, and are motivated individuals who 
-                      sacrifice their time to better the MSA.
+                <p>
+                    {info?.board}
                 </p>
             </div>
             <div className="board grey-bg">
