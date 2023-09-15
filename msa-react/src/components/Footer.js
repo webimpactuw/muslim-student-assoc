@@ -38,7 +38,7 @@ function Footer() {
                     {a}
                 </div>
                 <div className="made-with-love">
-                    <p>Made with 💛 by DUBvelopers!</p>
+                    <p>Made with 💛 by Web Impact UW!</p>
                 </div>
             </div>
 
