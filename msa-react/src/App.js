@@ -8,6 +8,7 @@ function App() {
   return (
     <HashRouter basename="/">
       <Navbar />
+      <div className="siteInfo"> https://docs.google.com/document/d/1GUb-mtFHAmpuDcOZT3krG4qfXIh9IYd4yCdSCXQrOPs/edit?usp=sharing </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about/*" element={<About />} />
